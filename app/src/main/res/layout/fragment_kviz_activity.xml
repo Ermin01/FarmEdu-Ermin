@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 🔙 HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:layout_marginTop="24dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/baseline_arrow_back"
+                android:tint="#2E7D32"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kviz znanja"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- 📊 PROGRESS -->
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pitanje 1/3"
+            android:textColor="#666"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- 📦 CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:padding="20dp"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <!-- NASLOV -->
+            <TextView
+                android:id="@+id/tvPitanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pitanje"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#222"
+                android:paddingBottom="20dp"/>
+
+            <!-- ODGOVORI -->
+            <Button
+                android:id="@+id/odgovor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odgovor 1"
+                android:backgroundTint="#E8F5E9"
+                android:textColor="#2E7D32"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/odgovor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odgovor 2"
+                android:backgroundTint="#E8F5E9"
+                android:textColor="#2E7D32"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/odgovor3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odgovor 3"
+                android:backgroundTint="#E8F5E9"
+                android:textColor="#2E7D32"/>
+
+        </LinearLayout>
+
+        <!-- REZULTAT -->
+        <TextView
+            android:id="@+id/tvRezultat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

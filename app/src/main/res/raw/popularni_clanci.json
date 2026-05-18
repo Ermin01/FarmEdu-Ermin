@@ -1,0 +1,66 @@
+[
+  {
+    "id": "article_1",
+    "title": "Kako povećati prinos kukuruza?",
+    "description": "Kukuruz je jedna od najvažnijih ratarskih kultura i zahtijeva pravilnu pripremu zemljišta kako bi dao maksimalan prinos. Prije same sjetve preporučuje se analiza tla kako bi se odredila optimalna količina đubriva i pH vrijednost zemljišta.\n\nKorištenje kvalitetnog i certificiranog sjemena značajno povećava otpornost biljke na bolesti i vremenske uslove. Sjetvu je potrebno obaviti u optimalnom roku kada temperatura tla dostigne odgovarajući nivo za klijanje.\n\nRedovno navodnjavanje tokom sušnih perioda igra ključnu ulogu u razvoju biljke. Posebno je važno obezbijediti dovoljno vlage tokom formiranja klipa.\n\nPored navodnjavanja, veoma je važna kontrola korova i zaštita od štetnika. Pravovremena primjena zaštitnih sredstava može značajno smanjiti gubitke i povećati kvalitet prinosa.\n\nStručnjaci preporučuju i pravilnu rotaciju usjeva kako bi zemljište ostalo plodno i zdravo tokom više sezona.",
+    "time": "5 min čitanja",
+    "category": "Savjet",
+    "image": "povrce_naslovna",
+    "tags": [
+      "Kukuruz",
+      "Biljke",
+      "Prinos",
+      "Đubrivo",
+      "Sjetva",
+      "Poljoprivreda"
+    ]
+  },
+  {
+    "id": "article_2",
+    "title": "Top 5 bolesti krava i kako ih spriječiti",
+    "description": "Bolesti kod krava mogu izazvati ozbiljne ekonomske gubitke ukoliko se ne prepoznaju na vrijeme. Jedna od najčešćih bolesti je mastitis koji pogađa vime i utiče na kvalitet mlijeka.\n\nRespiratorne infekcije također predstavljaju veliki problem posebno tokom hladnijih perioda godine. Redovna ventilacija štale i održavanje higijene mogu značajno smanjiti rizik od bolesti.\n\nParaziti i problemi sa probavom često nastaju zbog loše ishrane i nekvalitetne vode. Zbog toga je potrebno redovno kontrolisati kvalitet hrane i obezbijediti čistu vodu.\n\nVakcinacija je jedan od najvažnijih koraka u prevenciji bolesti. Veterinari preporučuju pravovremenu imunizaciju kako bi se smanjio rizik od širenja infekcija.\n\nRedovni pregledi životinja omogućavaju rano otkrivanje simptoma i bržu reakciju, što direktno utiče na zdravlje cijelog stada.",
+    "time": "7 min čitanja",
+    "category": "Stočarstvo",
+    "image": "stocarstvoimg",
+    "tags": [
+      "Krave",
+      "Mastitis",
+      "Vakcinacija",
+      "Zdravlje",
+      "Stočarstvo",
+      "Veterinar"
+    ]
+  },
+  {
+    "id": "article_3",
+    "title": "Navodnjavanje kap po kap",
+    "description": "Sistem navodnjavanja kap po kap jedan je od najefikasnijih načina raspodjele vode u poljoprivredi. Ovaj sistem omogućava direktno navodnjavanje korijena biljke uz minimalan gubitak vode.\n\nVelika prednost ovog sistema je ušteda vode i ravnomjerno zalijevanje biljaka. Posebno je koristan tokom ljetnih mjeseci kada su temperature visoke i zemljište brzo gubi vlagu.\n\nInstalacija sistema nije komplikovana, ali zahtijeva pravilno planiranje rasporeda cijevi i kapaljki. Potrebno je voditi računa o pritisku vode i kvalitetu filtera.\n\nRedovno održavanje sistema sprječava začepljenja i produžava njegov vijek trajanja. Preporučuje se čišćenje filtera i kontrola cijevi prije svake sezone.\n\nPoljoprivrednici koji koriste sistem kap po kap često ostvaruju bolje prinose uz manju potrošnju vode i energije.",
+    "time": "6 min čitanja",
+    "category": "Navodnjavanje",
+    "image": "navodnjavanje",
+    "tags": [
+      "Navodnjavanje",
+      "Kap po kap",
+      "Voda",
+      "Biljke",
+      "Sistem",
+      "Polje"
+    ]
+  },
+  {
+    "id": "article_4",
+    "title": "Održavanje traktora korak po korak",
+    "description": "Pravilno održavanje traktora ključno je za dug vijek trajanja i sigurnost tokom rada na farmi. Redovna provjera motora, ulja i rashladnog sistema može spriječiti ozbiljne kvarove.\n\nMotorno ulje potrebno je mijenjati prema preporukama proizvođača. Korištenje kvalitetnog ulja smanjuje habanje motora i poboljšava performanse traktora.\n\nGume također zahtijevaju redovnu kontrolu pritiska jer nepravilno napumpane gume povećavaju potrošnju goriva i smanjuju stabilnost vozila.\n\nVažno je pregledati kočnice, svjetla i hidraulični sistem prije početka rada. Mali kvarovi mogu brzo postati veliki problemi ukoliko se zanemare.\n\nNakon završetka sezone preporučuje se detaljno čišćenje traktora i skladištenje na suhom mjestu kako bi se spriječila korozija i oštećenja.",
+    "time": "8 min čitanja",
+    "category": "Mašine",
+    "image": "traktor_mas",
+    "tags": [
+      "Traktor",
+      "Mašine",
+      "Motor",
+      "Servis",
+      "Ulje",
+      "Poljoprivreda"
+    ]
+  }
+]

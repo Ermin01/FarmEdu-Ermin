@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="15dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="14dp"
+    app:strokeWidth="3dp"
+    app:strokeColor="#ECECEC"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:background="#FFFFFF">
+
+        <!-- AVATAR -->
+
+        <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp">
+
+            <!-- Glow -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/profile_glow_bg"
+                android:alpha="0.12" />
+
+            <!-- Avatar -->
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:background="@drawable/profile_circle_bg"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user" />
+
+            <!-- Online dot -->
+
+            <View
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/online_dot_bg" />
+
+        </FrameLayout>
+
+        <!-- CENTER -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- NAME + TIME -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Ermin Ham"
+                    android:textColor="#111111"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:45"
+                    android:textColor="#9A9A9A"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- LAST MESSAGE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- Read Icon -->
+
+                <ImageView
+                    android:id="@+id/imgSeen"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/ic_done_all"
+                    android:tint="#4CAF50" />
+
+                <TextView
+                    android:id="@+id/txtLastMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/zapocni_razgovor"
+                    android:textColor="#888888"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- RIGHT SIDE -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Unread badge -->
+
+            <TextView
+                android:id="@+id/txtUnread"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/chat_badge_bg"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <!-- Arrow -->
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_arrow_back"
+                android:tint="#B0B0B0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Belüftung des Stalls",
+    "tip": "Heute wird aufgrund erhöhter Luftfeuchtigkeit eine Belüftung des Stalls empfohlen.",
+    "description": "Hohe Luftfeuchtigkeit kann Atemprobleme bei Tieren und die Entwicklung von Bakterien verursachen.",
+    "category": "Tierunterkunft",
+    "emoji": "🌬️",
+    "priority": "high",
+    "voice": "Eine Belüftung des Stalls wird wegen erhöhter Luftfeuchtigkeit empfohlen."
+  },
+  {
+    "title": "Reinigung der Tränken",
+    "tip": "Die regelmäßige Reinigung der Tränken verringert das Infektionsrisiko.",
+    "description": "Verschmutztes Wasser erhöht das Risiko bakterieller Krankheiten bei Nutztieren.",
+    "category": "Hygiene",
+    "emoji": "💧",
+    "priority": "medium",
+    "voice": "Reinigen Sie die Tränken regelmäßig, um das Infektionsrisiko zu verringern."
+  },
+  {
+    "title": "Mineralien in der Ernährung",
+    "tip": "Die Zugabe von Mineralien verbessert die Widerstandskraft der Tiere.",
+    "description": "Mineralien stärken das Immunsystem und fördern die richtige Entwicklung des Organismus.",
+    "category": "Ernährung",
+    "emoji": "🥬",
+    "priority": "high",
+    "voice": "Die Zugabe von Mineralien verbessert die Widerstandskraft der Tiere."
+  },
+  {
+    "title": "Frisches Wasser",
+    "tip": "Frisches Wasser erhöht die Produktivität der Nutztiere.",
+    "description": "Eine ausreichende Wasseraufnahme verbessert die Milchproduktion und die Gesundheit der Tiere.",
+    "category": "Wasser",
+    "emoji": "🚰",
+    "priority": "medium",
+    "voice": "Sorgen Sie für frisches Wasser für eine bessere Produktivität der Nutztiere."
+  },
+  {
+    "title": "Temperaturkontrolle",
+    "tip": "Die Temperaturkontrolle reduziert Stress bei Tieren.",
+    "description": "Zu hohe Temperaturen können Appetitlosigkeit und Produktionsrückgang verursachen.",
+    "category": "Temperatur",
+    "emoji": "🌡️",
+    "priority": "high",
+    "voice": "Die Temperaturkontrolle reduziert Stress bei Tieren."
+  }
+]

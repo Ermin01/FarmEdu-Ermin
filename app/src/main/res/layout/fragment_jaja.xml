@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F4F6F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jajanaslovna" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#40000000" />
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="42dp"
+                android:layout_gravity="top|start"
+                android:padding="12dp"
+                android:src="@drawable/baseline_arrow_back"
+                android:background="@drawable/bg_back_button"
+                app:tint="#FFFFFF"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jaja"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jaja_opis"
+                    android:textColor="#DDFFFFFF"
+                    android:textSize="13sp"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- NASLOV -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sta_cete_pronaci"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="16dp"
+            android:textColor="#000000" />
+
+        <!-- ITEM -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/kokosicona"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/proizvodnja_jaja"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/proizvodnja_jaja_opis"
+                    android:textSize="13sp"
+                    android:textColor="#666"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:src="@drawable/jajaicondva"
+                android:scaleType="centerInside" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/higijena_proizvodnje"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/higijena_proizvodnje_opis"
+                    android:textSize="13sp"
+                    android:textColor="#666"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:src="@drawable/skladistejoja"
+                android:scaleType="centerInside" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skladistenje_jaja"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skladistenje_jaja_opis"
+                    android:textSize="13sp"
+                    android:textColor="#666"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:src="@drawable/kvalitetajaja"
+                android:scaleType="centerInside" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kvalitet_jaja"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kvalitet_jaja_opis"
+                    android:textSize="13sp"
+                    android:textColor="#666"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/expert_card_bg"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <!-- LIJEVA STRANA -->
+            <FrameLayout
+                android:layout_width="115dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center_vertical">
+
+                <!-- GLOW -->
+                <View
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center"
+                    android:background="#183D31" />
+
+                <!-- IMAGE -->
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="185dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ajla" />
+
+            </FrameLayout>
+
+            <!-- DESNI CONTENT -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- MINI BADGE -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="#1FC6FF00"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="#C6FF00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Savjeti stručnjaka"
+                        android:textColor="#C6FF00"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- TITLE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Povećajte kvalitet proizvodnje jaja"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <!-- DESC -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Pravilna ishrana, higijena i redovna kontrola kokoši direktno utiču na kvalitet i sigurnost jaja. Dobri uslovi uzgoja povećavaju proizvodnju, smanjuju bolesti i osiguravaju zdravije proizvode za tržište."
+                    android:textColor="#C5D2D7"
+                    android:textSize="14sp" />
+
+                <!-- BUTTON -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <!-- NASLOV -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Najvažnije preporuke"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- ZELENA LINIJA -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:background="#2E7D32"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- GRID -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- ITEM 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#FDF6F1"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jajasrce"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zdrave_zivotinje"
+                    android:textSize="10sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- ITEM 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#EEF7EF"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@android:drawable/ic_menu_help"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/higijena_kljuc"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- ITEM 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#EEF7EF"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@android:drawable/ic_menu_compass"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hladenje_jaja"
+                    android:textSize="10sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- ITEM 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#EEF7EF"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@android:drawable/checkbox_on_background"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redovna_kontrola"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- INFO BOX -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF3E0"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚠"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kvalitetno_jaje"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

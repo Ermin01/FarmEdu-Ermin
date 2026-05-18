@@ -1,0 +1,17 @@
+[
+  { "naslov": "savjet_zalijevanje_naslov", "tekst": "savjet_zalijevanje_tekst" },
+  { "naslov": "savjet_insekticid_naslov", "tekst": "savjet_insekticid_tekst" },
+  { "naslov": "savjet_sadnja_naslov", "tekst": "savjet_sadnja_tekst" },
+  { "naslov": "savjet_djubrivo_naslov", "tekst": "savjet_djubrivo_tekst" },
+  { "naslov": "savjet_traktor_naslov", "tekst": "savjet_traktor_tekst" },
+  { "naslov": "savjet_zetva_naslov", "tekst": "savjet_zetva_tekst" },
+  { "naslov": "savjet_kisa_naslov", "tekst": "savjet_kisa_tekst" },
+  { "naslov": "savjet_sunce_naslov", "tekst": "savjet_sunce_tekst" },
+  { "naslov": "savjet_puzevi_naslov", "tekst": "savjet_puzevi_tekst" },
+  { "naslov": "savjet_korov_naslov", "tekst": "savjet_korov_tekst" },
+  { "naslov": "savjet_voda_naslov", "tekst": "savjet_voda_tekst" },
+  { "naslov": "savjet_voce_naslov", "tekst": "savjet_voce_tekst" },
+  { "naslov": "savjet_kukuruz_naslov", "tekst": "savjet_kukuruz_tekst" },
+  { "naslov": "savjet_stoka_naslov", "tekst": "savjet_stoka_tekst" },
+  { "naslov": "savjet_sigurnost_naslov", "tekst": "savjet_sigurnost_tekst" }
+]

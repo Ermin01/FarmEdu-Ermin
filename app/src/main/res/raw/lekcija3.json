@@ -1,0 +1,26 @@
+{
+  "naslov": "Faktori uzgoja",
+  "opis": "Upoznaj ključne faktore koji utiču na rast i razvoj biljaka.",
+  "sadrzaj": [
+    {
+      "naslov": "Sunce",
+      "tekst": "Sunčeva svjetlost je osnovni izvor energije za biljke. Bez nje nema fotosinteze.",
+      "ikona": "☀️"
+    },
+    {
+      "naslov": "Voda",
+      "tekst": "Voda prenosi hranjive materije i omogućava rast biljaka.",
+      "ikona": "💧"
+    },
+    {
+      "naslov": "Tlo",
+      "tekst": "Tlo daje biljci hranjive materije i utiče na kvalitet prinosa.",
+      "ikona": "🌱"
+    },
+    {
+      "naslov": "Klima",
+      "tekst": "Temperatura i vremenski uslovi utiču na uspješnost uzgoja.",
+      "ikona": "🌦"
+    }
+  ]
+}

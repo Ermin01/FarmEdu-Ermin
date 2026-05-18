@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+      android:id="@+id/itHome"
+      android:title="@string/home"
+      app:showAsAction="ifRoom"
+      android:icon="@drawable/homeicon"/>
+
+  <item
+      android:id="@+id/zivotnje"
+      android:title="@string/stocarstvo"
+      app:showAsAction="ifRoom"
+      android:icon="@drawable/pets_pets"/>
+
+  <item
+      android:id="@+id/poljoprivreda"
+      android:title="@string/poljoprivreda"
+      android:icon="@drawable/gras"/>
+
+  <item
+      android:id="@+id/chat"
+      android:title="Chat"
+      android:icon="@drawable/chat"/>
+
+
+  <item
+      android:id="@+id/itOpcije"
+      android:title="@string/opcije"
+      app:showAsAction="ifRoom"
+      android:icon="@drawable/settings_postavka"/>
+
+
+
+
+</menu>

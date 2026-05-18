@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_interest_white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="34dp">
+
+        <!-- PREMIUM HEADER -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/headerImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stalanaslovna" />
+
+            <!-- DARK OVERLAY -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#C0000000" />
+
+            <!-- TOP BAR -->
+            <!-- TOP BAR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <!-- BACK BUTTON -->
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:padding="12dp"
+                    android:src="@drawable/baseline_arrow_back"
+                    android:background="@drawable/bg_back_button"
+                    app:tint="#FFFFFF"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <!-- HEADER CONTENT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:paddingStart="22dp"
+
+                android:paddingTop="22dp"
+                android:paddingEnd="22dp"
+                android:paddingBottom="28dp">
+
+                <!-- TAG -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:background="#1F4CAF50"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="#4CAF50" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Premium edukacija"
+                        android:textColor="#4CAF50"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- TITLE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/fragment_smjestaj_oprema_title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="31sp"
+                    android:textStyle="bold" />
+
+                <!-- DESCRIPTION -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3dp"
+                    android:text="@string/fragment_smjestaj_oprema_desc"
+                    android:textColor="#D0D7DC"
+                    android:textSize="15sp" />
+
+                <!-- STATS -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- SECTION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fragment_smjestaj_objekti"
+                android:textColor="#1D7A3E"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prikaži sve"
+                android:textColor="#4CAF50"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- RECYCLER PREMIUM CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:background="#0E2027"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvContent"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:clipToPadding="false"
+                android:paddingStart="10dp"
+                android:background="#0E2027"
+                android:paddingEnd="8dp" />
+
+        </LinearLayout>
+
+        <!-- SAVJETI STRUČNJAKA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/bg_interest_white"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <!-- LIJEVA STRANA -->
+            <FrameLayout
+                android:layout_width="115dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center_vertical">
+
+                <!-- GLOW -->
+                <View
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center"
+                    android:background="#183D31" />
+
+                <!-- IMAGE -->
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="195dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ismar" />
+
+            </FrameLayout>
+
+            <!-- DESNI CONTENT -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- MINI BADGE -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="#1FC6FF00"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp">
+
+                    <View
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:background="#1D7A3E" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Savjeti stručnjaka"
+                        android:textColor="#1D7A3E"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!-- TITLE -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Poboljšajte uslove na farmi"
+                    android:textColor="#1D7A3E"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <!-- DESC -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Pravilnim izborom i održavanjem opreme povećavate sigurnost, smanjujete troškove i ostvarujete bolje rezultate u proizvodnji."
+                    android:textColor="#1D7A3E"
+                    android:textSize="14sp" />
+
+                <!-- BUTTON -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- EXTRA INFO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="18dp"
+            android:textColor="#1D7A3E"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zašto je ovo važno?"
+                android:textColor="#1D7A3E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Moderan smještaj i kvalitetna oprema utiču na zdravlje životinja, povećavaju produktivnost i olakšavaju svakodnevni rad na farmi."
+                android:textColor="#1D7A3E"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_profile"
+        android:title="👤 Profil"/>
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="⚙️ Postavke"/>
+
+    <item
+        android:id="@+id/menu_fav_animals"
+        android:title="🐄 Omiljene životinje"/>
+
+    <item
+        android:id="@+id/menu_fav_articles"
+        android:title="📚 Omiljeni članci"/>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="🚪 Odjavi se"/>
+
+
+<!--    <item-->
+<!--        android:id="@+id/chat"-->
+<!--        android:title="💬 CHAT"/>-->
+
+</menu>

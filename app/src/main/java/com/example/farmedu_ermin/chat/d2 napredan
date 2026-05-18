@@ -1,0 +1,172 @@
+package com.example.farmedu_ermin.chat;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.farmedu_ermin.R;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FeedFragment extends Fragment {
+
+    // =====================================
+    // VIEWS
+    // =====================================
+
+    private RecyclerView recyclerPosts;
+
+    private ImageView btnAddPost;
+
+    // =====================================
+    // ADAPTER
+    // =====================================
+
+    private PostAdapter adapter;
+
+    // =====================================
+    // LIST
+    // =====================================
+
+    private final List<PostModel> postList =
+            new ArrayList<>();
+
+    // =====================================
+    // FIREBASE
+    // =====================================
+
+    private FirebaseFirestore db;
+
+    public FeedFragment() {
+    }
+
+    @Override
+    public View onCreateView(
+            @NonNull LayoutInflater inflater,
+            ViewGroup container,
+            Bundle savedInstanceState
+    ) {
+
+        return inflater.inflate(
+                R.layout.fragment_feed,
+                container,
+                false
+        );
+    }
+
+    @Override
+    public void onViewCreated(
+            @NonNull View view,
+            @Nullable Bundle savedInstanceState
+    ) {
+
+        super.onViewCreated(view, savedInstanceState);
+
+        // =====================================
+        // FIREBASE
+        // =====================================
+
+        db = FirebaseFirestore.getInstance();
+
+        // =====================================
+        // INIT
+        // =====================================
+
+        recyclerPosts =
+                view.findViewById(R.id.recyclerPosts);
+
+        btnAddPost =
+                view.findViewById(R.id.accelerate);
+
+        // =====================================
+        // RECYCLER
+        // =====================================
+
+        recyclerPosts.setLayoutManager(
+                new LinearLayoutManager(
+                        requireContext()
+                )
+        );
+
+        adapter =
+                new PostAdapter(postList);
+
+        recyclerPosts.setAdapter(adapter);
+
+        // =====================================
+        // LOAD POSTS
+        // =====================================
+
+        loadPosts();
+
+        // =====================================
+        // OPEN NEW POST
+        // =====================================
+
+        btnAddPost.setOnClickListener(v -> {
+
+            requireActivity()
+                    .getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(
+                            R.id.fragmentContainer,
+                            new NovaObjavaFragment()
+                    )
+                    .addToBackStack(null)
+                    .commit();
+        });
+    }
+
+    // =====================================
+    // LOAD POSTS
+    // =====================================
+
+    private void loadPosts() {
+
+        db.collection("posts")
+                .get()
+
+                .addOnSuccessListener(queryDocumentSnapshots -> {
+
+                    postList.clear();
+
+                    for (var doc : queryDocumentSnapshots) {
+
+                        PostModel post =
+                                doc.toObject(
+                                        PostModel.class
+                                );
+
+                        // =====================================
+                        // SAVE DOCUMENT ID
+                        // =====================================
+
+                        post.setPostId(
+                                doc.getId()
+                        );
+
+                        postList.add(0, post);
+                    }
+
+                    adapter.notifyDataSetChanged();
+                });
+    }
+
+    @Override
+    public void onResume() {
+
+        super.onResume();
+
+        loadPosts();
+    }
+}

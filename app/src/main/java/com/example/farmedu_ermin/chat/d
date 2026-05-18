@@ -1,0 +1,681 @@
+package com.example.farmedu_ermin.chat;
+
+import android.graphics.Color;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.farmedu_ermin.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NovaObjavaFragment extends Fragment {
+
+    // =========================================
+    // VIEWS
+    // =========================================
+
+    private RecyclerView recyclerPhotos;
+
+    private EditText etDescription;
+
+    private TextView txtCounter;
+
+    private TextView txtName;
+
+    private ImageView imgUser;
+
+    private LinearLayout btnObjavi;
+
+    // =========================================
+    // CATEGORY CHIPS
+    // =========================================
+
+    private TextView chipStocarstvo;
+
+    private TextView chipVocnjak;
+
+    private TextView chipMasine;
+
+    // =========================================
+    // SELECTED CATEGORY
+    // =========================================
+
+    private String selectedCategory =
+            "Stočarstvo";
+
+    // =========================================
+    // FIREBASE
+    // =========================================
+
+    private FirebaseFirestore db;
+
+    // =========================================
+    // ADAPTER
+    // =========================================
+
+    private PhotoAdapter photoAdapter;
+
+    // =========================================
+    // PHOTO LIST
+    // =========================================
+
+    private final List<Uri> photoList =
+            new ArrayList<>();
+
+    // =========================================
+    // IMAGE PICKER
+    // =========================================
+
+    private final ActivityResultLauncher<String>
+            pickImageLauncher =
+            registerForActivityResult(
+                    new ActivityResultContracts.GetContent(),
+                    uri -> {
+
+                        if (uri != null
+                                && photoList.size() < 3) {
+
+                            photoList.add(uri);
+
+                            photoAdapter.notifyDataSetChanged();
+                        }
+                    }
+            );
+
+    public NovaObjavaFragment() {
+    }
+
+    @Override
+    public View onCreateView(
+            @NonNull LayoutInflater inflater,
+            ViewGroup container,
+            Bundle savedInstanceState
+    ) {
+
+        return inflater.inflate(
+                R.layout.fragment_nova_objava,
+                container,
+                false
+        );
+    }
+
+    @Override
+    public void onViewCreated(
+            @NonNull View view,
+            @Nullable Bundle savedInstanceState
+    ) {
+
+        super.onViewCreated(view, savedInstanceState);
+
+        // =========================================
+        // FIREBASE
+        // =========================================
+
+        db = FirebaseFirestore.getInstance();
+
+        // =========================================
+        // INIT
+        // =========================================
+
+        recyclerPhotos =
+                view.findViewById(R.id.recyclerPhotos);
+
+        etDescription =
+                view.findViewById(R.id.etDescription);
+
+        txtCounter =
+                view.findViewById(R.id.txtCounter);
+
+        txtName =
+                view.findViewById(R.id.txtName);
+
+        imgUser =
+                view.findViewById(R.id.imgUser);
+
+        btnObjavi =
+                view.findViewById(R.id.btnObjavi);
+
+        // =========================================
+        // CHIPS
+        // =========================================
+
+        chipStocarstvo =
+                view.findViewById(R.id.chipStocarstvo);
+
+        chipVocnjak =
+                view.findViewById(R.id.chipVocnjak);
+
+        chipMasine =
+                view.findViewById(R.id.chipMasine);
+
+        // =========================================
+        // DEFAULT CHIP
+        // =========================================
+
+        updateCategoryUI();
+
+        // =========================================
+        // CHIP CLICK
+        // =========================================
+
+        chipStocarstvo.setOnClickListener(v -> {
+
+            selectedCategory = "Stočarstvo";
+
+            updateCategoryUI();
+        });
+
+        chipVocnjak.setOnClickListener(v -> {
+
+            selectedCategory = "Voćnjak";
+
+            updateCategoryUI();
+        });
+
+        chipMasine.setOnClickListener(v -> {
+
+            selectedCategory = "Mašine";
+
+            updateCategoryUI();
+        });
+
+        // =========================================
+        // LOAD USER
+        // =========================================
+
+        loadUserData();
+
+        // =========================================
+        // RECYCLER
+        // =========================================
+
+        recyclerPhotos.setLayoutManager(
+                new LinearLayoutManager(
+                        requireContext(),
+                        LinearLayoutManager.HORIZONTAL,
+                        false
+                )
+        );
+
+        // =========================================
+        // PHOTO ADAPTER
+        // =========================================
+
+        photoAdapter = new PhotoAdapter(
+                photoList,
+                this::openGallery
+        );
+
+        recyclerPhotos.setAdapter(photoAdapter);
+
+        // =========================================
+        // COUNTER
+        // =========================================
+
+        etDescription.addTextChangedListener(
+                new TextWatcher() {
+
+                    @Override
+                    public void beforeTextChanged(
+                            CharSequence s,
+                            int start,
+                            int count,
+                            int after
+                    ) {
+                    }
+
+                    @Override
+                    public void onTextChanged(
+                            CharSequence s,
+                            int start,
+                            int before,
+                            int count
+                    ) {
+
+                        txtCounter.setText(
+                                s.length() + "/500"
+                        );
+                    }
+
+                    @Override
+                    public void afterTextChanged(
+                            Editable s
+                    ) {
+                    }
+                }
+        );
+
+        // =========================================
+        // OBJAVI
+        // =========================================
+
+        btnObjavi.setOnClickListener(v -> {
+
+            btnObjavi.setEnabled(false);
+
+            String description =
+                    etDescription.getText()
+                            .toString()
+                            .trim();
+
+            if (description.isEmpty()) {
+
+                btnObjavi.setEnabled(true);
+
+                Toast.makeText(
+                        requireContext(),
+                        "Unesite opis objave",
+                        Toast.LENGTH_SHORT
+                ).show();
+
+                return;
+            }
+
+            FirebaseUser user =
+                    FirebaseAuth.getInstance()
+                            .getCurrentUser();
+
+            if (user == null) {
+
+                btnObjavi.setEnabled(true);
+
+                Toast.makeText(
+                        requireContext(),
+                        "User nije prijavljen",
+                        Toast.LENGTH_SHORT
+                ).show();
+
+                return;
+            }
+
+            String uid = user.getUid();
+
+            // =========================================
+            // LOAD USER DATA
+            // =========================================
+
+            db.collection("users")
+                    .document(uid)
+                    .get()
+
+                    .addOnSuccessListener(snapshot -> {
+
+                        String name =
+                                snapshot.getString("name");
+
+                        if (name == null
+                                || name.trim().isEmpty()) {
+
+                            name = "Korisnik";
+                        }
+
+                        // =====================================
+                        // AVATAR
+                        // =====================================
+
+                        Long avatarLong =
+                                snapshot.getLong("avatar");
+
+                        int avatarRes;
+
+                        if (avatarLong != null) {
+
+                            avatarRes =
+                                    avatarLong.intValue();
+
+                        } else {
+
+                            avatarRes =
+                                    R.drawable.user;
+                        }
+
+                        // =====================================
+                        // IMAGE URI
+                        // =====================================
+
+                        String imageUri = "";
+
+                        if (!photoList.isEmpty()) {
+
+                            imageUri =
+                                    photoList.get(0)
+                                            .toString();
+                        }
+
+                        // =====================================
+                        // CREATE POST
+                        // =====================================
+
+                        PostModel post =
+                                new PostModel();
+
+                        post.setName(name);
+
+                        post.setTime("Upravo sada");
+
+                        post.setDescription(
+                                "📌 "
+                                        + selectedCategory
+                                        + "\n\n"
+                                        + description
+                        );
+
+                        post.setAvatar(avatarRes);
+
+                        post.setImageUri(imageUri);
+
+                        post.setLikes(0);
+
+                        post.setComments(0);
+
+                        // =====================================
+                        // SAVE
+                        // =====================================
+
+                        db.collection("posts")
+                                .add(post)
+
+                                .addOnSuccessListener(unused -> {
+
+                                    Toast.makeText(
+                                            requireContext(),
+                                            "Objava objavljena",
+                                            Toast.LENGTH_SHORT
+                                    ).show();
+
+                                    requireActivity()
+                                            .getSupportFragmentManager()
+                                            .beginTransaction()
+                                            .replace(
+                                                    R.id.fragmentContainer,
+                                                    new FeedFragment()
+                                            )
+                                            .commit();
+                                })
+
+                                .addOnFailureListener(e -> {
+
+                                    btnObjavi.setEnabled(true);
+
+                                    Toast.makeText(
+                                            requireContext(),
+                                            "Greška: "
+                                                    + e.getMessage(),
+                                            Toast.LENGTH_LONG
+                                    ).show();
+                                });
+                    })
+
+                    .addOnFailureListener(e -> {
+
+                        btnObjavi.setEnabled(true);
+
+                        Toast.makeText(
+                                requireContext(),
+                                "Greška user podataka",
+                                Toast.LENGTH_SHORT
+                        ).show();
+                    });
+        });
+    }
+
+    // =========================================
+    // LOAD USER DATA
+    // =========================================
+
+    private void loadUserData() {
+
+        FirebaseUser user =
+                FirebaseAuth.getInstance()
+                        .getCurrentUser();
+
+        if (user == null)
+            return;
+
+        String uid = user.getUid();
+
+        db.collection("users")
+                .document(uid)
+                .get()
+
+                .addOnSuccessListener(documentSnapshot -> {
+
+                    txtName.setText("Korisnik");
+
+                    imgUser.setImageResource(
+                            R.drawable.user
+                    );
+
+                    if (!documentSnapshot.exists()) {
+                        return;
+                    }
+
+                    String name =
+                            documentSnapshot.getString("name");
+
+                    if (name != null
+                            && !name.trim().isEmpty()) {
+
+                        txtName.setText(name);
+                    }
+
+                    Long avatarLong =
+                            documentSnapshot.getLong("avatar");
+
+                    if (avatarLong != null) {
+
+                        imgUser.setImageResource(
+                                avatarLong.intValue()
+                        );
+
+                    } else {
+
+                        imgUser.setImageResource(
+                                R.drawable.user
+                        );
+                    }
+                })
+
+                .addOnFailureListener(e -> {
+
+                    txtName.setText("Korisnik");
+
+                    imgUser.setImageResource(
+                            R.drawable.user
+                    );
+                });
+    }
+
+    // =========================================
+    // CATEGORY UI
+    // =========================================
+
+    private void updateCategoryUI() {
+
+        resetChips();
+
+        if (selectedCategory.equals("Stočarstvo")) {
+
+            activateChip(chipStocarstvo);
+
+        } else if (selectedCategory.equals("Voćnjak")) {
+
+            activateChip(chipVocnjak);
+
+        } else if (selectedCategory.equals("Mašine")) {
+
+            activateChip(chipMasine);
+        }
+    }
+
+    // =========================================
+    // RESET CHIPS
+    // =========================================
+
+    private void resetChips() {
+
+        deactivateChip(chipStocarstvo);
+
+        deactivateChip(chipVocnjak);
+
+        deactivateChip(chipMasine);
+    }
+
+    // =========================================
+    // ACTIVE CHIP
+    // =========================================
+
+    private void activateChip(TextView chip) {
+
+        chip.setBackgroundResource(
+                R.drawable.bg_green_button
+        );
+
+        chip.setTextColor(Color.WHITE);
+    }
+
+    // =========================================
+    // INACTIVE CHIP
+    // =========================================
+
+    private void deactivateChip(TextView chip) {
+
+        chip.setBackgroundResource(
+                R.drawable.bg_search_modern
+        );
+
+        chip.setTextColor(
+                Color.parseColor("#111111")
+        );
+    }
+
+    // =========================================
+    // OPEN GALLERY
+    // =========================================
+
+    private void openGallery() {
+
+        pickImageLauncher.launch("image/*");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ================= USERS =================
+    match /users/{userId} {
+
+      // svi logirani mogu čitati usere (feed/chat)
+      allow read: if request.auth != null;
+
+      // samo vlasnik može edit
+      allow write: if request.auth != null
+                   && request.auth.uid == userId;
+
+      match /partners/{partnerId} {
+        allow read, write: if request.auth != null
+                             && request.auth.uid == userId;
+      }
+    }
+
+    // ================= CHATS =================
+    match /chats/{chatId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // ================= CHAT REQUESTS =================
+    match /chat_requests/{requestId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // ================= NOTIFICATIONS =================
+    match /notifications/{notificationId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // ================= POSTS =================
+    match /posts/{postId} {
+
+      allow read: if request.auth != null;
+
+      // 🔥 POST OWNER CHECK (BITNO ZA EDIT/DELETE)
+      allow write: if request.auth != null;
+
+      match /comments/{commentId} {
+        allow read, write: if request.auth != null;
+      }
+
+      match /likes/{likeId} {
+        allow read, write: if request.auth != null;
+      }
+    }
+
+    // ================= SAFETY =================
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

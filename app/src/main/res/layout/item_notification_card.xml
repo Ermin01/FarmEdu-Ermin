@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="4dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="3dp"
+    app:strokeColor="#EEEEEE"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- AVATAR -->
+
+        <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp">
+
+            <!-- Glow -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/profile_glow_bg"
+                android:alpha="0.15"/>
+
+            <!-- Avatar -->
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:background="@drawable/profile_circle_bg"
+                android:clipToOutline="true"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user"/>
+
+            <!-- Status Dot -->
+
+            <View
+                android:id="@+id/dotUnread"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/unread_dot_bg"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+        <!-- CONTENT -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- TITLE -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notification_chip_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/partnership"
+                    android:textColor="#4CAF50"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!-- MESSAGE -->
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/partner_accept_message"
+                android:textColor="#222222"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <!-- TIME -->
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/time_2_min_ago"
+                android:textColor="#9A9A9A"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <!-- RIGHT ICON -->
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_arrow_right"
+            android:tint="#C2C2C2"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:paddingStart="16dp"
+    android:paddingTop="18dp"
+    android:paddingEnd="16dp"
+    tools:context=".chat.ChatFragment">
+
+    <!-- TOP BAR -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/chat"
+            android:textColor="#111111"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- OBJAVE -->
+
+        <ImageView
+            android:id="@+id/btnObjave"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_search_modern"
+            android:padding="13dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/feed" />
+
+        <!-- ADD USER -->
+
+        <ImageView
+            android:id="@+id/btnAdd"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_search_modern"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/user" />
+
+    </LinearLayout>
+
+    <!-- SEARCH -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_search_modern"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/pretrazi_korisnike"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#111111"
+            android:textColorHint="#9E9E9E"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- CHAT LIST -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerChats"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="18dp"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"
+        tools:listitem="@layout/item_chat" />
+
+</LinearLayout>

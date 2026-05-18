@@ -1,0 +1,27 @@
+[
+  {
+    "naslov": "Lopata",
+    "slika": "lopata_alat",
+    "opis": "Koristi se za kopanje i premještanje zemlje."
+  },
+  {
+    "naslov": "Motika",
+    "slika": "motika_alat",
+    "opis": "Služi za obradu zemljišta i uklanjanje korova."
+  },
+  {
+    "naslov": "Grablje",
+    "slika": "grablje_alat",
+    "opis": "Koriste se za poravnanje zemlje i skupljanje trave."
+  },
+  {
+    "naslov": "Vile",
+    "slika": "vile_alat",
+    "opis": "Koriste se za sijeno i lakši materijal."
+  },
+  {
+    "naslov": "Makaze za grane",
+    "slika": "makaze_za_granje",
+    "opis": "Za rezanje grana i biljaka."
+  }
+]

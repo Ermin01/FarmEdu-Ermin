@@ -1,0 +1,24 @@
+{
+  "grad": "Sarajevo, BiH",
+  "datum": "Danas, 24. maj",
+  "temperatura": "22°C",
+  "opis": "Djelimično oblačno",
+
+  "vlaga": "56%",
+  "vjetar": "12 km/h",
+  "pritisak": "1015 hPa",
+  "uv": "5 - Umjeren",
+
+  "osjecaj": "23°",
+  "padavine": "20%",
+  "izlazak": "05:18",
+  "zalazak": "20:30",
+
+  "prognoza": [
+    { "dan": "Ned", "temp": "24° / 13°", "ikonica": "sunce" },
+    { "dan": "Pon", "temp": "23° / 12°", "ikonica": "oblaci" },
+    { "dan": "Uto", "temp": "18° / 10°", "ikonica": "kisa" },
+    { "dan": "Sri", "temp": "17° / 9°", "ikonica": "kisa" },
+    { "dan": "Čet", "temp": "21° / 11°", "ikonica": "oblaci" }
+  ]
+}

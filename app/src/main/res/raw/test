@@ -1,0 +1,668 @@
+package com.example.farmedu_ermin.chat;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+
+import com.example.farmedu_ermin.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class DodajKorisnikaChatFragment extends Fragment {
+
+    private LinearLayout usersContainer;
+
+    private EditText etSearchUser;
+
+    private ImageView btnBack;
+
+    private FirebaseFirestore db;
+
+    private final Set<String> sentRequests =
+            new HashSet<>();
+
+    // =========================================
+    // PARTNERS
+    // =========================================
+
+    private final Set<String> partners =
+            new HashSet<>();
+
+    private boolean isLoading = false;
+
+    private final Handler handler =
+            new Handler();
+
+    public DodajKorisnikaChatFragment() {
+    }
+
+    @Override
+    public View onCreateView(
+            LayoutInflater inflater,
+            ViewGroup container,
+            Bundle savedInstanceState
+    ) {
+
+        View view = inflater.inflate(
+                R.layout.fragment_dodaj_korisnika_chat,
+                container,
+                false
+        );
+
+        usersContainer =
+                view.findViewById(R.id.usersContainer);
+
+        etSearchUser =
+                view.findViewById(R.id.etSearchUser);
+
+        btnBack =
+                view.findViewById(R.id.btnBack);
+
+        db = FirebaseFirestore.getInstance();
+
+        // =====================================
+        // BACK
+        // =====================================
+
+        btnBack.setOnClickListener(v ->
+                requireActivity()
+                        .getSupportFragmentManager()
+                        .popBackStack()
+        );
+
+        // =====================================
+        // SEARCH
+        // =====================================
+
+        etSearchUser.addTextChangedListener(
+                new TextWatcher() {
+
+                    Runnable searchRunnable;
+
+                    @Override
+                    public void beforeTextChanged(
+                            CharSequence s,
+                            int start,
+                            int count,
+                            int after
+                    ) {
+                    }
+
+                    @Override
+                    public void onTextChanged(
+                            CharSequence s,
+                            int start,
+                            int before,
+                            int count
+                    ) {
+
+                        handler.removeCallbacksAndMessages(
+                                null
+                        );
+
+                        searchRunnable = () ->
+                                loadUsers(
+                                        s.toString()
+                                                .trim()
+                                                .toLowerCase()
+                                );
+
+                        handler.postDelayed(
+                                searchRunnable,
+                                300
+                        );
+                    }
+
+                    @Override
+                    public void afterTextChanged(
+                            Editable s
+                    ) {
+                    }
+                });
+
+        // =====================================
+        // LOAD USERS
+        // =====================================
+
+        loadUsers("");
+
+        return view;
+    }
+
+    // =========================================
+    // LOAD USERS
+    // =========================================
+
+    private void loadUsers(String searchText) {
+
+        if (!isAdded() || isLoading)
+            return;
+
+        isLoading = true;
+
+        FirebaseUser currentUser =
+                FirebaseAuth.getInstance()
+                        .getCurrentUser();
+
+        if (currentUser == null) {
+
+            isLoading = false;
+
+            Toast.makeText(
+                    requireContext(),
+                    "Niste prijavljeni",
+                    Toast.LENGTH_SHORT
+            ).show();
+
+            return;
+        }
+
+        // =====================================
+        // LOAD SENT REQUESTS
+        // =====================================
+
+        db.collection("chat_requests")
+                .whereEqualTo(
+                        "senderUid",
+                        currentUser.getUid()
+                )
+                .whereEqualTo(
+                        "status",
+                        "pending"
+                )
+                .get()
+
+                .addOnSuccessListener(requests -> {
+
+                    sentRequests.clear();
+                    partners.clear();
+
+                    for (DocumentSnapshot req :
+                            requests.getDocuments()) {
+
+                        String receiverUid =
+                                req.getString(
+                                        "receiverUid"
+                                );
+
+                        if (receiverUid != null) {
+
+                            sentRequests.add(
+                                    receiverUid
+                            );
+                        }
+                    }
+
+                    // =====================================
+                    // LOAD PARTNERS
+                    // =====================================
+
+                    db.collection("users")
+                            .document(currentUser.getUid())
+                            .collection("partners")
+                            .get()
+
+                            .addOnSuccessListener(partnerQuery -> {
+
+                                for (DocumentSnapshot partnerDoc :
+                                        partnerQuery.getDocuments()) {
+
+                                    partners.add(
+                                            partnerDoc.getId()
+                                    );
+                                }
+
+                                // =====================================
+                                // LOAD USERS
+                                // =====================================
+
+                                db.collection("users")
+                                        .get()
+
+                                        .addOnSuccessListener(query -> {
+
+                                            if (!isAdded()) {
+
+                                                isLoading = false;
+                                                return;
+                                            }
+
+                                            usersContainer.removeAllViews();
+
+                                            for (DocumentSnapshot doc :
+                                                    query.getDocuments()) {
+
+                                                try {
+
+                                                    String uid =
+                                                            doc.getId();
+
+                                                    // =====================================
+                                                    // SKIP CURRENT USER
+                                                    // =====================================
+
+                                                    if (uid.equals(
+                                                            currentUser.getUid()
+                                                    )) {
+
+                                                        continue;
+                                                    }
+
+                                                    // =====================================
+                                                    // NAME
+                                                    // =====================================
+
+                                                    String name =
+                                                            doc.getString(
+                                                                    "name"
+                                                            );
+
+                                                    if (name == null
+                                                            || name.isEmpty()) {
+
+                                                        name =
+                                                                "FarmEdu korisnik";
+                                                    }
+
+                                                    // =====================================
+                                                    // SEARCH FILTER
+                                                    // =====================================
+
+                                                    if (!searchText.isEmpty()
+                                                            &&
+                                                            !name.toLowerCase()
+                                                                    .contains(
+                                                                            searchText
+                                                                    )) {
+
+                                                        continue;
+                                                    }
+
+                                                    // =====================================
+                                                    // CITY
+                                                    // =====================================
+
+                                                    String city =
+                                                            doc.getString(
+                                                                    "city"
+                                                            );
+
+                                                    if (city == null
+                                                            || city.isEmpty()) {
+
+                                                        city =
+                                                                "Bosna i Hercegovina";
+                                                    }
+
+                                                    // =====================================
+                                                    // AVATAR
+                                                    // =====================================
+
+                                                    int avatar =
+                                                            R.drawable.user;
+
+                                                    try {
+
+                                                        Long avatarLong =
+                                                                doc.getLong(
+                                                                        "avatar"
+                                                                );
+
+                                                        if (avatarLong != null) {
+
+                                                            avatar =
+                                                                    avatarLong.intValue();
+                                                        }
+
+                                                    } catch (Exception ignored) {
+                                                    }
+
+                                                    // =====================================
+                                                    // ADD CARD
+                                                    // =====================================
+
+                                                    addUserCard(
+                                                            uid,
+                                                            name,
+                                                            city,
+                                                            avatar
+                                                    );
+
+                                                } catch (Exception e) {
+
+                                                    e.printStackTrace();
+                                                }
+                                            }
+
+                                            isLoading = false;
+
+                                        })
+
+                                        .addOnFailureListener(e -> {
+
+                                            isLoading = false;
+
+                                            Toast.makeText(
+                                                    requireContext(),
+                                                    "Greška učitavanja korisnika",
+                                                    Toast.LENGTH_SHORT
+                                            ).show();
+                                        });
+
+                            });
+
+                })
+
+                .addOnFailureListener(e -> {
+
+                    isLoading = false;
+
+                    Toast.makeText(
+                            requireContext(),
+                            "Greška zahtjeva",
+                            Toast.LENGTH_SHORT
+                    ).show();
+                });
+    }
+
+    // =========================================
+    // USER CARD
+    // =========================================
+
+    private void addUserCard(
+            String uid,
+            String name,
+            String city,
+            int avatar
+    ) {
+
+        View card =
+                LayoutInflater.from(requireContext())
+                        .inflate(
+                                R.layout.item_user_chat,
+                                usersContainer,
+                                false
+                        );
+
+        ImageView imgUser =
+                card.findViewById(R.id.imgUser);
+
+        TextView txtName =
+                card.findViewById(R.id.txtName);
+
+        TextView txtUsername =
+                card.findViewById(R.id.txtUsername);
+
+        LinearLayout btnAdd =
+                card.findViewById(R.id.btnAdd);
+
+        LinearLayout cardUser =
+                card.findViewById(R.id.cardUser);
+
+        TextView btnText =
+                (TextView) btnAdd.getChildAt(0);
+
+        FirebaseUser currentUser =
+                FirebaseAuth.getInstance()
+                        .getCurrentUser();
+
+        if (currentUser == null)
+            return;
+
+        // =====================================
+        // IMAGE
+        // =====================================
+
+        try {
+
+            imgUser.setImageResource(
+                    avatar
+            );
+
+        } catch (Exception e) {
+
+            imgUser.setImageResource(
+                    R.drawable.user
+            );
+        }
+
+        // =====================================
+        // TEXT
+        // =====================================
+
+        txtName.setText(name);
+
+        txtUsername.setText(
+                "📍 " + city
+        );
+
+        // =====================================
+        // BUTTON STATUS
+        // =====================================
+
+        if (partners.contains(uid)) {
+
+            btnAdd.setBackgroundResource(
+                    R.drawable.bg_request_sent
+            );
+
+            btnText.setText(
+                    "🤝 Partneri"
+            );
+
+            btnAdd.setEnabled(false);
+
+        } else if (sentRequests.contains(uid)) {
+
+            btnAdd.setBackgroundResource(
+                    R.drawable.bg_request_sent
+            );
+
+            btnText.setText(
+                    "Poslano"
+            );
+
+        } else {
+
+            btnAdd.setBackgroundResource(
+                    R.drawable.bg_green_button
+            );
+
+            btnText.setText(
+                    "Dodaj"
+            );
+        }
+
+        // =====================================
+        // BUTTON CLICK
+        // =====================================
+
+        btnAdd.setOnClickListener(v -> {
+
+            if (btnText.getText().toString().equals("🤝 Partneri")) {
+                return;
+            }
+
+            // =====================================
+            // CANCEL REQUEST
+            // =====================================
+
+            if (btnText.getText()
+                    .toString()
+                    .equals("Poslano")) {
+
+                db.collection("chat_requests")
+                        .whereEqualTo(
+                                "senderUid",
+                                currentUser.getUid()
+                        )
+                        .whereEqualTo(
+                                "receiverUid",
+                                uid
+                        )
+                        .whereEqualTo(
+                                "status",
+                                "pending"
+                        )
+                        .get()
+
+                        .addOnSuccessListener(query -> {
+
+                            for (DocumentSnapshot doc :
+                                    query.getDocuments()) {
+
+                                db.collection(
+                                                "chat_requests"
+                                        )
+                                        .document(
+                                                doc.getId()
+                                        )
+                                        .delete();
+                            }
+
+                            sentRequests.remove(
+                                    uid
+                            );
+
+                            btnAdd.setBackgroundResource(
+                                    R.drawable.bg_green_button
+                            );
+
+                            btnText.setText(
+                                    "Dodaj"
+                            );
+
+                            Toast.makeText(
+                                    requireContext(),
+                                    "Zahtjev poništen",
+                                    Toast.LENGTH_SHORT
+                            ).show();
+
+                        });
+
+                return;
+            }
+
+            // =====================================
+            // NEW REQUEST
+            // =====================================
+
+            Map<String, Object> request =
+                    new HashMap<>();
+
+            request.put(
+                    "senderUid",
+                    currentUser.getUid()
+            );
+
+            request.put(
+                    "receiverUid",
+                    uid
+            );
+
+            request.put(
+                    "status",
+                    "pending"
+            );
+
+            request.put(
+                    "timestamp",
+                    System.currentTimeMillis()
+            );
+
+            db.collection("chat_requests")
+                    .add(request)
+
+                    .addOnSuccessListener(doc -> {
+
+                        sentRequests.add(uid);
+
+                        btnAdd.setBackgroundResource(
+                                R.drawable.bg_request_sent
+                        );
+
+                        btnText.setText(
+                                "Poslano"
+                        );
+
+                        Toast.makeText(
+                                requireContext(),
+                                "Zahtjev poslan ✅",
+                                Toast.LENGTH_SHORT
+                        ).show();
+
+                    })
+
+                    .addOnFailureListener(e ->
+
+                            Toast.makeText(
+                                    requireContext(),
+                                    "Greška slanja zahtjeva",
+                                    Toast.LENGTH_SHORT
+                            ).show()
+                    );
+        });
+
+        // =====================================
+        // OPEN PROFILE
+        // =====================================
+
+        cardUser.setOnClickListener(v -> {
+
+            Bundle bundle =
+                    new Bundle();
+
+            bundle.putString(
+                    "uid",
+                    uid
+            );
+
+            PocetniProfilUseraFragment fragment =
+                    new PocetniProfilUseraFragment();
+
+            fragment.setArguments(
+                    bundle
+            );
+
+            requireActivity()
+                    .getSupportFragmentManager()
+                    .beginTransaction()
+                    .setCustomAnimations(
+                            R.anim.slide_in_right,
+                            R.anim.slide_out_left,
+                            R.anim.slide_in_left,
+                            R.anim.slide_out_right
+                    )
+                    .replace(
+                            R.id.fragmentContainer,
+                            fragment
+                    )
+                    .addToBackStack(null)
+                    .commit();
+        });
+
+        // =====================================
+        // ADD VIEW
+        // =====================================
+
+        usersContainer.addView(card);
+    }
+}

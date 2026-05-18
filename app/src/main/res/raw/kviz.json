@@ -1,0 +1,31 @@
+{
+  "pitanja": [
+    {
+      "pitanje": "Šta je poljoprivreda?",
+      "odgovori": [
+        "Uzgoj biljaka i životinja",
+        "Rad u fabrici",
+        "Programiranje aplikacija"
+      ],
+      "tacan": 0
+    },
+    {
+      "pitanje": "Koji je faktor uzgoja?",
+      "odgovori": [
+        "Internet",
+        "Sunce",
+        "Telefon"
+      ],
+      "tacan": 1
+    },
+    {
+      "pitanje": "Koja je grana poljoprivrede?",
+      "odgovori": [
+        "Stočarstvo",
+        "Vožnja auta",
+        "Grafički dizajn"
+      ],
+      "tacan": 0
+    }
+  ]
+}

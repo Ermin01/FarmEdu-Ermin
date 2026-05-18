@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F4F6F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <!-- IMAGE -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vunanaslovna" />
+
+            <!-- DARK OVERLAY -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#55000000" />
+
+            <!-- BACK BUTTON -->
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="42dp"
+                android:layout_gravity="top|start"
+                android:padding="12dp"
+                android:src="@drawable/baseline_arrow_back"
+                android:background="@drawable/bg_back_button"
+                app:tint="#FFFFFF"/>
+
+
+            <!-- TITLE CONTENT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- TAG -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_tag"
+                    android:textColor="#D7E4E7"
+                    android:textSize="12sp"
+                    android:background="#33FFFFFF"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp" />
+
+                <!-- TITLE -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_title"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <!-- DESCRIPTION -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_desc"
+                    android:textColor="#F1F1F1"
+                    android:textSize="14sp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="2dp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- SECTION TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_vuna_section"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:textColor="#111111" />
+
+        <!-- LINE -->
+        <View
+            android:layout_width="45dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:background="#B7792B" />
+
+        <!-- CARD 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="14dp"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:src="@drawable/vunaicona"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_card1_title"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111111"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_card1_desc"
+                    android:textSize="13sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- CARD 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:src="@drawable/higjenvuna"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_card2_title"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111111"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_card2_desc"
+                    android:textSize="13sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- CARD 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:src="@drawable/pranjeiobrada"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_card3_title"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111111"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_card3_desc"
+                    android:textSize="13sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- CARD 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="14dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:src="@drawable/kvalitetvuna"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_card4_title"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111111"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_card4_desc"
+                    android:textSize="13sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- RECOMMENDATIONS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_vuna_recommendations"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- LINE -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:background="#2E7D32"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- GRID -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- ITEM 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#EEF7EF"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@android:drawable/btn_star_big_off"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_tip1"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- ITEM 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#EEF7EF"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@android:drawable/ic_menu_help"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_tip2"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- ITEM 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#EEF7EF"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@android:drawable/ic_menu_compass"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_tip3"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- ITEM 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#EEF7EF"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@android:drawable/checkbox_on_background"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_vuna_tip4"
+                    android:textSize="11sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- INFO BOX -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF3E0"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚠"
+                android:textSize="22sp"
+                android:layout_marginEnd="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_vuna_warning"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

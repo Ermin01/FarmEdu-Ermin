@@ -1,0 +1,66 @@
+[
+  {
+    "id": "article_1",
+    "title": "How to Increase Corn Yield?",
+    "description": "Corn is one of the most important agricultural crops and requires proper soil preparation to achieve maximum yield. Before sowing, soil analysis is recommended to determine the optimal amount of fertilizer and soil pH value.\n\nUsing high-quality certified seeds significantly increases plant resistance to diseases and weather conditions. Sowing should be done at the optimal time when soil temperature reaches the proper level for germination.\n\nRegular irrigation during dry periods plays a key role in plant development. It is especially important to provide enough moisture during ear formation.\n\nBesides irrigation, weed control and pest protection are extremely important. Timely application of protective treatments can significantly reduce losses and improve crop quality.\n\nExperts also recommend proper crop rotation to keep the soil fertile and healthy over multiple seasons.",
+    "time": "5 min read",
+    "category": "Advice",
+    "image": "povrce_naslovna",
+    "tags": [
+      "Corn",
+      "Plants",
+      "Yield",
+      "Fertilizer",
+      "Sowing",
+      "Agriculture"
+    ]
+  },
+  {
+    "id": "article_2",
+    "title": "Top 5 Cow Diseases and How to Prevent Them",
+    "description": "Diseases in cows can cause serious economic losses if not detected early. One of the most common diseases is mastitis, which affects the udder and milk quality.\n\nRespiratory infections are also a major issue, especially during colder periods of the year. Regular barn ventilation and hygiene maintenance can significantly reduce disease risk.\n\nParasites and digestive problems often occur due to poor nutrition and low-quality water. Therefore, it is necessary to regularly monitor feed quality and provide clean water.\n\nVaccination is one of the most important steps in disease prevention. Veterinarians recommend timely immunization to reduce the spread of infections.\n\nRegular animal checkups allow early symptom detection and faster reaction, directly improving the health of the entire herd.",
+    "time": "7 min read",
+    "category": "Livestock",
+    "image": "stocarstvoimg",
+    "tags": [
+      "Cows",
+      "Mastitis",
+      "Vaccination",
+      "Health",
+      "Livestock",
+      "Veterinarian"
+    ]
+  },
+  {
+    "id": "article_3",
+    "title": "Drip Irrigation System",
+    "description": "The drip irrigation system is one of the most efficient ways of distributing water in agriculture. This system allows direct watering of plant roots with minimal water loss.\n\nA major advantage of this system is water saving and even irrigation of plants. It is especially useful during summer months when temperatures are high and soil quickly loses moisture.\n\nInstalling the system is not complicated, but it requires proper planning of pipes and drippers. Attention must be paid to water pressure and filter quality.\n\nRegular maintenance prevents clogging and extends system lifespan. Cleaning filters and checking pipes before every season is recommended.\n\nFarmers who use drip irrigation often achieve higher yields with lower water and energy consumption.",
+    "time": "6 min read",
+    "category": "Irrigation",
+    "image": "navodnjavanje",
+    "tags": [
+      "Irrigation",
+      "Drip System",
+      "Water",
+      "Plants",
+      "System",
+      "Field"
+    ]
+  },
+  {
+    "id": "article_4",
+    "title": "Tractor Maintenance Step by Step",
+    "description": "Proper tractor maintenance is essential for long service life and safety during farm work. Regular inspection of the engine, oil, and cooling system can prevent serious breakdowns.\n\nEngine oil should be changed according to manufacturer recommendations. Using quality oil reduces engine wear and improves tractor performance.\n\nTires also require regular pressure checks because improperly inflated tires increase fuel consumption and reduce vehicle stability.\n\nIt is important to inspect brakes, lights, and the hydraulic system before starting work. Small issues can quickly become major problems if ignored.\n\nAfter the season ends, detailed tractor cleaning and storage in a dry place are recommended to prevent corrosion and damage.",
+    "time": "8 min read",
+    "category": "Machinery",
+    "image": "traktor_mas",
+    "tags": [
+      "Tractor",
+      "Machinery",
+      "Engine",
+      "Service",
+      "Oil",
+      "Agriculture"
+    ]
+  }
+]

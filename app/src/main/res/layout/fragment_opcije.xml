@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_header"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#2E7D32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slogan"
+                    android:textSize="14sp"
+                    android:textColor="#6D6D6D"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- OPĆENITO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opcenito"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            android:textColor="#2E7D32"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginHorizontal="16dp"
+            android:padding="8dp">
+
+            <!-- Obavijesti -->
+            <LinearLayout style="@style/itemRow">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="@string/obavijesti"/>
+
+                <Switch
+                    android:id="@+id/switchObavijesti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+            </LinearLayout>
+
+            <!-- Jezik -->
+            <LinearLayout
+                android:id="@+id/btnJezik"
+                style="@style/itemRow">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="@string/jezik"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvTrenutniJezik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trenutni_jezik"
+                        android:textColor="#777"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="6dp"
+                        android:src="@drawable/ic_arrow_right"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Tema -->
+            <LinearLayout style="@style/itemRow">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="@string/tema"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- RAČUN -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/racun"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            android:textColor="#2E7D32"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginHorizontal="16dp"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/btnProfilkorisnika"
+                style="@style/itemRow">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="@string/profil"/>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnprivatnost"
+                style="@style/itemRow">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="@string/privatnost"/>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnSigurnostkopija"
+                style="@style/itemRow">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="@string/backup"/>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- OSTALO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ostalo"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            android:textColor="#2E7D32"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginHorizontal="16dp"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/btnPodrska"
+                style="@style/itemRow">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="@string/pomoc"/>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnOcijena"
+                style="@style/itemRow">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="@string/ocijeni"/>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btnPets"
+                style="@style/itemRow">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="🐾 Omiljeni ljubimac"/>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btnOApp"
+                style="@style/itemRow">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/itemTitle"
+                    android:text="@string/o_aplikaciji"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_arrow_right"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

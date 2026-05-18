@@ -1,0 +1,197 @@
+[
+  {
+    "naslov": "Traktor",
+    "slika": "traktor_mas",
+    "opis": "Osnovna poljoprivredna mašina za sve vrste radova na farmi."
+  },
+  {
+    "naslov": "Kombajn",
+    "slika": "kombaj_mas",
+    "opis": "Koristi se za žetvu različitih kultura poput pšenice i kukuruza."
+  },
+  {
+    "naslov": "Plug",
+    "slika": "plug_mas",
+    "opis": "Služi za oranje i pripremu zemljišta za sadnju."
+  },
+  {
+    "naslov": "Sijačica",
+    "slika": "sijecica_mas",
+    "opis": "Omogućava preciznu sjetvu sjemena u redove."
+  },
+  {
+    "naslov": "Prskalica",
+    "slika": "prskalica_mas",
+    "opis": "Koristi se za zaštitu biljaka i prskanje pesticida."
+  },
+  {
+    "naslov": "Rasipač đubriva",
+    "slika": "rasp_mas",
+    "opis": "Ravnomjerno raspoređuje đubrivo po zemljištu."
+  },
+  {
+    "naslov": "Tanjirača",
+    "slika": "tanjiraca_mas",
+    "opis": "Usitnjava zemljište i priprema ga za dalju obradu."
+  },
+  {
+    "naslov": "Kultivator",
+    "slika": "kulitvator_mas",
+    "opis": "Koristi se za obradu i prozračivanje zemljišta."
+  },
+  {
+    "naslov": "Drljača",
+    "slika": "drljaca_mas",
+    "opis": "Poravnava i usitnjava površinu zemlje nakon oranja."
+  },
+  {
+    "naslov": "Freza",
+    "slika": "freza_mas",
+    "opis": "Usitnjava tlo i priprema ga za sadnju."
+  },
+  {
+    "naslov": "Kosilica",
+    "slika": "kosilica_mas",
+    "opis": "Koristi se za košenje trave i sijena."
+  },
+  {
+    "naslov": "Balirka",
+    "slika": "balirka_masina",
+    "opis": "Formira bale sijena ili slame radi lakšeg transporta."
+  },
+  {
+    "naslov": "Berač kukuruza",
+    "slika": "berac_masina",
+    "opis": "Specijalizovana mašina za berbu kukuruza."
+  },
+  {
+    "naslov": "Prikolica",
+    "slika": "prikolica",
+    "opis": "Koristi se za transport raznih materijala."
+  },
+  {
+    "naslov": "Cisterna",
+    "slika": "cisterna_mas",
+    "opis": "Za transport vode, goriva ili tečnih materijala."
+  },
+  {
+    "naslov": "Sadilica",
+    "slika": "sadilica_mas",
+    "opis": "Služi za sadnju biljaka i rasada."
+  },
+  {
+    "naslov": "Atomizer",
+    "slika": "atomizer_mas",
+    "opis": "Koristi se za zaštitu voća i vinograda."
+  },
+  {
+    "naslov": "Motokultivator",
+    "slika": "motokultivator_mas",
+    "opis": "Manja mašina za obradu zemljišta u baštama."
+  },
+  {
+    "naslov": "Mini traktor",
+    "slika": "mini_traktor",
+    "opis": "Manja verzija traktora za lakše radove."
+  },
+  {
+    "naslov": "Dron za prskanje",
+    "slika": "dron_prskanje",
+    "opis": "Moderna tehnologija za precizno prskanje usjeva."
+  },
+  {
+    "naslov": "Valjak",
+    "slika": "valjak_mas",
+    "opis": "Sabija zemljište i poboljšava kontakt sjemena sa tlom."
+  },
+  {
+    "naslov": "Plug premetnjak",
+    "slika": "plug_premetnjak",
+    "opis": "Napredniji plug koji okreće zemlju na obje strane."
+  },
+  {
+    "naslov": "Sakupljač sijena",
+    "slika": "sakupljacsijena_mas",
+    "opis": "Skuplja pokošeno sijeno u redove."
+  },
+  {
+    "naslov": "Samoutovarna prikolica",
+    "slika": "samoutovarna",
+    "opis": "Automatski utovara i prevozi sijeno ili travu."
+  },
+  {
+    "naslov": "Mulčer",
+    "slika": "mulcer",
+    "opis": "Usitnjava travu, grane i ostatke biljaka."
+  },
+  {
+    "naslov": "Kombinirka",
+    "slika": "kombinirka",
+    "opis": "Kombinuje više operacija obrade tla u jednoj mašini."
+  },
+  {
+    "naslov": "Vadilica krompira",
+    "slika": "vadilica_krompira",
+    "opis": "Olakšava vađenje krompira iz zemlje."
+  },
+  {
+    "naslov": "Sejalica za žito",
+    "slika": "sejalica_zito",
+    "opis": "Precizno sije žitarice poput pšenice i ječma."
+  },
+  {
+    "naslov": "Prskalica nošena",
+    "slika": "prskalica_nosena",
+    "opis": "Manja prskalica koja se montira na traktor."
+  },
+  {
+    "naslov": "Prskalica vučena",
+    "slika": "prskalica_vucena",
+    "opis": "Veća prskalica za velike površine."
+  },
+  {
+    "naslov": "Kopačica",
+    "slika": "kopacica",
+    "opis": "Koristi se za okopavanje i uklanjanje korova."
+  },
+  {
+    "naslov": "Rezacica drva",
+    "slika": "rezacica_drva",
+    "opis": "Mašina za rezanje drva na manje komade."
+  },
+  {
+    "naslov": "Mikser za stočnu hranu",
+    "slika": "mikser_hrana",
+    "opis": "Miješa i priprema hranu za stoku."
+  },
+  {
+    "naslov": "Hranilica automatska",
+    "slika": "hranilica",
+    "opis": "Automatski dozira hranu životinjama."
+  },
+  {
+    "naslov": "Muzilica",
+    "slika": "muzilica",
+    "opis": "Koristi se za mužu krava i drugih životinja."
+  },
+  {
+    "naslov": "Silokombajn",
+    "slika": "silokombajn",
+    "opis": "Siječe i prikuplja silažu za stoku."
+  },
+  {
+    "naslov": "Roto kosa",
+    "slika": "roto_kosa",
+    "opis": "Brzo i efikasno kosi travu na velikim površinama."
+  },
+  {
+    "naslov": "Utovarivač",
+    "slika": "utovarivac",
+    "opis": "Koristi se za utovar zemlje, stajnjaka i materijala."
+  },
+  {
+    "naslov": "Mini bager",
+    "slika": "mini_bager",
+    "opis": "Koristi se za kopanje i manje građevinske radove na farmi."
+  }
+]

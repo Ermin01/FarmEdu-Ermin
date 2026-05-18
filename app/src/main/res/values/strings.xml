@@ -1,0 +1,932 @@
+<resources>
+
+
+    <string name="odaberi_jezik">Odaberi jezik</string>
+
+    <string name="bosanski_jezik">Bosanski 🇧🇦</string>
+
+    <string name="engleski_jezik">English 🇬🇧</string>
+
+    <string name="njemacki_jezik">Deutsch 🇩🇪</string>
+
+
+    <string name="app_name">FarmEdu-Ermin</string>
+    <string name="hello_blank_fragment">Tekst</string>
+    <string name="opcenito">🌿 Općenito</string>
+    <string name="jezik">🌍 Jezik</string>
+    <string name="tema">☀️ Tema</string>
+    <string name="obavijesti">🔔 Obavijesti</string>
+    <string name="racun">🌿 Račun</string>
+    <string name="profil">👤 Profil</string>
+    <string name="backup">⬇️ Sigurnosna kopija</string>
+    <string name="ostalo">🌿 Ostalo</string>
+    <string name="pomoc">❓ Pomoć i podrška</string>
+    <string name="ocijeni">⭐ Ocijeni aplikaciju</string>
+    <string name="o_aplikaciji">ℹ️ O aplikaciji</string>
+    <string name="trenutni_jezik">Bosanski</string>
+    <string name="slogan">Učimo, uzgajamo, rastemo zajedno 🌿</string>
+
+
+    <!--ovo je dio ekran zivotnja  prevodi deskripcija group zivotnja ekrana-->
+
+    <string name="zivotni_vijek">Životni vijek</string>
+    <string name="visina">Visina</string>
+    <string name="tezina">Težina</string>
+    <string name="porijeklo">Porijeklo</string>
+    <string name="brzina">Brzina</string>
+    <string name="tip_dlake">Tip dlake</string>
+    <string name="snaga">Snaga</string>
+    <string name="temperament">Temperament</string>
+    <string name="inteligencija">Inteligencija</string>
+    <string name="socijalno">Socijalno ponašanje</string>
+    <string name="ljudi">Odnos prema ljudima</string>
+    <string name="djeca">Odnos prema djeci</string>
+    <string name="zivotinje">Odnos prema životinjama</string>
+    <string name="energija">Nivo energije</string>
+    <string name="trening">Trening</string>
+    <string name="instinkti">Instinkti</string>
+    <string name="starost">Starost</string>
+    <string name="bolesti">Bolesti</string>
+    <string name="genetika">Genetika</string>
+    <string name="otpornost">Otpornost</string>
+    <string name="osjetljivost">Osjetljivost</string>
+    <string name="tip">Tip</string>
+    <string name="obroci">Obroci</string>
+    <string name="kretanje">Kretanje</string>
+    <!--ovo je dio ekran zivotnja  prevodi deskripcija group zivotnja ekrana-->
+
+
+    <!--    kategorije button -na fragment_detalji_zivotnja  -->
+
+    <string name="osnovne_info">📌 Osnovne informacije</string>
+    <string name="ponasanje">🧠 Ponašanje</string>
+    <string name="zdravlje">❤️ Zdravlje</string>
+    <string name="ishrana">🍖 Ishrana</string>
+    <string name="aktivnost">🏃 Aktivnost</string>
+
+    <!--    kategorije button -na fragment_detalji_zivotnja  -->
+
+
+    <!--    fragment-zivotnja       -->
+    <string name="dobrodosao">Dobrodošao 👋</string>
+    <string name="kategorije">Kategorije</string>
+    <!--    fragment-zivotnja       -->
+
+    <!--    fragement_poljopriveda.xml-->
+    <string name="poljoprivreda_naslov">Poljoprivreda i raj</string>
+    <string name="poljoprivreda_podnaslov">Produži vijek života na selu!</string>
+
+    <string name="osnove_poljoprivrede">Osnove poljoprivrede</string>
+    <string name="osnove_poljoprivrede_desc">Nauči osnovne pojmove i upoznaj glavne grane.</string>
+
+    <string name="uzgoj_biljaka">Uzgoj biljaka</string>
+    <string name="uzgoj_biljaka_desc">Saznaj kako pravilno uzgajati kulture.</string>
+
+    <string name="vremenski_uslovi">Vremenski uslovi</string>
+    <string name="vremenski_uslovi_desc">Prati vrijeme i utjecaj klime.</string>
+
+    <string name="zastita_bilja">Zaštita bilja</string>
+    <string name="zastita_bilja_desc">Prepoznaj bolesti i štetočine i nauči kako zaštititi svoje usjeve.</string>
+
+    <string name="mehanizacija">Mehanizacija i alati</string>
+    <string name="mehanizacija_desc">Upoznaj poljoprivredne mašine i njihovu pravilnu upotrebu.</string>
+
+    <string name="savjeti_praksa">Savjet i praksa</string>
+    <string name="savjeti_praksa_desc">Korisni savjeti iskusnih poljoprivrednika iz prakse.</string>
+
+    <!--    fragement_poljopriveda.xml-->
+
+    <!-- fragment_lekcije    -->
+    <string name="lekcije_naslov">📚 Lekcije</string>
+
+    <string name="lekcija1_naslov">Šta je poljoprivreda</string>
+    <string name="lekcija1_desc">Osnovni pojmovi i definicija</string>
+
+    <string name="lekcija2_naslov">Grane poljoprivrede</string>
+    <string name="lekcija2_desc">Biljna, stočna i organska</string>
+
+    <string name="lekcija3_naslov">Faktori uzgoja</string>
+    <string name="lekcija3_desc">Voda, sunce, tlo i klima</string>
+
+    <string name="kviz_naslov">Kviz znanja</string>
+    <string name="kviz_desc">Provjeri šta si naučio</string>
+
+
+    <!-- JABUKA -->
+    <string name="jabuka_naslov">Jabuka</string>
+    <string name="jabuka_opis">Jabuka je jedno od najrasprostranjenijih voćki. Lako se uzgaja i daje kvalitetne plodove.</string>
+    <string name="jabuka_sadnja">Jesen ili rano proljeće</string>
+    <string name="jabuka_berba">Septembar - oktobar</string>
+    <string name="jabuka_zalijevanje">Umjereno, redovno</string>
+    <string name="jabuka_sunce">Puno sunce</string>
+    <string name="jabuka_temperatura">10-25°C</string>
+    <string name="jabuka_tlo">Plodno, dobro drenirano</string>
+    <string name="jabuka_prinos">50-100 kg po stablu</string>
+
+    <!-- KRUŠKA -->
+    <string name="kruska_naslov">Kruška</string>
+    <string name="kruska_opis">Kruška voli topliju klimu i daje sočne plodove.</string>
+    <string name="kruska_sadnja">Jesen</string>
+    <string name="kruska_berba">Avgust - septembar</string>
+    <string name="kruska_zalijevanje">Umjereno</string>
+    <string name="kruska_sunce">Puno sunce</string>
+    <string name="kruska_temperatura">15-30°C</string>
+    <string name="kruska_tlo">Lagano, plodno tlo</string>
+    <string name="kruska_prinos">40-80 kg po stablu</string>
+
+    <!-- ŠLJIVA -->
+    <string name="sljiva_naslov">Šljiva</string>
+    <string name="sljiva_opis">Šljiva je vrlo popularna voćka na Balkanu, koristi se za jelo i rakiju.</string>
+    <string name="sljiva_sadnja">Jesen</string>
+    <string name="sljiva_berba">Jul - avgust</string>
+    <string name="sljiva_zalijevanje">Minimalno</string>
+    <string name="sljiva_sunce">Puno sunce</string>
+    <string name="sljiva_temperatura">10-30°C</string>
+    <string name="sljiva_tlo">Različita tla, dobro drenirano</string>
+    <string name="sljiva_prinos">30-70 kg po stablu</string>
+
+    <!-- TREŠNJA -->
+    <string name="tresnja_naslov">Trešnja</string>
+    <string name="tresnja_opis">Trešnja daje slatke plodove i traži dosta sunca.</string>
+    <string name="tresnja_sadnja">Proljeće</string>
+    <string name="tresnja_berba">Maj - juni</string>
+    <string name="tresnja_zalijevanje">Umjereno</string>
+    <string name="tresnja_sunce">Puno sunce</string>
+    <string name="tresnja_temperatura">15-25°C</string>
+    <string name="tresnja_tlo">Plodno, lagano tlo</string>
+    <string name="tresnja_prinos">20-50 kg po stablu</string>
+
+    <!-- JAGODA -->
+    <string name="jagoda_naslov">Jagoda</string>
+    <string name="jagoda_opis">Jagode brzo rastu i daju plodove već prve godine.</string>
+    <string name="jagoda_sadnja">Proljeće</string>
+    <string name="jagoda_berba">Maj - juni</string>
+    <string name="jagoda_zalijevanje">Često</string>
+    <string name="jagoda_sunce">Puno sunce</string>
+    <string name="jagoda_temperatura">15-25°C</string>
+    <string name="jagoda_tlo">Humusno tlo</string>
+    <string name="jagoda_prinos">0.5-1 kg po biljci</string>
+
+    <!-- MALINA -->
+    <string name="malina_naslov">Malina</string>
+    <string name="malina_opis">Malina je vrlo isplativa kultura i često se izvozi.</string>
+    <string name="malina_sadnja">Jesen</string>
+    <string name="malina_berba">Jun - avgust</string>
+    <string name="malina_zalijevanje">Redovno</string>
+    <string name="malina_sunce">Polusjena ili sunce</string>
+    <string name="malina_temperatura">15-25°C</string>
+    <string name="malina_tlo">Blago kiselo tlo</string>
+    <string name="malina_prinos">1-2 kg po biljci</string>
+
+
+    <string name="sunce">Sunce</string>
+    <string name="zalijevanje">Zalijevanje</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="tip_tla">Tip tla</string>
+    <string name="prinos">Prinos</string>
+    <string name="berba">Berba</string>
+
+
+    <string name="voce_naslov">Voće</string>
+    <string name="voce_citat">🌱 Grijeh, krivnja i neuroza su jedno te isto — plod drveta znanja.</string>
+    <!-- VOCE -->
+
+
+    <!--    povrce-->
+
+    <string name="krompir_naslov">Krompir</string>
+    <string name="krompir_opis">Krompir je jedna od najvažnijih kultura. Sadi se u proljeće i zahtijeva rahlo, dobro drenirano zemljište.</string>
+    <string name="krompir_sadnja">Mart - April</string>
+    <string name="krompir_zalijevanje">Umjereno</string>
+    <string name="krompir_sunce">Puno sunca</string>
+
+    <string name="paprika_naslov">Paprika</string>
+    <string name="paprika_opis">Paprika voli toplotu i sunce. Redovno zalijevanje i prihrana su ključni za dobar prinos.</string>
+    <string name="paprika_sadnja">April - Maj</string>
+    <string name="paprika_zalijevanje">Redovno</string>
+    <string name="paprika_sunce">Puno sunca</string>
+
+    <string name="mrkva_naslov">Mrkva</string>
+    <string name="mrkva_opis">Mrkva uspijeva u rastresitom tlu bez kamenja. Važno je redovno zalijevanje i prorjeđivanje.</string>
+    <string name="mrkva_sadnja">Mart - Juni</string>
+    <string name="mrkva_zalijevanje">Umjereno</string>
+    <string name="mrkva_sunce">Sunce / polusjena</string>
+
+    <string name="paradajz_naslov">Paradajz</string>
+    <string name="paradajz_opis">Paradajz traži puno sunca i potpornu konstrukciju. Potrebno je redovno zalijevanje i zaštita od bolesti.</string>
+    <string name="paradajz_sadnja">April - Maj</string>
+    <string name="paradajz_zalijevanje">Često</string>
+    <string name="paradajz_sunce">Puno sunca</string>
+
+    <string name="luk_naslov">Luk</string>
+    <string name="luk_opis">Luk je jednostavan za uzgoj. Sadi se rano i ne zahtijeva puno vode.</string>
+    <string name="luk_sadnja">Februar - Mart</string>
+    <string name="luk_zalijevanje">Rijetko</string>
+    <string name="luk_sunce">Puno sunca</string>
+
+    <string name="kupus_naslov">Kupus</string>
+    <string name="kupus_opis">Kupus voli hladnije uslove i redovno zalijevanje. Često se koristi u domaćinstvu.</string>
+    <string name="kupus_sadnja">Mart - April</string>
+    <string name="kupus_zalijevanje">Redovno</string>
+    <string name="kupus_sunce">Sunce / polusjena</string>
+
+
+    <string name="sadnja">Sadnja</string>
+
+
+    <!-- PŠENICA -->
+    <string name="psenica_naslov">Pšenica</string>
+    <string name="psenica_opis">Pšenica je jedna od najvažnijih žitarica na svijetu, koristi se za proizvodnju brašna i hljeba.</string>
+    <string name="psenica_sadnja">Jesen (ozima) ili proljeće (jara)</string>
+    <string name="psenica_berba">Juni - Juli</string>
+    <string name="psenica_zalijevanje">Umjereno, ne voli previše vode</string>
+    <string name="psenica_sunce">Puno sunce</string>
+    <string name="psenica_temperatura">10°C - 25°C</string>
+    <string name="psenica_tlo">Plodno, dobro drenirano tlo</string>
+    <string name="psenica_prinos">5 - 8 t/ha</string>
+
+    <!-- KUKURUZ -->
+    <string name="kukuruz_naslov">Kukuruz</string>
+    <string name="kukuruz_opis">Kukuruz je toploljubiva biljka koja se koristi za ishranu ljudi i životinja.</string>
+    <string name="kukuruz_sadnja">April - Maj</string>
+    <string name="kukuruz_berba">Septembar - Oktobar</string>
+    <string name="kukuruz_zalijevanje">Potrebno redovno zalijevanje u sušnim periodima</string>
+    <string name="kukuruz_sunce">Puno sunce</string>
+    <string name="kukuruz_temperatura">18°C - 30°C</string>
+    <string name="kukuruz_tlo">Duboko, plodno i vlažno tlo</string>
+    <string name="kukuruz_prinos">7 - 12 t/ha</string>
+
+    <!-- JEČAM -->
+    <string name="jecam_naslov">Ječam</string>
+    <string name="jecam_opis">Ječam se koristi za proizvodnju stočne hrane i piva.</string>
+    <string name="jecam_sadnja">Proljeće ili jesen</string>
+    <string name="jecam_berba">Juni</string>
+    <string name="jecam_zalijevanje">Umjereno</string>
+    <string name="jecam_sunce">Puno sunce</string>
+    <string name="jecam_temperatura">12°C - 25°C</string>
+    <string name="jecam_tlo">Lagana do srednje teška tla</string>
+    <string name="jecam_prinos">4 - 7 t/ha</string>
+
+    <!-- ZOB -->
+    <string name="zob_naslov">Zob</string>
+    <string name="zob_opis">Zob je zdrava žitarica bogata vlaknima, često se koristi za doručak.</string>
+    <string name="zob_sadnja">Mart - April</string>
+    <string name="zob_berba">Juli - August</string>
+    <string name="zob_zalijevanje">Podnosi vlagu, umjereno zalijevanje</string>
+    <string name="zob_sunce">Sunce do polusjena</string>
+    <string name="zob_temperatura">10°C - 22°C</string>
+    <string name="zob_tlo">Vlažno i plodno tlo</string>
+    <string name="zob_prinos">3 - 6 t/ha</string>
+
+    <!-- RAŽ -->
+    <string name="raz_naslov">Raž</string>
+    <string name="raz_opis">Raž je otporna žitarica koja uspijeva i na siromašnijem tlu.</string>
+    <string name="raz_sadnja">Septembar - Oktobar</string>
+    <string name="raz_berba">Juni</string>
+    <string name="raz_zalijevanje">Nisko do umjereno</string>
+    <string name="raz_sunce">Puno sunce</string>
+    <string name="raz_temperatura">5°C - 20°C</string>
+    <string name="raz_tlo">Siromašnija, pjeskovita tla</string>
+    <string name="raz_prinos">3 - 5 t/ha</string>
+
+    <!-- GLOBAL -->
+    <!--    zitarice-->
+
+
+    <!--    zacinsko bilje-->
+
+
+    <!-- 🌿 PERŠUN -->
+    <string name="persun_naslov">Peršun</string>
+    <string name="persun_opis">Peršun je vrlo popularna začinska biljka koja se koristi u mnogim jelima. Bogat je vitaminima i lako se uzgaja.</string>
+    <string name="persun_sadnja">Proljeće</string>
+    <string name="persun_berba">Tokom cijele sezone</string>
+    <string name="persun_zalijevanje">Redovno, ali umjereno</string>
+    <string name="persun_sunce">Polusjena ili sunce</string>
+    <string name="persun_temperatura">10-25°C</string>
+    <string name="persun_tlo">Rahlo, humusno tlo</string>
+    <string name="persun_prinos">Kontinuirano branje listova</string>
+
+    <!-- 🌿 BOSILJAK -->
+    <string name="bosiljak_naslov">Bosiljak</string>
+    <string name="bosiljak_opis">Bosiljak je aromatična biljka koja se često koristi u mediteranskoj kuhinji.</string>
+    <string name="bosiljak_sadnja">Proljeće</string>
+    <string name="bosiljak_berba">Ljeto</string>
+    <string name="bosiljak_zalijevanje">Često, ali ne previše</string>
+    <string name="bosiljak_sunce">Puno sunce</string>
+    <string name="bosiljak_temperatura">18-30°C</string>
+    <string name="bosiljak_tlo">Lagano, dobro drenirano</string>
+    <string name="bosiljak_prinos">Redovno rezanje listova</string>
+
+    <!-- 🌿 MENTA -->
+    <string name="menta_naslov">Menta</string>
+    <string name="menta_opis">Menta je osvježavajuća biljka koja se koristi u pićima i jelima.</string>
+    <string name="menta_sadnja">Proljeće</string>
+    <string name="menta_berba">Tokom cijele sezone</string>
+    <string name="menta_zalijevanje">Često</string>
+    <string name="menta_sunce">Polusjena</string>
+    <string name="menta_temperatura">15-25°C</string>
+    <string name="menta_tlo">Vlažno, bogato tlo</string>
+    <string name="menta_prinos">Brzo se širi i daje puno listova</string>
+
+    <!-- 🌿 RUZMARIN -->
+    <string name="ruzmarin_naslov">Ruzmarin</string>
+    <string name="ruzmarin_opis">Ruzmarin je višegodišnja biljka koja se koristi kao začin i u medicini.</string>
+    <string name="ruzmarin_sadnja">Proljeće</string>
+    <string name="ruzmarin_berba">Tokom cijele godine</string>
+    <string name="ruzmarin_zalijevanje">Minimalno</string>
+    <string name="ruzmarin_sunce">Puno sunce</string>
+    <string name="ruzmarin_temperatura">15-30°C</string>
+    <string name="ruzmarin_tlo">Suho, kamenito tlo</string>
+    <string name="ruzmarin_prinos">Dugotrajno korištenje grana</string>
+
+    <!-- 🌿 TIMIJAN -->
+    <string name="timijan_naslov">Timijan</string>
+    <string name="timijan_opis">Timijan je mali aromatični grm koji se koristi u kuhinji i medicini.</string>
+    <string name="timijan_sadnja">Proljeće</string>
+    <string name="timijan_berba">Ljeto</string>
+    <string name="timijan_zalijevanje">Umjereno</string>
+    <string name="timijan_sunce">Puno sunce</string>
+    <string name="timijan_temperatura">15-28°C</string>
+    <string name="timijan_tlo">Suho, dobro drenirano</string>
+    <string name="timijan_prinos">Rezanje grančica</string>
+
+    <!-- 🌿 ORIGANO -->
+    <string name="origano_naslov">Origano</string>
+    <string name="origano_opis">Origano je popularan začin u pizzama i italijanskim jelima.</string>
+    <string name="origano_sadnja">Proljeće</string>
+    <string name="origano_berba">Ljeto</string>
+    <string name="origano_zalijevanje">Umjereno</string>
+    <string name="origano_sunce">Puno sunce</string>
+    <string name="origano_temperatura">18-30°C</string>
+    <string name="origano_tlo">Lagano, suho tlo</string>
+    <string name="origano_prinos">Sušenje listova</string>
+
+
+    <!--    frragment uzgo biljaka-->
+
+
+    <string name="kategorije_uzgoja">Kategorije uzgoja</string>
+    <string name="trikovi">🌱 Trikovi za veliki uspjeh</string>
+
+    <string name="povrce">Povrće</string>
+    <string name="zitarice">Žitarice</string>
+    <string name="voce">Voće</string>
+    <string name="zacinsko_bilje">Začinsko bilje</string>
+    <string name="savjeti">Savjeti</string>
+
+
+    <string name="savjeti_praksa_naslov_praksa">Savjeti i praksa</string>
+    <string name="savjeti_praksa_opis_opis">Pravi savjeti iz svakodnevnog rada</string>
+    <string name="novi_savjet_btn">🔄 Novi savjet</string>
+
+    <string name="savjet_zalijevanje_naslov">🌿 Zalijevanje</string>
+    <string name="savjet_zalijevanje_tekst">Zalijevaj biljke rano ujutro ili navečer kako bi smanjio isparavanje vode.</string>
+
+    <string name="savjet_insekticid_naslov">🐛 Prirodni insekticid</string>
+    <string name="savjet_insekticid_tekst">Pomiješaj vodu i malo sapuna za uklanjanje lisnih uši.</string>
+
+    <string name="savjet_sadnja_naslov">🌱 Sadnja</string>
+    <string name="savjet_sadnja_tekst">Ne sadi biljke prije zadnjeg mraza.</string>
+
+    <string name="savjet_djubrivo_naslov">🍃 Đubrivo</string>
+    <string name="savjet_djubrivo_tekst">Kopriva može poslužiti kao prirodno đubrivo.</string>
+
+    <string name="savjet_traktor_naslov">🚜 Traktor</string>
+    <string name="savjet_traktor_tekst">Redovno provjeravaj ulje i filtere.</string>
+
+    <string name="savjet_zetva_naslov">🌾 Žetva</string>
+    <string name="savjet_zetva_tekst">Žetvu obavljaj po suhom vremenu.</string>
+
+    <string name="savjet_kisa_naslov">🌧 Kiša</string>
+    <string name="savjet_kisa_tekst">Ne prskaj biljke prije kiše.</string>
+
+    <string name="savjet_sunce_naslov">☀️ Sunce</string>
+    <string name="savjet_sunce_tekst">Izbjegavaj pesticide na jakom suncu.</string>
+
+    <string name="savjet_puzevi_naslov">🐌 Puževi</string>
+    <string name="savjet_puzevi_tekst">Pospi pepeo oko biljaka.</string>
+
+    <string name="savjet_korov_naslov">🌿 Korov</string>
+    <string name="savjet_korov_tekst">Uklanjaj korov redovno.</string>
+
+    <string name="savjet_voda_naslov">💧 Voda</string>
+    <string name="savjet_voda_tekst">Previše zalijevanja šteti biljkama.</string>
+
+    <string name="savjet_voce_naslov">🌳 Voće</string>
+    <string name="savjet_voce_tekst">Oreži voćke u proljeće.</string>
+
+    <string name="savjet_kukuruz_naslov">🌽 Kukuruz</string>
+    <string name="savjet_kukuruz_tekst">Sadi kukuruz na razmak.</string>
+
+    <string name="savjet_stoka_naslov">🐄 Stoka</string>
+    <string name="savjet_stoka_tekst">Obezbijedi svježu vodu životinjama.</string>
+
+    <string name="savjet_sigurnost_naslov">🧤 Sigurnost</string>
+    <string name="savjet_sigurnost_tekst">Koristi rukavice pri radu sa hemikalijama.</string>
+
+
+    <!--    savjet dvaaa -->
+
+
+    <string name="savjeti_title">Savjeti</string>
+    <string name="savjeti_subtitle">Za zdrav rast biljaka 🌿</string>
+    <string name="savjeti_badge">🌱 Mali trikovi za veliki uspjeh</string>
+
+    <string name="savjet_zalijevanje_naslov_dda">Pravilno zalijevanje</string>
+    <string name="savjet_zalijevanje_opis">Zalijevaj ujutro ili navečer kada je temperatura niža.</string>
+
+    <string name="savjet_svjetlost_naslov">Dovoljno svjetlosti</string>
+    <string name="savjet_svjetlost_opis">Većina biljaka voli indirektno sunce.</string>
+
+    <string name="savjet_tlo_naslov">Kvalitetno tlo</string>
+    <string name="savjet_tlo_opis">Koristi kvalitetno i hranjivo tlo.</string>
+
+    <string name="savjet_rezidba_naslov">Redovna rezidba</string>
+    <string name="savjet_rezidba_opis">Uklanjajte suhe i oštećene dijelove kako biste potaknuli novi rast.</string>
+
+    <string name="banner_naslov">Brinite s ljubavlju,</string>
+    <string name="banner_opis">a priroda će uzvratiti 💚</string>
+
+    <!--    ozdravanje i serivs-->
+
+    <string name="servis_title">Održavanje i servis</string>
+    <string name="servis_subtitle">Produži vijek trajanja mašina</string>
+
+    <string name="servis_card1_title">🔧 Redovno održavanje</string>
+    <string name="servis_card1_desc">Redovno provjeravaj ulje, filtere i stanje dijelova kako bi spriječio kvarove.</string>
+
+    <string name="servis_card2_title">🛢 Zamjena ulja</string>
+    <string name="servis_card2_desc">Ulje mijenjaj prema preporuci proizvođača da bi motor radio ispravno.</string>
+
+    <string name="servis_card3_title">🧼 Čišćenje</string>
+    <string name="servis_card3_desc">Nakon rada očisti mašinu od blata i prašine da spriječiš oštećenja.</string>
+
+    <string name="servis_card4_title">🛑 Sigurnost</string>
+    <string name="servis_card4_desc">Uvijek koristi zaštitnu opremu i isključi mašinu prije servisiranja.</string>
+
+
+    <!--    fragment gorivo-->
+
+    <string name="gorivo_title">Gorivo i potrošnja</string>
+    <string name="gorivo_subtitle">Kako smanjiti potrošnju i uštedjeti</string>
+
+    <string name="gorivo_card1_title">⛽ Kvalitet goriva</string>
+    <string name="gorivo_card1_desc">Koristi kvalitetno gorivo da bi spriječio kvarove i smanjio potrošnju.</string>
+
+    <string name="gorivo_card2_title">⚙️ Pravilno korištenje</string>
+    <string name="gorivo_card2_desc">Ne forsiraj mašinu – rad u optimalnim obrtajima štedi gorivo.</string>
+
+    <string name="gorivo_card3_title">🔧 Servis</string>
+    <string name="gorivo_card3_desc">Redovan servis motora direktno utiče na manju potrošnju.</string>
+
+
+    <!--    sigurnost cards -->
+
+    <string name="sigurnost_title">Sigurnost pri radu</string>
+    <string name="sigurnost_subtitle">Zaštiti sebe i druge na farmi</string>
+
+    <string name="sigurnost_oprema_title">🦺 Zaštitna oprema</string>
+    <string name="sigurnost_oprema_desc">Uvijek koristi rukavice, čizme i zaštitne naočale prilikom rada.</string>
+
+    <string name="sigurnost_masine_title">⚠️ Rad sa mašinama</string>
+    <string name="sigurnost_masine_desc">Nikada ne prilazi pokretnim dijelovima dok mašina radi.</string>
+
+    <string name="sigurnost_struja_title">🔌 Električna sigurnost</string>
+    <string name="sigurnost_struja_desc">Ne koristi oštećene kablove i uvijek radi na suhom mjestu.</string>
+
+    <string name="sigurnost_hemija_title">🧴 Hemikalije</string>
+    <string name="sigurnost_hemija_desc">Koristi masku i izbjegavaj direktan kontakt s pesticidima.</string>
+
+    <!--    mehanizacija-->
+
+    <string name="mech_title">Mehanizacija i alati</string>
+    <string name="mech_subtitle">Upoznaj mašine koje olakšavaju rad na farmi</string>
+
+    <string name="action_back">Nazad</string>
+
+    <string name="mech_machines_title">Poljoprivredne mašine</string>
+    <string name="mech_machines_desc">Upoznaj mašine koje olakšavaju rad na farmi</string>
+
+    <string name="mech_tools_title">Alati i oprema</string>
+    <string name="mech_tools_desc">Osnovni alati i njihova pravilna upotreba</string>
+
+    <string name="mech_service_title">Održavanje i servis</string>
+    <string name="mech_service_desc">Kako pravilno održavati mašine i produžiti njihov vijek trajanja</string>
+
+    <string name="mech_safety_title" translatable="false">Sigurnost pri radu</string>
+    <string name="mech_safety_desc">Savjeti i pravila za siguran rad sa mašinama i alatima</string>
+
+    <string name="mech_fuel_title">Gorivo i potrošnja</string>
+    <string name="mech_fuel_desc" translatable="false">Vrste goriva i kako optimizovati potrošnju</string>
+
+
+    <!--    fragment_profile-->
+    <string name="profile_title">Moj profil</string>
+    <string name="profile_aktivnost">Aktivnost</string>
+    <string name="o_meni">O meni</string>
+    <string name="napisi_o_meni">Napiši nešto o sebi...</string>
+    <!-- values/strings.xml (Bosanski) -->
+    <string name="uredi_profil">Uredi profil</string>
+    <string name="promjeni_lozinku">Promjeni lozinku</string>
+    <string name="aktivnost_naloga">Aktivnost naloga</string>
+    <string name="odjavi_se">Odjavi se</string>
+
+
+    <!--    fragment_privatnost-->
+    <string name="privatnost">Privatnost</string>
+    <string name="sigurnost_kontrola">Sigurnost i kontrola podataka</string>
+    <string name="vasa_privatnost">Vaša privatnost</string>
+    <string name="vasi_podaci_sigurni">Vaši podaci su zaštićeni i sigurni.</string>
+    <string name="privatnost_opis">Kontrolišite kako aplikacija koristi vaše podatke, lokaciju i obavijesti. Sve opcije možete promijeniti u bilo kojem trenutku.</string>
+    <string name="postavke_privatnosti">Postavke privatnosti</string>
+    <string name="pristup_lokaciji">Pristup lokaciji</string>
+    <string name="gps_lokalne_info">Koristi GPS za lokalne informacije</string>
+    <string name="analitika">Analitika</string>
+    <string name="analitika_opis">Poboljšanje iskustva aplikacije</string>
+    <string name="personalizirane_obavijesti">Personalizirane obavijesti</string>
+    <string name="pametne_preporuke">Pametne preporuke i obavijesti</string>
+    <string name="upravljanje_podacima">Upravljanje podacima</string>
+    <string name="obrisi_podatke">Obriši podatke</string>
+    <string name="pravila_privatnosti">Pravila privatnosti</string>
+
+
+    <!--    fragment_login-->
+
+
+    <!--    fragment_jaja-->
+
+    <string name="jaja">Jaja</string>
+    <string name="jaja_opis">Proizvodnja jaja, higijena, skladištenje i kvalitet jaja.</string>
+    <string name="sta_cete_pronaci">Šta ćete pronaći</string>
+    <string name="proizvodnja_jaja">Proizvodnja jaja</string>
+    <string name="proizvodnja_jaja_opis">Proces proizvodnje jaja od nesilica i faktori koji utiču na količinu i kvalitet.</string>
+    <string name="higijena_proizvodnje">Higijena u proizvodnji</string>
+    <string name="higijena_proizvodnje_opis">Higijenske prakse i standardi za zdravlje nesilica i bezbjednost jaja.</string>
+    <string name="skladistenje_jaja">Skladištenje jaja</string>
+    <string name="skladistenje_jaja_opis">    Pravilno skladištenje i rukovanje jajima za očuvanje svježine i kvaliteta.</string>
+    <string name="kvalitet_jaja">Kvalitet jaja</string>
+    <string name="kvalitet_jaja_opis">    Kriteriji kvaliteta, ocjenjivanje i razvrstavanje jaja prema standardima.</string>
+    <string name="zdrave_zivotinje">    Zdrave životinje = kvalitetno jaje</string>
+    <string name="higijena_kljuc">    Higijena je ključna za sigurno jaje</string>
+    <string name="hladenje_jaja">    Pravilno hlađenje čuva svježinu i sigurnost jajeta</string>
+    <string name="redovna_kontrola">    Redovna kontrola osigurava sigurnost</string>
+    <string name="kvalitetno_jaje">Kvalitetno jaje počinje zdravom životinjom.</string>
+
+
+    <!--    fragment_osnovoeoca-->
+    <!-- BOSANSKI -->
+
+    <string name="premium_course">Premium kurs</string>
+
+    <string name="osnove_stocarstva_naslov">Osnove stočarstva</string>
+
+    <string name="osnove_stocarstva_podnaslov">Nauči osnove uzgoja životinja i moderne proizvodnje</string>
+
+    <string name="lekcije_broj">4 lekcije</string>
+
+    <string name="vrijeme_citanja">15 min čitanja</string>
+
+    <string name="lesson_01">Šta je stočarstvo?</string>
+
+    <string name="lesson_01_opis">Stočarstvo je grana poljoprivrede koja se bavi uzgojem domaćih životinja radi proizvodnje hrane i drugih proizvoda.</string>
+
+    <string name="lesson_02">Vrste stočarstva</string>
+
+    <string name="lesson_02_opis">Najpoznatije grane su govedarstvo, ovčarstvo, kozarstvo i peradarstvo.</string>
+
+    <!--fragment_zivotnje_stocarasvo-->
+
+    <string name="stocarstvo_naslov">Stočarstvo</string>
+    <string name="stocarstvo_opis">Sve o uzgoju i brizi o životinjama</string>
+
+    <string name="osnove_stocarstva">Osnove stočarstva</string>
+    <string name="osnove_stocarstva_opis">Upoznaj osnovne pojmove i vrste proizvodnje</string>
+
+    <string name="vrste_zivotinja">Vrste životinja</string>
+    <string name="vrste_zivotinja_opis">Pregled svih domaćih životinja</string>
+
+    <string name="ishrana_zivotinja">Ishrana životinja</string>
+    <string name="ishrana_zivotinja_opis">Plan ishrane za zdrav rast</string>
+
+    <string name="bolesti_prevencija">Bolesti i prevencija</string>
+    <string name="bolesti_prevencija_opis">Prepoznaj bolesti, njihovu prevenciju i načine zaštite životinja</string>
+
+    <string name="smjestaj_oprema">Smještaj i oprema</string>
+    <string name="smjestaj_oprema_opis">Saznaj kako urediti štale i izabrati odgovarajuću opremu.</string>
+
+    <string name="proizvodnja_prerada">Proizvodnja i prerada</string>
+    <string name="proizvodnja_prerada_opis">Mlijeko, meso, jaja i vuna - od proizvodnje do prerade i tržišta.</string>
+
+
+    <!--    fragmenet-->
+
+    <!--    fragment_ocijena_aplikcije-->
+
+
+    <string name="rate_app">Ocijeni aplikaciju</string>
+    <string name="opinion_matters">Vaše mišljenje nam znači</string>
+
+    <string name="how_do_you_like">Kako vam se sviđa FarmEdu?</string>
+
+    <string name="rating_help">Vaša ocjena nam pomaže da unaprijedimo aplikaciju i iskustvo korištenja.</string>
+
+    <string name="add_comment">Dodajte komentar</string>
+
+    <string name="write_experience">Napišite svoje iskustvo...</string>
+
+    <string name="send_rating">Pošalji ocjenu</string>
+
+    <string name="thanks_support">Hvala na podršci 💚</string>
+
+    <string name="rating_supports_app">Vaša ocjena pomaže razvoju FarmEdu aplikacije.</string>
+
+    <!--    fragment_proizovdnja-->
+    <string name="fragment_pro_naslov">Proizvodnja i prerada</string>
+    <string name="fragment_pro_podnaslov">Savjeti, higijena i kvalitet stočarskih proizvoda</string>
+
+    <string name="fragment_pro_prevencija">Prevencija</string>
+    <string name="fragment_pro_zdravlje">Zdravlje</string>
+    <string name="fragment_pro_vakcinacija">Vakcinacija</string>
+
+    <string name="fragment_pro_potkategorije">Potkategorije</string>
+
+    <string name="fragment_pro_mlijeko">Mlijeko</string>
+    <string name="fragment_pro_mlijeko_opis">Proizvodnja, higijena i kvalitet mlijeka</string>
+
+    <string name="fragment_pro_meso">Meso</string>
+    <string name="fragment_pro_meso_opis">Uzgoj, obrada i kontrola kvaliteta mesa</string>
+
+    <string name="fragment_pro_jaja">Jaja</string>
+    <string name="fragment_pro_jaja_opis">Skladištenje, higijena i sigurnost jaja</string>
+
+    <string name="fragment_pro_vuna">Vuna</string>
+    <string name="fragment_pro_vuna_opis">Šišanje, obrada i kvalitet vune</string>
+
+    <string name="fragment_pro_prerada">Prerada</string>
+    <string name="fragment_pro_prerada_opis">Obrada stočnih proizvoda i priprema za tržište</string>
+
+    <string name="fragment_pro_trziste">Tržište</string>
+    <string name="fragment_pro_trziste_opis">Prodaja proizvoda i tržišne informacije</string>
+
+    <!--    fragment_home-->
+
+    <string name="dobrodosli">Dobrodošli 👋</string>
+
+    <string name="home_opis">
+    Sve što vam treba za uspješno i moderno
+    poljoprivredno znanje.
+</string>
+
+    <string name="suncano">Sunčano</string>
+
+    <string name="pogledaj_sve">Pogledaj sve</string>
+
+
+    <string name="stocarstvo">Stočarstvo</string>
+    <string name="masine">Mašine</string>
+    <string name="organska_proizvodnja">Organska proizvodnja</string>
+    <string name="brzi_pristup">Brzi pristup</string>
+
+
+    <!--    fragment_bolesti_prevencija-->
+
+    <string name="bolesti_opis">Prepoznajte bolesti na vrijeme i zaštitite svoju stoku pravilnom prevencijom.</string>
+    <string name="prevencija">Prevencija</string>
+    <string name="zdravljee">Zdravlje</string>
+    <string name="vakcinacija">Vakcinacija</string>
+    <string name="prevencija_najbolja">Prevencija je najbolja zaštita</string>
+    <string name="redovna_njega">Redovna njega, higijena, ishrana i vakcinacija ključ su zdravlja i produktivnosti vaše stoke.</string>
+    <string name="najcesce_bolesti">Najčešće bolesti</string>
+    <string name="respiratorne_bolesti">Respiratorne bolesti</string>
+    <string name="respiratorne_opis">Kašalj, kijavica, upala pluća. Najčešće kod teladi i jagnjadi.</string>
+    <string name="probavni_poremecaji">Probavni poremećaji</string>
+    <string name="probavni_opis">Proljev, nadutost, grčevi. Uzrok: ishrana, voda, stres.</string>
+    <string name="paraziti">Paraziti</string>
+    <string name="paraziti_opis">Unutrašnji i spoljašnji paraziti smanjuju prirast i otpornost.</string>
+    <string name="mastitis">Mastitis</string>
+    <string name="mastitis_opis">Upala vimena kod krava i koza. Utiče na kvalitet mlijeka.</string>
+    <string name="mjere_prevencije">Mjere prevencije</string>
+    <string name="vakcinacija_opis">Pratite raspored vakcinacije prema preporuci veterinara.</string>
+    <string name="higijena">Higijena</string>
+    <string name="higijena_opis">Redovno čišćenje objekata i opreme sprečava bolesti.</string>
+    <string name="pravilna_ishrana">Pravilna ishrana</string>
+    <string name="pravilna_ishrana_opis">Kvalitetna, balansirana ishrana jača imunitet životinja.</string>
+    <string name="cista_voda">Čista voda</string>
+    <string name="cista_voda_opis">Obezbijedite stalno dostupnu čistu i svježu vodu.</string>
+    <string name="veterinar_upozorenje">Kod pojave simptoma bolesti odmah kontaktirajte veterinara. Brza reakcija spašava životinje i smanjuje gubitke.</string>
+
+
+    <!--    framgnet- o aplikaciji-->
+
+    <string name="fragment_o_aplikaciji_nazad">Nazad</string>
+
+    <string name="fragment_o_aplikaciji_osnovni_podaci">Osnovni podaci</string>
+
+    <string name="fragment_o_aplikaciji_info_aplikacije">Informacije o aplikaciji</string>
+
+    <string name="fragment_o_aplikaciji_farmedu">FarmEdu</string>
+
+    <string name="fragment_o_aplikaciji_farmedu_opis">Pametna edukativna platforma za farmu</string>
+
+    <string name="fragment_o_aplikaciji_glavni_opis">FarmEdu omogućava korisnicima da istraže svijet domaćih životinja, biljaka, vremenskih uslova i savremene poljoprivrede kroz moderan i jednostavan interfejs.</string>
+
+    <string name="fragment_o_aplikaciji_detalji">Detalji aplikacije</string>
+
+    <string name="fragment_o_aplikaciji_naziv">Naziv aplikacije</string>
+
+    <string name="fragment_o_aplikaciji_naziv_vrijednost">FarmEduErmin</string>
+
+    <string name="fragment_o_aplikaciji_autor">Autor</string>
+
+    <string name="fragment_o_aplikaciji_autor_ime">Ermin</string>
+
+    <string name="fragment_o_aplikaciji_godina">Godina</string>
+
+    <string name="fragment_o_aplikaciji_godina_vrijednost">2026</string>
+
+    <string name="fragment_o_aplikaciji_verzija">Verzija</string>
+
+    <string name="fragment_o_aplikaciji_verzija_broj">v1.0.0</string>
+
+    <string name="fragment_o_aplikaciji_svrha">Svrha aplikacije</string>
+
+    <string name="fragment_o_aplikaciji_edukacija">📚 Edukacija i razvoj</string>
+
+    <string name="fragment_o_aplikaciji_edukacija_opis">Aplikacija je kreirana kako bi korisnicima pružila jednostavan pristup edukativnim sadržajima vezanim za životinje, proizvodnju mlijeka, mesa, jaja i savremene metode uzgoja.</string>
+
+    <string name="fragment_o_aplikaciji_hvala">Hvala što koristite FarmEdu</string>
+
+    <string name="fragment_o_aplikaciji_footer_opis">Pametnije učenje za modernu farmu.</string>
+
+
+    <!--    fragment_sigurnost kopija-->
+
+    <string name="fragment_backup_naslov">Sigurnosna kopija</string>
+
+    <string name="fragment_backup_podnaslov">Backup i vraćanje podataka</string>
+
+    <string name="fragment_backup_status_naslov">Status sigurnosne kopije</string>
+
+    <string name="fragment_backup_status_opis">Podaci aplikacije su sigurni</string>
+
+    <string name="fragment_backup_zadnji_backup">Zadnji backup: Nikada</string>
+
+    <string name="fragment_backup_status_neaktivan">Backup nije aktivan</string>
+
+    <string name="fragment_backup_upravljanje">Upravljanje backupom</string>
+
+    <string name="fragment_backup_napravi">Napravi backup sada</string>
+
+    <string name="fragment_backup_vrati">Vrati podatke</string>
+
+    <string name="fragment_backup_vrati_opis">Obnovi prethodno spremljene podatke</string>
+
+    <string name="fragment_backup_auto_naslov">Automatska sigurnost</string>
+
+    <string name="fragment_backup_auto_backup">Automatski backup</string>
+
+    <string name="fragment_backup_auto_opis">Backup podataka svaki dan</string>
+
+
+    <!--    fragmnet_vuna-->
+
+    <string name="fragment_vuna_tag">Proizvodnja i prerada</string>
+    <string name="fragment_vuna_title">Vuna</string>
+    <string name="fragment_vuna_desc">Proizvodnja vune, pranje, kardanje, predenje i kvaliteta vune.</string>
+    <string name="fragment_vuna_section">Šta ćete pronaći</string>
+
+    <string name="fragment_vuna_card1_title">Proizvodnja vune</string>
+    <string name="fragment_vuna_card1_desc">Proces uzgoja ovaca i faktori koji utiču na količinu i kvalitet vune.</string>
+
+    <string name="fragment_vuna_card2_title">Higijena u proizvodnji</string>
+    <string name="fragment_vuna_card2_desc">Higijenske prakse i standardi za zdravlje ovaca i sigurnost vune.</string>
+
+    <string name="fragment_vuna_card3_title">Pranje i obrada vune</string>
+    <string name="fragment_vuna_card3_desc">Pranje, sušenje i priprema vune za dalju obradu i poboljšanje kvaliteta.</string>
+
+    <string name="fragment_vuna_card4_title">Kvalitet vune</string>
+    <string name="fragment_vuna_card4_desc">Kriteriji kvaliteta, ocjenjivanje i faktori koji utiču na osobine i vrijednost vune.</string>
+
+    <string name="fragment_vuna_recommendations">Najvažnije preporuke</string>
+
+    <string name="fragment_vuna_tip1">Zdrave ovce = kvalitetna vuna</string>
+    <string name="fragment_vuna_tip2">Higijena je ključna za čistu vunu</string>
+    <string name="fragment_vuna_tip3">Pranje poboljšava kvalitet vune</string>
+    <string name="fragment_vuna_tip4">Redovna kontrola osigurava kvalitet</string>
+
+    <string name="fragment_vuna_warning">Kvalitetna vuna počinje zdravom životinjom.</string>
+
+
+    <!--    smjestaj-->
+
+    <!-- values/strings.xml (Bosanski) -->
+
+    <string name="fragment_smjestaj_oprema_title">Smještaj i oprema</string>
+    <string name="fragment_smjestaj_oprema_desc">Sigurnost i produktivnost životinja</string>
+
+    <string name="fragment_smjestaj_objekti">Vrste objekata za smještaj</string>
+
+    <string name="fragment_smjestaj_savjet">Savjet stručnjaka</string>
+    <string name="fragment_smjestaj_savjet_desc">Redovno čistite prostor i održavajte optimalne uslove za zdravlje životinja.</string>
+
+    <string name="fragment_smjestaj_stale">Štale</string>
+    <string name="fragment_smjestaj_stale_desc">Klasični objekti za smještaj goveda, ovaca i drugih životinja.</string>
+
+    <string name="fragment_smjestaj_nadstresnice">Nadstrešnice</string>
+    <string name="fragment_smjestaj_nadstresnice_desc">Otvoreni objekti za zaštitu od sunca, kiše i vjetra.</string>
+
+    <string name="fragment_smjestaj_boksovi">Boksovi i boksevi</string>
+    <string name="fragment_smjestaj_boksovi_desc">Odvojeni prostori za pojedinačne ili grupne životinje.</string>
+
+    <string name="fragment_smjestaj_kokosinjci">Kokošinjci</string>
+    <string name="fragment_smjestaj_kokosinjci_desc">Prilagođeni objekti za držanje živine.</string>
+
+
+    <!--    AI HOME    -->
+
+
+    <!--    fragment_alati_oprema-->
+
+    <string name="alati_oprema">Alati i oprema</string>
+    <string name="osnovni_alati">🛠️ Osnovni alati za rad na farmi</string>
+    <string name="trikovi_alati">🛠 Mali trikovi za alati i oprema</string>
+
+
+    <!--    activity_main  -->
+    <string name="login">Prijava</string>
+    <string name="register">Registracija</string>
+    <!--    *register i login-->
+
+    <string name="welcome_back">Dobrodošli nazad 👋</string>
+
+    <string name="password">Lozinka</string>
+    <string name="register_question">Nemate račun? Registrujte se</string>
+    <string name="email">Email</string>
+
+    <string name="home">Početna</string>
+
+    <string name="poljoprivreda">Poljoprivreda</string>
+    <string name="opcije">Opcije</string>
+
+
+    <!-- res/values/strings.xml -->
+
+
+    <string name="ai_tip_not_available">AI savjet nije dostupan</string>
+    <string name="ai_confidence_high">Pouzdanost AI analize: 98%</string>
+    <string name="ai_confidence_medium"> Pouzdanost AI analize: 91%</string>
+    <string name="ai_confidence_low">    Pouzdanost AI analize: 85%</string>
+
+    <string name="home_home">Pogledaj sve</string>
+    <string name="popular_articles">Popularni članci</string>
+    <string name="selected_articles">0 selected</string>
+
+    <string name="welcome_user">Dobrodošli, %1$s 👋</string>
+    <string name="welcome_default">Dobrodošli 👋</string>
+
+    <string name="tips_experts">Savjeti\nstručnjaka</string>
+    <string name="weather_forecast">Vremenska\nprognoza</string>
+    <string name="day_planner">Planer dana</string>
+    <string name="video_tutorials">Video\ntutorijali</string>
+
+
+    <!--    edit profil-->
+
+    <string name="hint_full_name">Ime i prezime</string>
+    <string name="hint_city_country">Grad / država</string>
+    <string name="hint_about_me">O meni...</string>
+    <string name="save_changes">Sačuvaj promjene</string>
+    <string name="edit_profile">Uredi profil</string>
+
+    <string name="partnership">🤝 Partnerstvo</string>
+    <string name="partner_accept_message">Korisnik je prihvatio vaš zahtjev za partnerstvo.</string>
+    <string name="time_2_min_ago">Prije 2 minute</string>
+    <string name="dodaj_user_novog">Dodaj novog korisnika</string>
+
+    <string name="zapocni_razgovor">Pošalji poruku i započni razgovor...</string>
+    <string name="chat">Chat</string>
+    <string name="pretrazi_korisnike">Pretraži korisnike...</string>
+    <string name="partner_request_message">Želi vas dodati za partnera 🤝</string>
+    <string name="reject">Odbij</string>
+    <string name="accept">Prihvati</string>
+
+
+    <!--        chat aktivnot-->
+    <string name="active_now">🟢 Aktivan sada</string>
+    <string name="send_message_hint">Pošalji poruku...</string>
+
+
+    <!--    zahtjev-->
+    <string name="partnership_requests">Zahtjevi partnerstva</string>
+    <string name="users_who_want_to_collaborate">Korisnici koji žele surađivati s vama</string>
+    <string name="new_partnerships">Nova partnerstva</string>
+    <string name="accept_requests_expand_network">Prihvatite zahtjeve i proširite mrežu suradnika.</string>
+    <string name="add_user">Dodaj korisnika</string>
+    <string name="search_users_hint">Pretraži korisnike...</string>
+    <!--    home AI -->
+
+    <string name="listen_text">Poslušaj</string>
+    <string name="read_more">Pročitaj više</string>
+
+</resources>

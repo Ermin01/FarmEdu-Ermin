@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F6F6"
+    tools:context=".DetaljiClankaFragment">
+
+    <!-- READING PROGRESS -->
+    <ProgressBar
+        android:id="@+id/readingProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:max="100"
+        android:progress="20"
+        android:padding="0dp"
+        android:splitTrack="false"
+        android:progressTint="#5EAA4A"
+        android:progressBackgroundTint="#E0E0E0" />
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- BACK -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_back_button"
+            android:padding="10dp"
+            android:src="@drawable/baseline_arrow_back"
+            app:tint="#5EAA4A" />
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:text="Detalji članka"
+            android:textColor="#111111"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <!-- BOOKMARK -->
+        <ImageView
+            android:id="@+id/btnBookmark"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_circle_glass"
+            android:padding="10dp"
+            android:src="@drawable/bookmark"
+            app:tint="#5EAA4A" />
+
+        <!-- SHARE -->
+        <ImageView
+            android:id="@+id/btnShare"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_circle_glass"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_share"
+            app:tint="#5EAA4A" />
+
+        <!-- AI VOICE -->
+        <LinearLayout
+            android:id="@+id/btnVoice"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/active_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/voiceIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_btn_speak_now"
+                app:tint="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- CONTENT -->
+    <ScrollView
+        android:id="@+id/articleScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="120dp">
+
+            <!-- IMAGE -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                app:cardCornerRadius="26dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/articleImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/povrce_naslovna" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- CATEGORY -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:background="#EAF5E5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/weather_box"
+                    app:tint="#5EAA4A" />
+
+                <TextView
+                    android:id="@+id/articleCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Biljna proizvodnja"
+                    android:textColor="#5EAA4A"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- AI BADGE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#EEF5EB"
+                android:paddingStart="12dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="6dp"
+                android:text="AI analiziran sadržaj"
+                android:textColor="#5EAA4A"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            <!-- TITLE -->
+            <TextView
+                android:id="@+id/articleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="18dp"
+                android:text="Kako povećati prinos kukuruza?"
+                android:textColor="#111111"
+                android:textStyle="bold"
+                android:textSize="28sp" />
+
+            <!-- INFO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/tag_bg"
+                    app:tint="#5EAA4A" />
+
+                <TextView
+                    android:id="@+id/articleTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 min čitanja"
+                    android:textColor="#5EAA4A"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/articleDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:text="12 Maj 2026"
+                    android:textColor="#888888"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- DESCRIPTION -->
+            <TextView
+                android:id="@+id/articleDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginTop="26dp"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:hyphenationFrequency="full"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="10dp"
+                android:paddingBottom="8dp"
+                android:text="Ovdje ide puni tekst članka iz JSON-a..."
+                android:textAlignment="viewStart"
+                android:textColor="#3A3A3A"
+                android:textIsSelectable="true"
+                android:textSize="17sp" />
+
+            <!-- LIKE / DISLIKE -->
+
+            <!-- TAGS TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="34dp"
+                android:text="Tagovi"
+                android:textColor="#111111"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+
+            <!-- TAGS -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/tagsContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp">
+
+                    <!-- DEFAULT PLACEHOLDER -->
+                    <TextView
+                        android:id="@+id/defaultTagsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#EEF5EB"
+                        android:paddingStart="16dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="10dp"
+                        android:text="Učitavanje tagova..."
+                        android:textColor="#5EAA4A"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

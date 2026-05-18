@@ -1,0 +1,32 @@
+{
+  "naslov": "Šta je poljoprivreda",
+  "opis": "Osnovni pojmovi i značaj u svakodnevnom životu",
+
+  "sekcije": [
+    {
+      "tip": "tekst",
+      "naslov": "Definicija",
+      "sadrzaj": "Poljoprivreda je djelatnost koja obuhvata uzgoj biljaka i životinja radi proizvodnje hrane, sirovina i drugih proizvoda potrebnih čovjeku."
+    },
+    {
+      "tip": "tekst",
+      "naslov": "Zašto je važna",
+      "sadrzaj": "Bez poljoprivrede ne bi bilo hrane. Ona omogućava opstanak ljudi i razvoj društva."
+    },
+    {
+      "tip": "lista",
+      "naslov": "Primjeri poljoprivrede",
+      "stavke": [
+        "Uzgoj pšenice",
+        "Uzgoj kukuruza",
+        "Uzgoj voća i povrća",
+        "Stočarstvo (krave, ovce, kokoši)"
+      ]
+    },
+    {
+      "tip": "highlight",
+      "naslov": "Zanimljivost",
+      "sadrzaj": "Poljoprivreda postoji više od 10.000 godina i bila je ključ razvoja civilizacije."
+    }
+  ]
+}

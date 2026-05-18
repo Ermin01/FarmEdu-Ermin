@@ -1,0 +1,62 @@
+[
+  {
+    "naslov": "psenica_naslov",
+    "slika": "psenica_slika",
+    "opis": "psenica_opis",
+    "vrijeme_sadnje": "psenica_sadnja",
+    "vrijeme_berbe": "psenica_berba",
+    "zalijevanje": "psenica_zalijevanje",
+    "sunce": "psenica_sunce",
+    "temperatura": "psenica_temperatura",
+    "tip_tla": "psenica_tlo",
+    "prinos": "psenica_prinos"
+  },
+  {
+    "naslov": "kukuruz_naslov",
+    "slika": "kukuruz_slika",
+    "opis": "kukuruz_opis",
+    "vrijeme_sadnje": "kukuruz_sadnja",
+    "vrijeme_berbe": "kukuruz_berba",
+    "zalijevanje": "kukuruz_zalijevanje",
+    "sunce": "kukuruz_sunce",
+    "temperatura": "kukuruz_temperatura",
+    "tip_tla": "kukuruz_tlo",
+    "prinos": "kukuruz_prinos"
+  },
+  {
+    "naslov": "jecam_naslov",
+    "slika": "jecam_slika",
+    "opis": "jecam_opis",
+    "vrijeme_sadnje": "jecam_sadnja",
+    "vrijeme_berbe": "jecam_berba",
+    "zalijevanje": "jecam_zalijevanje",
+    "sunce": "jecam_sunce",
+    "temperatura": "jecam_temperatura",
+    "tip_tla": "jecam_tlo",
+    "prinos": "jecam_prinos"
+  },
+  {
+    "naslov": "zob_naslov",
+    "slika": "zob_slika",
+    "opis": "zob_opis",
+    "vrijeme_sadnje": "zob_sadnja",
+    "vrijeme_berbe": "zob_berba",
+    "zalijevanje": "zob_zalijevanje",
+    "sunce": "zob_sunce",
+    "temperatura": "zob_temperatura",
+    "tip_tla": "zob_tlo",
+    "prinos": "zob_prinos"
+  },
+  {
+    "naslov": "raz_naslov",
+    "slika": "raz_slika",
+    "opis": "raz_opis",
+    "vrijeme_sadnje": "raz_sadnja",
+    "vrijeme_berbe": "raz_berba",
+    "zalijevanje": "raz_zalijevanje",
+    "sunce": "raz_sunce",
+    "temperatura": "raz_temperatura",
+    "tip_tla": "raz_tlo",
+    "prinos": "raz_prinos"
+  }
+]

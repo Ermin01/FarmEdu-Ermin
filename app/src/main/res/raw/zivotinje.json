@@ -1,0 +1,3611 @@
+[
+    {
+      "ime": "Pas",
+      "slika": "grupna_slika_psi",
+      "lista": [
+        {
+          "ime": "Malinoa",
+          "slika": "maliona_pas",
+
+          "osnovneInfo": {
+            "zivotniVijek": "12-14 godina",
+            "visina": "55-65 cm",
+            "tezina": "20-30 kg",
+            "porijeklo": "Belgija",
+            "brzina": "50 km/h",
+            "tipDlake": "kratka",
+            "snaga": "visoka"
+          },
+
+          "ponasanje": {
+            "temperament": "aktivan, zaštitnički",
+            "inteligencija": "vrlo visoka",
+            "socijalnoPonasanje": "dobro uz trening",
+            "odnosPremaLjudima": "odan",
+            "odnosPremaDjeci": "dobar uz nadzor",
+            "odnosPremaZivotinjama": "dominantan",
+            "nivoEnergije": "vrlo visok",
+            "lakocaTreniranja": "lako",
+            "instinkti": "čuvarski, radni"
+          },
+
+          "zdravlje": {
+            "prosjecnaStarost": "13 godina",
+            "bolesti": "displazija kukova",
+            "genetika": "osjetljiv na zglobove",
+            "otpornost": "visoka",
+            "osjetljivost": "na hladnoću"
+          },
+
+          "vakcinacija": {
+            "obavezne": "bjesnilo",
+            "preporucene": "parvovirus",
+            "zadnjaVakcinacija": "2025",
+            "plan": "godišnje",
+            "paraziti": "svaka 3 mjeseca",
+            "pregledi": "1x godišnje",
+            "sterilizacija": "preporučena",
+            "terapije": "po potrebi"
+          },
+
+          "reprodukcija": {
+            "polnaZrelost": "6-12 mjeseci",
+            "gestacija": "60 dana",
+            "brojMladunaca": "6-10",
+            "interval": "1 godišnje",
+            "sezonaParenja": "tokom godine"
+          },
+
+          "ishrana": {
+            "tip": "mesožder",
+            "dnevniUnos": "2 obroka",
+            "vrstaHrane": "suha i mokra",
+            "dijeta": "proteinska",
+            "alergije": "piletina kod nekih",
+            "voda": "stalno dostupna"
+          },
+
+          "aktivnost": {
+            "kretanje": "2-3 sata dnevno",
+            "vrsta": "trčanje, trening",
+            "trening": "poslušnost",
+            "radneSposobnosti": "policija, vojska",
+            "sport": "agility"
+          },
+
+          "njega": {
+            "dlaka": "kratka njega",
+            "kupanje": "1x mjesečno",
+            "zubi": "redovno pranje",
+            "nokti": "svakih 3-4 sedmice",
+            "linjanje": "sezonsko"
+          },
+
+          "uslovi": {
+            "prostor": "dvorište",
+            "minimalni": "velik prostor",
+            "temperatura": "umjerena",
+            "potrebaProstora": "velika",
+            "sigurnost": "ograda"
+          }
+        },
+
+        {
+          "ime": "Njemački ovčar",
+          "slika": "njemacki_ovcar_pas",
+
+          "osnovneInfo": {
+            "zivotniVijek": "9-13 godina",
+            "visina": "55-65 cm",
+            "tezina": "22-40 kg",
+            "porijeklo": "Njemačka",
+            "brzina": "48 km/h",
+            "tipDlake": "srednje duga",
+            "snaga": "visoka"
+          },
+
+          "ponasanje": {
+            "temperament": "odan, hrabar, zaštitnički",
+            "inteligencija": "vrlo visoka",
+            "socijalnoPonasanje": "dobro uz socijalizaciju",
+            "odnosPremaLjudima": "vrlo odan",
+            "odnosPremaDjeci": "dobar uz nadzor",
+            "odnosPremaZivotinjama": "može biti dominantan",
+            "nivoEnergije": "visok",
+            "lakocaTreniranja": "vrlo lako",
+            "instinkti": "čuvarski, radni"
+          },
+
+          "zdravlje": {
+            "prosjecnaStarost": "11 godina",
+            "bolesti": "displazija kukova, displazija laktova",
+            "genetika": "sklon problemima sa zglobovima",
+            "otpornost": "visoka",
+            "osjetljivost": "na zglobove i kičmu"
+          },
+
+          "vakcinacija": {
+            "obavezne": "bjesnilo",
+            "preporucene": "parvovirus, štenećak",
+            "zadnjaVakcinacija": "2025",
+            "plan": "godišnje",
+            "paraziti": "svaka 3 mjeseca",
+            "pregledi": "1x godišnje",
+            "sterilizacija": "preporučena",
+            "terapije": "po potrebi"
+          },
+
+          "reprodukcija": {
+            "polnaZrelost": "6-12 mjeseci",
+            "gestacija": "60-63 dana",
+            "brojMladunaca": "5-9",
+            "interval": "1 godišnje",
+            "sezonaParenja": "tokom godine"
+          },
+
+          "ishrana": {
+            "tip": "mesožder",
+            "dnevniUnos": "2 obroka",
+            "vrstaHrane": "suha i mokra",
+            "dijeta": "proteinska, balansirana",
+            "alergije": "rijetke",
+            "voda": "stalno dostupna"
+          },
+
+          "aktivnost": {
+            "kretanje": "2 sata dnevno",
+            "vrsta": "trčanje, trening",
+            "trening": "poslušnost, radni trening",
+            "radneSposobnosti": "policija, vojska, spasavanje",
+            "sport": "agility, poslušnost"
+          },
+
+          "njega": {
+            "dlaka": "redovno četkanje",
+            "kupanje": "po potrebi",
+            "zubi": "redovno pranje",
+            "nokti": "svakih 3-4 sedmice",
+            "linjanje": "izraženo sezonsko"
+          },
+
+          "uslovi": {
+            "prostor": "kuća sa dvorištem",
+            "minimalni": "srednje velik prostor",
+            "temperatura": "umjerena",
+            "potrebaProstora": "velika",
+            "sigurnost": "ograda"
+          }
+        },
+        {
+          "ime": "Doberman",
+          "slika": "doberman_pas",
+
+          "osnovneInfo": {
+            "zivotniVijek": "10-13 godina",
+            "visina": "60-72 cm",
+            "tezina": "30-45 kg",
+            "porijeklo": "Njemačka",
+            "brzina": "50-55 km/h",
+            "tipDlake": "kratka",
+            "snaga": "vrlo visoka"
+          },
+
+          "ponasanje": {
+            "temperament": "hrabar, odan, zaštitnički",
+            "inteligencija": "vrlo visoka",
+            "socijalnoPonasanje": "dobro uz socijalizaciju",
+            "odnosPremaLjudima": "vrlo odan",
+            "odnosPremaDjeci": "dobar uz nadzor",
+            "odnosPremaZivotinjama": "može biti dominantan",
+            "nivoEnergije": "visok",
+            "lakocaTreniranja": "vrlo lako",
+            "instinkti": "čuvarski, zaštitnički"
+          },
+
+          "zdravlje": {
+            "prosjecnaStarost": "11 godina",
+            "bolesti": "kardiomiopatija, displazija kukova",
+            "genetika": "sklon srčanim problemima",
+            "otpornost": "srednja",
+            "osjetljivost": "na hladnoću"
+          },
+
+          "vakcinacija": {
+            "obavezne": "bjesnilo",
+            "preporucene": "parvovirus, štenećak",
+            "zadnjaVakcinacija": "2025",
+            "plan": "godišnje",
+            "paraziti": "svaka 3 mjeseca",
+            "pregledi": "1x godišnje",
+            "sterilizacija": "preporučena",
+            "terapije": "po potrebi"
+          },
+
+          "reprodukcija": {
+            "polnaZrelost": "6-12 mjeseci",
+            "gestacija": "60-63 dana",
+            "brojMladunaca": "6-8",
+            "interval": "1 godišnje",
+            "sezonaParenja": "tokom godine"
+          },
+
+          "ishrana": {
+            "tip": "mesožder",
+            "dnevniUnos": "2 obroka",
+            "vrstaHrane": "suha i mokra",
+            "dijeta": "proteinska, balansirana",
+            "alergije": "rijetke",
+            "voda": "stalno dostupna"
+          },
+
+          "aktivnost": {
+            "kretanje": "2 sata dnevno",
+            "vrsta": "trčanje, trening",
+            "trening": "poslušnost, zaštitni trening",
+            "radneSposobnosti": "policija, zaštita",
+            "sport": "agility, poslušnost"
+          },
+
+          "njega": {
+            "dlaka": "minimalna njega",
+            "kupanje": "po potrebi",
+            "zubi": "redovno pranje",
+            "nokti": "svakih 3-4 sedmice",
+            "linjanje": "slabo"
+          },
+
+          "uslovi": {
+            "prostor": "kuća sa dvorištem",
+            "minimalni": "srednje velik prostor",
+            "temperatura": "umjerena do topla",
+            "potrebaProstora": "velika",
+            "sigurnost": "ograda"
+          }
+        },
+        {
+          "ime": "Aljaški malamut",
+          "slika": "malamut_pas",
+
+          "osnovneInfo": {
+            "zivotniVijek": "10-14 godina",
+            "visina": "58-64 cm",
+            "tezina": "34-43 kg",
+            "porijeklo": "Aljaska",
+            "brzina": "30-40 km/h",
+            "tipDlake": "duga i gusta",
+            "snaga": "vrlo visoka"
+          },
+
+          "ponasanje": {
+            "temperament": "prijateljski, tvrdoglav, energičan",
+            "inteligencija": "visoka",
+            "socijalnoPonasanje": "dobro uz socijalizaciju",
+            "odnosPremaLjudima": "vrlo prijateljski",
+            "odnosPremaDjeci": "dobar",
+            "odnosPremaZivotinjama": "može loviti manje životinje",
+            "nivoEnergije": "vrlo visok",
+            "lakocaTreniranja": "srednje (tvrdoglav)",
+            "instinkti": "vuča, radni"
+          },
+
+          "zdravlje": {
+            "prosjecnaStarost": "12 godina",
+            "bolesti": "displazija kukova, problemi sa očima",
+            "genetika": "sklon nasljednim bolestima očiju",
+            "otpornost": "visoka",
+            "osjetljivost": "na toplotu"
+          },
+
+          "vakcinacija": {
+            "obavezne": "bjesnilo",
+            "preporucene": "parvovirus, štenećak",
+            "zadnjaVakcinacija": "2025",
+            "plan": "godišnje",
+            "paraziti": "svaka 3 mjeseca",
+            "pregledi": "1x godišnje",
+            "sterilizacija": "preporučena",
+            "terapije": "po potrebi"
+          },
+
+          "reprodukcija": {
+            "polnaZrelost": "6-12 mjeseci",
+            "gestacija": "60-63 dana",
+            "brojMladunaca": "4-8",
+            "interval": "1 godišnje",
+            "sezonaParenja": "tokom godine"
+          },
+
+          "ishrana": {
+            "tip": "mesožder",
+            "dnevniUnos": "2 obroka",
+            "vrstaHrane": "suha i mokra",
+            "dijeta": "proteinska",
+            "alergije": "rijetke",
+            "voda": "stalno dostupna"
+          },
+
+          "aktivnost": {
+            "kretanje": "2-3 sata dnevno",
+            "vrsta": "trčanje, vuča",
+            "trening": "osnovna poslušnost",
+            "radneSposobnosti": "vuča sanki",
+            "sport": "canicross, skijoring"
+          },
+
+          "njega": {
+            "dlaka": "intenzivno četkanje",
+            "kupanje": "po potrebi",
+            "zubi": "redovno pranje",
+            "nokti": "svakih 3-4 sedmice",
+            "linjanje": "vrlo izraženo sezonsko"
+          },
+
+          "uslovi": {
+            "prostor": "kuća sa dvorištem",
+            "minimalni": "velik prostor",
+            "temperatura": "hladna klima",
+            "potrebaProstora": "vrlo velika",
+            "sigurnost": "visoka ograda"
+          }
+        }
+      ]
+    },
+
+
+
+
+  {
+    "ime": "Macka",
+    "slika": "grupna_slika_macke",
+    "lista": [
+      {
+        "ime": "Perzijska mačka",
+        "slika": "perzijska_macka",
+
+        "osnovneInfo": {
+          "zivotniVijek": "12-17 godina",
+          "visina": "20-25 cm",
+          "tezina": "3-5 kg",
+          "porijeklo": "Iran (Perzija)",
+          "brzina": "30 km/h",
+          "tipDlake": "duga, gusta",
+          "snaga": "umjerena"
+        },
+
+        "ponasanje": {
+          "temperament": "miran, nježan",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "dobro u kući",
+          "odnosPremaLjudima": "privržena",
+          "odnosPremaDjeci": "dobar",
+          "odnosPremaZivotinjama": "tolerantna",
+          "nivoEnergije": "nizak",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "slab lovački instinkt"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "14 godina",
+          "bolesti": "problemi sa disanjem, oči",
+          "genetika": "osjetljiva rasa",
+          "otpornost": "srednja",
+          "osjetljivost": "na toplinu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "bjesnilo",
+          "preporucene": "mačji virus",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3 mjeseca",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "preporučena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-10 mjeseci",
+          "gestacija": "63 dana",
+          "brojMladunaca": "2-6",
+          "interval": "1-2 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "mesožder",
+          "dnevniUnos": "2-3 obroka",
+          "vrstaHrane": "suha i mokra",
+          "dijeta": "balansirana",
+          "alergije": "osjetljiva na neke proteine",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "1-2 sata dnevno",
+          "vrsta": "igra u kući",
+          "trening": "minimalan",
+          "radneSposobnosti": "nema",
+          "sport": "nije tipično"
+        },
+
+        "njega": {
+          "dlaka": "svakodnevno četkanje",
+          "kupanje": "1x mjesečno",
+          "zubi": "redovno čišćenje",
+          "nokti": "svakih 2-3 sedmice",
+          "linjanje": "često"
+        },
+
+        "uslovi": {
+          "prostor": "stan ili kuća",
+          "minimalni": "mirno okruženje",
+          "temperatura": "umjerena",
+          "potrebaProstora": "mala",
+          "sigurnost": "unutrašnji boravak"
+        }
+      },
+
+      {
+        "ime": "Bengalska mačka",
+        "slika": "bengalska_macka",
+
+        "osnovneInfo": {
+          "zivotniVijek": "12-16 godina",
+          "visina": "20-25 cm",
+          "tezina": "3-7 kg",
+          "porijeklo": "SAD",
+          "brzina": "48 km/h",
+          "tipDlake": "kratka, gusta",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "aktivan, razigran, znatiželjan",
+          "inteligencija": "vrlo visoka",
+          "socijalnoPonasanje": "vrlo društvena",
+          "odnosPremaLjudima": "privržena",
+          "odnosPremaDjeci": "dobar",
+          "odnosPremaZivotinjama": "dobar uz socijalizaciju",
+          "nivoEnergije": "vrlo visok",
+          "lakocaTreniranja": "lako",
+          "instinkti": "lovački"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "14 godina",
+          "bolesti": "srčane bolesti (HCM), problemi s očima",
+          "genetika": "sklon određenim nasljednim bolestima",
+          "otpornost": "visoka",
+          "osjetljivost": "na hladnoću"
+        },
+
+        "vakcinacija": {
+          "obavezne": "bjesnilo",
+          "preporucene": "mačja kuga, kalicivirus",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3 mjeseca",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "preporučena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-9 mjeseci",
+          "gestacija": "63-65 dana",
+          "brojMladunaca": "3-5",
+          "interval": "2 godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "mesožder",
+          "dnevniUnos": "2-3 obroka",
+          "vrstaHrane": "suha i mokra",
+          "dijeta": "visokoproteinska",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "2-4 sata dnevno",
+          "vrsta": "penjanje, igra",
+          "trening": "igre i trikovi",
+          "radneSposobnosti": "lov",
+          "sport": "mačji agility"
+        },
+
+        "njega": {
+          "dlaka": "minimalna njega",
+          "kupanje": "rijetko",
+          "zubi": "redovno pranje",
+          "nokti": "svakih 2-3 sedmice",
+          "linjanje": "umjereno"
+        },
+
+        "uslovi": {
+          "prostor": "stan ili kuća",
+          "minimalni": "srednje velik prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zatvoren prostor ili nadzor"
+        }
+      },
+      {
+        "ime": "Britanska kratkodlaka",
+        "slika": "britanska_kratkodlaka",
+
+        "osnovneInfo": {
+          "zivotniVijek": "12-20 godina",
+          "visina": "30-35 cm",
+          "tezina": "4-8 kg",
+          "porijeklo": "Velika Britanija",
+          "brzina": "30 km/h",
+          "tipDlake": "kratka, gusta",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "miran, nježan, nezavisan",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "umjereno društvena",
+          "odnosPremaLjudima": "privržena ali ne napadna",
+          "odnosPremaDjeci": "dobar",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "lovački"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "15 godina",
+          "bolesti": "gojaznost, srčane bolesti (HCM)",
+          "genetika": "sklon debljanju",
+          "otpornost": "visoka",
+          "osjetljivost": "na prejedanje"
+        },
+
+        "vakcinacija": {
+          "obavezne": "bjesnilo",
+          "preporucene": "mačja kuga, kalicivirus",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3 mjeseca",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "preporučena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-12 mjeseci",
+          "gestacija": "63-65 dana",
+          "brojMladunaca": "3-5",
+          "interval": "1-2 godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "mesožder",
+          "dnevniUnos": "2 obroka",
+          "vrstaHrane": "suha i mokra",
+          "dijeta": "balansirana",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "1-2 sata dnevno",
+          "vrsta": "igra, lagano kretanje",
+          "trening": "igre",
+          "radneSposobnosti": "lov",
+          "sport": "nema izraženog"
+        },
+
+        "njega": {
+          "dlaka": "redovno četkanje",
+          "kupanje": "po potrebi",
+          "zubi": "redovno pranje",
+          "nokti": "svakih 2-3 sedmice",
+          "linjanje": "umjereno"
+        },
+
+        "uslovi": {
+          "prostor": "stan ili kuća",
+          "minimalni": "manji prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zatvoren prostor"
+        }
+      },
+      {
+        "ime": "Europska divlja mačka",
+        "slika": "europska_divlja_macka",
+
+        "osnovneInfo": {
+          "zivotniVijek": "12-15 godina",
+          "visina": "30-35 cm",
+          "tezina": "3-8 kg",
+          "porijeklo": "Evropa",
+          "brzina": "48 km/h",
+          "tipDlake": "gusta, srednje duga",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "oprezna, divlja, teritorijalna",
+          "inteligencija": "visoka",
+          "socijalnoPonasanje": "samotnjačka",
+          "odnosPremaLjudima": "nepovjerljiva",
+          "odnosPremaDjeci": "nije pogodna",
+          "odnosPremaZivotinjama": "lovac",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "teško",
+          "instinkti": "izraženi lovački"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "13 godina",
+          "bolesti": "paraziti, infekcije",
+          "genetika": "otporna u prirodi",
+          "otpornost": "vrlo visoka",
+          "osjetljivost": "na gubitak staništa"
+        },
+
+        "vakcinacija": {
+          "obavezne": "nema (u prirodi)",
+          "preporucene": "nije primjenjivo",
+          "zadnjaVakcinacija": "nije dostupno",
+          "plan": "nije primjenjivo",
+          "paraziti": "prirodna izloženost",
+          "pregledi": "nije primjenjivo",
+          "sterilizacija": "ne",
+          "terapije": "nije primjenjivo"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "10-12 mjeseci",
+          "gestacija": "63-68 dana",
+          "brojMladunaca": "2-4",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "mesožder",
+          "dnevniUnos": "lov prema potrebi",
+          "vrstaHrane": "glodari, ptice",
+          "dijeta": "prirodna",
+          "alergije": "nije poznato",
+          "voda": "iz prirodnih izvora"
+        },
+
+        "aktivnost": {
+          "kretanje": "noćna aktivnost",
+          "vrsta": "lov, skrivanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "preživljavanje",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "prirodna njega",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno održavanje",
+          "nokti": "prirodno trošenje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "šume, planine",
+          "minimalni": "veliko prirodno stanište",
+          "temperatura": "različita",
+          "potrebaProstora": "vrlo velika",
+          "sigurnost": "zaštićena vrsta"
+        }
+      },
+      {
+        "ime": "Karakal",
+        "slika": "karakal_macka",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-15 godina",
+          "visina": "40-50 cm",
+          "tezina": "8-20 kg",
+          "porijeklo": "Afrika, Bliski istok, Azija",
+          "brzina": "80 km/h",
+          "tipDlake": "kratka",
+          "snaga": "vrlo visoka"
+        },
+
+        "ponasanje": {
+          "temperament": "oprezan, teritorijalan, vrlo aktivan",
+          "inteligencija": "visoka",
+          "socijalnoPonasanje": "samotnjak",
+          "odnosPremaLjudima": "izbjegava ljude",
+          "odnosPremaDjeci": "nije pogodan",
+          "odnosPremaZivotinjama": "lovac, agresivan prema plijenu",
+          "nivoEnergije": "vrlo visok",
+          "lakocaTreniranja": "teško (divlja životinja)",
+          "instinkti": "izraženi lovački"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "12 godina",
+          "bolesti": "paraziti, infekcije",
+          "genetika": "prirodna selekcija",
+          "otpornost": "vrlo visoka",
+          "osjetljivost": "na gubitak staništa"
+        },
+
+        "vakcinacija": {
+          "obavezne": "nije primjenjivo",
+          "preporucene": "nije primjenjivo",
+          "zadnjaVakcinacija": "nije primjenjivo",
+          "plan": "nije primjenjivo",
+          "paraziti": "prirodna kontrola",
+          "pregledi": "nije primjenjivo",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "nije primjenjivo"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "12-16 mjeseci",
+          "gestacija": "69-81 dana",
+          "brojMladunaca": "1-4",
+          "interval": "1 godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "mesožder",
+          "dnevniUnos": "zavisi od lova",
+          "vrstaHrane": "ptice, glodari, mali sisari",
+          "dijeta": "prirodna",
+          "alergije": "nema poznatih",
+          "voda": "iz prirodnih izvora"
+        },
+
+        "aktivnost": {
+          "kretanje": "više sati dnevno",
+          "vrsta": "lov, skakanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "lov",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "prirodna njega",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno održavanje",
+          "nokti": "prirodno trošenje",
+          "linjanje": "umjereno"
+        },
+
+        "uslovi": {
+          "prostor": "pustinje, savane",
+          "minimalni": "vrlo velika teritorija",
+          "temperatura": "topla klima",
+          "potrebaProstora": "vrlo velika",
+          "sigurnost": "nije za kućne uslove"
+        }
+      }
+
+    ]
+  },
+
+  {
+    "ime": "Ovce",
+    "slika": "grupna_slika_ovce",
+    "lista": [
+      {
+        "ime": "Pramenka",
+        "slika": "pramenka_ovca",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-12 godina",
+          "visina": "60-80 cm",
+          "tezina": "45-70 kg",
+          "porijeklo": "Balkan",
+          "brzina": "25 km/h",
+          "tipDlake": "gusta vuna",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, poslušna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "živi u stadu",
+          "odnosPremaLjudima": "pitoma",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "vrlo dobra",
+          "nivoEnergije": "umjeren",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "instinkt stada"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "11 godina",
+          "bolesti": "paraziti, papci",
+          "genetika": "otporna rasa",
+          "otpornost": "visoka",
+          "osjetljivost": "na vlagu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "enterotoksemija",
+          "preporucene": "bruceloza",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3 mjeseca",
+          "pregledi": "1-2x godišnje",
+          "sterilizacija": "nije česta",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-12 mjeseci",
+          "gestacija": "150 dana",
+          "brojMladunaca": "1-2",
+          "interval": "1 godišnje",
+          "sezonaParenja": "jesen"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, sijeno",
+          "dijeta": "prirodna",
+          "alergije": "rijetko",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "više sati dnevno",
+          "vrsta": "ispaša",
+          "trening": "nije potreban",
+          "radneSposobnosti": "proizvodnja vune i mesa",
+          "sport": "nema"
+        },
+
+        "njega": {
+          "dlaka": "šišanje 1-2x godišnje",
+          "kupanje": "rijetko",
+          "zubi": "prirodno trošenje",
+          "nokti": "kontrola papaka",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "livade, farma",
+          "minimalni": "velik prostor",
+          "temperatura": "otporna na hladnoću",
+          "potrebaProstora": "velika",
+          "sigurnost": "ograđeno područje"
+        }
+      },
+
+      {
+        "ime": "Romanovska ovca",
+        "slika": " romanovska_ovca",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-12 godina",
+          "visina": "60-70 cm",
+          "tezina": "50-80 kg",
+          "porijeklo": "Rusija",
+          "brzina": "25 km/h",
+          "tipDlake": "gusta, vunena",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "miran, izdržljiv, prilagodljiv",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "stado (živi u grupi)",
+          "odnosPremaLjudima": "mirna i pitoma",
+          "odnosPremaDjeci": "bezopasna",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "lako upravljiva",
+          "instinkti": "stado, majčinski"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "11 godina",
+          "bolesti": "paraziti, problemi sa papcima",
+          "genetika": "vrlo plodna rasa",
+          "otpornost": "vrlo visoka",
+          "osjetljivost": "na vlagu i loše uslove"
+        },
+
+        "vakcinacija": {
+          "obavezne": "enterotoksemija",
+          "preporucene": "bruceloza",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije uobičajena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-8 mjeseci",
+          "gestacija": "145-150 dana",
+          "brojMladunaca": "2-4",
+          "interval": "1-2 godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više manjih obroka",
+          "vrstaHrane": "trava, sijeno, žitarice",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "ispaša",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "proizvodnja vune i mesa",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "šišanje vune 1-2x godišnje",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno trošenje",
+          "nokti": "papci - redovno održavanje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "farma, pašnjak",
+          "minimalni": "velik otvoren prostor",
+          "temperatura": "otporna na hladnoću",
+          "potrebaProstora": "velika",
+          "sigurnost": "zaštita od predatora"
+        }
+      },
+      {
+        "ime": "Lacaune ovca",
+        "slika": "lacaune_ovca",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-12 godina",
+          "visina": "65-75 cm",
+          "tezina": "60-90 kg",
+          "porijeklo": "Francuska",
+          "brzina": "25 km/h",
+          "tipDlake": "kratka do srednje duga",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, poslušna, prilagodljiva",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "živi u stadu",
+          "odnosPremaLjudima": "pitoma",
+          "odnosPremaDjeci": "bezopasna",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "lako upravljiva",
+          "instinkti": "stado, majčinski"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "11 godina",
+          "bolesti": "mastitis, paraziti",
+          "genetika": "visoka mliječnost",
+          "otpornost": "dobra",
+          "osjetljivost": "na infekcije vimena"
+        },
+
+        "vakcinacija": {
+          "obavezne": "enterotoksemija",
+          "preporucene": "bruceloza",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije uobičajena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-8 mjeseci",
+          "gestacija": "145-150 dana",
+          "brojMladunaca": "1-3",
+          "interval": "1 godišnje",
+          "sezonaParenja": "jesen"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više manjih obroka",
+          "vrstaHrane": "trava, sijeno, koncentrati",
+          "dijeta": "vlakna i energija",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "ispaša",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "proizvodnja mlijeka",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "šišanje po potrebi",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno trošenje",
+          "nokti": "papci - redovno održavanje",
+          "linjanje": "umjereno"
+        },
+
+        "uslovi": {
+          "prostor": "farma, pašnjak",
+          "minimalni": "velik otvoren prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "velika",
+          "sigurnost": "zaštita od predatora"
+        }
+      }
+
+
+    ]
+  },
+  {
+    "ime": "Kokosi",
+    "slika": "grupna_slika_kokosi",
+    "lista": [
+      {
+        "ime": "Leghorn",
+        "slika": "leghorn",
+
+        "osnovneInfo": {
+          "zivotniVijek": "5-8 godina",
+          "visina": "30-40 cm",
+          "tezina": "2-3 kg",
+          "porijeklo": "Italija",
+          "brzina": "15 km/h",
+          "tipDlake": "kratko perje",
+          "snaga": "niska"
+        },
+
+        "ponasanje": {
+          "temperament": "živahna, aktivna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "voli jato",
+          "odnosPremaLjudima": "oprezna",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "teže",
+          "instinkti": "traženje hrane"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "6 godina",
+          "bolesti": "respiratorne bolesti",
+          "genetika": "otporna",
+          "otpornost": "visoka",
+          "osjetljivost": "na hladnoću"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle bolest",
+          "preporucene": "bronhitis",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "redovno čišćenje",
+          "pregledi": "periodično",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-6 mjeseci",
+          "gestacija": "21 dan (inkubacija)",
+          "brojMladunaca": "10-15 jaja",
+          "interval": "često",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejedi",
+          "dnevniUnos": "više manjih obroka",
+          "vrstaHrane": "žitarice, kukuruz, proteini",
+          "dijeta": "balansirana",
+          "alergije": "rijetko",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "cijeli dan aktivna",
+          "vrsta": "kljucanje, hodanje",
+          "trening": "nije potreban",
+          "radneSposobnosti": "proizvodnja jaja",
+          "sport": "nema"
+        },
+
+        "njega": {
+          "dlaka": "perje - minimalna njega",
+          "kupanje": "nije potrebno",
+          "zubi": "nema",
+          "nokti": "prirodno trošenje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "kokošinjac + dvorište",
+          "minimalni": "siguran prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zaštita od predatora"
+        }
+      },
+      {
+        "ime": "Rhode Island Red",
+        "slika": "rhode_island_red",
+
+        "osnovneInfo": {
+          "zivotniVijek": "5-8 godina",
+          "visina": "35-45 cm",
+          "tezina": "3-4 kg",
+          "porijeklo": "SAD",
+          "brzina": "12 km/h",
+          "tipDlake": "kratko perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, ali aktivna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "dobro u jatu",
+          "odnosPremaLjudima": "pitoma",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "umjeren",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "traženje hrane"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "6 godina",
+          "bolesti": "paraziti, respiratorne bolesti",
+          "genetika": "vrlo otporna",
+          "otpornost": "visoka",
+          "osjetljivost": "na vlagu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle bolest",
+          "preporucene": "bronhitis",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "redovno",
+          "pregledi": "periodično",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-6 mjeseci",
+          "gestacija": "21 dan (inkubacija)",
+          "brojMladunaca": "10-15 jaja",
+          "interval": "redovno",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejedi",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "žitarice, proteini",
+          "dijeta": "balansirana",
+          "alergije": "rijetko",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "aktivna tokom dana",
+          "vrsta": "kljucanje, hodanje",
+          "trening": "nije potreban",
+          "radneSposobnosti": "proizvodnja jaja i mesa",
+          "sport": "nema"
+        },
+
+        "njega": {
+          "dlaka": "perje - minimalna njega",
+          "kupanje": "nije potrebno",
+          "zubi": "nema",
+          "nokti": "prirodno trošenje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "kokošinjac + dvorište",
+          "minimalni": "siguran prostor",
+          "temperatura": "otporna na različite uslove",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zaštita od predatora"
+        }
+      },
+      {
+        "ime": "Sussex",
+        "slika": "susex_koka",
+
+        "osnovneInfo": {
+          "zivotniVijek": "6-8 godina",
+          "visina": "35-45 cm",
+          "tezina": "3-4 kg",
+          "porijeklo": "Engleska",
+          "brzina": "10 km/h",
+          "tipDlake": "kratko perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, prijateljska",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "dobro u jatu",
+          "odnosPremaLjudima": "pitoma",
+          "odnosPremaDjeci": "vrlo dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "umjeren",
+          "lakocaTreniranja": "lako",
+          "instinkti": "traženje hrane"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "7 godina",
+          "bolesti": "paraziti",
+          "genetika": "otporna",
+          "otpornost": "visoka",
+          "osjetljivost": "nema posebnih"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle bolest",
+          "preporucene": "bronhitis",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "redovno",
+          "pregledi": "periodično",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-6 mjeseci",
+          "gestacija": "21 dan",
+          "brojMladunaca": "10-15 jaja",
+          "interval": "redovno",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejedi",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "žitarice, proteini",
+          "dijeta": "balansirana",
+          "alergije": "rijetko",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "aktivna",
+          "vrsta": "hodanje, kljucanje",
+          "trening": "nije potreban",
+          "radneSposobnosti": "jaja i meso",
+          "sport": "nema"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "nije potrebno",
+          "zubi": "nema",
+          "nokti": "prirodno trošenje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "kokošinjac + dvorište",
+          "minimalni": "sigurno okruženje",
+          "temperatura": "prilagodljiva",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zaštita od predatora"
+        }
+      },
+      {
+        "ime": "Brahma",
+        "slika": "brahma_kokos",
+
+        "osnovneInfo": {
+          "zivotniVijek": "6-10 godina",
+          "visina": "50-60 cm",
+          "tezina": "4-6 kg",
+          "porijeklo": "SAD/Indija",
+          "brzina": "8 km/h",
+          "tipDlake": "gusto perje",
+          "snaga": "visoka"
+        },
+
+        "ponasanje": {
+          "temperament": "vrlo mirna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "mirna u jatu",
+          "odnosPremaLjudima": "vrlo pitoma",
+          "odnosPremaDjeci": "odlična",
+          "odnosPremaZivotinjama": "mirna",
+          "nivoEnergije": "nizak",
+          "lakocaTreniranja": "lako",
+          "instinkti": "slab"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "8 godina",
+          "bolesti": "problemi sa nogama",
+          "genetika": "osjetljivija",
+          "otpornost": "srednja",
+          "osjetljivost": "vlaga"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle",
+          "preporucene": "bronhitis",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "redovno",
+          "pregledi": "periodično",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-7 mjeseci",
+          "gestacija": "21 dan",
+          "brojMladunaca": "8-12 jaja",
+          "interval": "umjereno",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejedi",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "žitarice, proteini",
+          "dijeta": "balansirana",
+          "alergije": "rijetko",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "manje aktivna",
+          "vrsta": "hodanje",
+          "trening": "nije potreban",
+          "radneSposobnosti": "meso",
+          "sport": "nema"
+        },
+
+        "njega": {
+          "dlaka": "potrebna njega perja",
+          "kupanje": "rijetko",
+          "zubi": "nema",
+          "nokti": "kontrola",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "kokošinjac",
+          "minimalni": "suho mjesto",
+          "temperatura": "otporna na hladnoću",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zaštita"
+        }
+      },
+      {
+        "ime": "Cochin",
+        "slika": "cochin_kokos",
+
+        "osnovneInfo": {
+          "zivotniVijek": "6-9 godina",
+          "visina": "40-50 cm",
+          "tezina": "3-5 kg",
+          "porijeklo": "Kina",
+          "brzina": "7 km/h",
+          "tipDlake": "vrlo gusto perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "vrlo mirna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "mirna u jatu",
+          "odnosPremaLjudima": "pitoma",
+          "odnosPremaDjeci": "odlična",
+          "odnosPremaZivotinjama": "mirna",
+          "nivoEnergije": "nizak",
+          "lakocaTreniranja": "lako",
+          "instinkti": "slab"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "7 godina",
+          "bolesti": "paraziti",
+          "genetika": "osjetljiva",
+          "otpornost": "srednja",
+          "osjetljivost": "vlaga"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle",
+          "preporucene": "bronhitis",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "redovno",
+          "pregledi": "periodično",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6 mjeseci",
+          "gestacija": "21 dan",
+          "brojMladunaca": "8-12 jaja",
+          "interval": "umjereno",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejedi",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "žitarice, proteini",
+          "dijeta": "balansirana",
+          "alergije": "rijetko",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "slabo aktivna",
+          "vrsta": "hodanje",
+          "trening": "nije potreban",
+          "radneSposobnosti": "ukrasna i meso",
+          "sport": "nema"
+        },
+
+        "njega": {
+          "dlaka": "intenzivna njega perja",
+          "kupanje": "rijetko",
+          "zubi": "nema",
+          "nokti": "kontrola",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "kokošinjac",
+          "minimalni": "suho okruženje",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zaštita"
+        }
+      },
+      {
+        "ime": "Orpington",
+        "slika": "orpington_kokos",
+
+        "osnovneInfo": {
+          "zivotniVijek": "7-10 godina",
+          "visina": "40-45 cm",
+          "tezina": "3-4.5 kg",
+          "porijeklo": "Engleska",
+          "brzina": "8 km/h",
+          "tipDlake": "gusto perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, pitoma",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "jato",
+          "odnosPremaLjudima": "vrlo dobra",
+          "odnosPremaDjeci": "bezopasna",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "nizak",
+          "lakocaTreniranja": "lako",
+          "instinkti": "majčinski"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "8 godina",
+          "bolesti": "gojaznost",
+          "genetika": "stabilna",
+          "otpornost": "visoka",
+          "osjetljivost": "na prejedanje"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle bolest",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-6 mjeseci",
+          "gestacija": "21 dan",
+          "brojMladunaca": "8-12",
+          "interval": "više puta godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejeder",
+          "dnevniUnos": "2-3 obroka",
+          "vrstaHrane": "žitarice, insekti",
+          "dijeta": "balansirana",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "šetnja",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "jaja i meso",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "redovno čišćenje",
+          "kupanje": "po potrebi",
+          "zubi": "nije primjenjivo",
+          "nokti": "prirodno trošenje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "dvorište",
+          "minimalni": "srednji prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zaštita od predatora"
+        }
+      },
+      {
+        "ime": "Hamburg",
+        "slika": "hamburg_kokos",
+
+        "osnovneInfo": {
+          "zivotniVijek": "6-8 godina",
+          "visina": "35-40 cm",
+          "tezina": "2-2.5 kg",
+          "porijeklo": "Njemačka",
+          "brzina": "10 km/h",
+          "tipDlake": "glatko perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "živahan, oprezan",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "jato",
+          "odnosPremaLjudima": "oprezan",
+          "odnosPremaDjeci": "umjeren",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "istraživanje"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "7 godina",
+          "bolesti": "rijetke",
+          "genetika": "otporna",
+          "otpornost": "visoka",
+          "osjetljivost": "minimalna"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle bolest",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5 mjeseci",
+          "gestacija": "21 dan",
+          "brojMladunaca": "6-10",
+          "interval": "više puta godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejeder",
+          "dnevniUnos": "2 obroka",
+          "vrstaHrane": "žitarice, insekti",
+          "dijeta": "balansirana",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "aktivno",
+          "vrsta": "letenje, trčanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "jaja",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "po potrebi",
+          "zubi": "nije primjenjivo",
+          "nokti": "prirodno",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "velik prostor",
+          "minimalni": "dvorište",
+          "temperatura": "umjerena",
+          "potrebaProstora": "veća",
+          "sigurnost": "ograđen prostor"
+        }
+      },
+      {
+        "ime": "Araucana",
+        "slika": "araucana_kokos",
+
+        "osnovneInfo": {
+          "zivotniVijek": "6-8 godina",
+          "visina": "35-40 cm",
+          "tezina": "2-2.5 kg",
+          "porijeklo": "Čile",
+          "brzina": "9 km/h",
+          "tipDlake": "perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "živahna, radoznala",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "jato",
+          "odnosPremaLjudima": "dobra",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "istraživanje"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "7 godina",
+          "bolesti": "rijetke",
+          "genetika": "specifična (plava jaja)",
+          "otpornost": "visoka",
+          "osjetljivost": "minimalna"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle bolest",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-6 mjeseci",
+          "gestacija": "21 dan",
+          "brojMladunaca": "6-10",
+          "interval": "više puta godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejeder",
+          "dnevniUnos": "2 obroka",
+          "vrstaHrane": "žitarice, insekti",
+          "dijeta": "balansirana",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "aktivna",
+          "vrsta": "šetnja, istraživanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "jaja",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "po potrebi",
+          "zubi": "nije primjenjivo",
+          "nokti": "prirodno",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "dvorište",
+          "minimalni": "srednji prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zaštita"
+        }
+      },
+      {
+        "ime": "Silkie",
+        "slika": "silkie_kokos",
+
+        "osnovneInfo": {
+          "zivotniVijek": "7-9 godina",
+          "visina": "30-35 cm",
+          "tezina": "1-1.5 kg",
+          "porijeklo": "Kina",
+          "brzina": "6 km/h",
+          "tipDlake": "mekano perje",
+          "snaga": "niska"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, pitoma",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "jato",
+          "odnosPremaLjudima": "vrlo dobra",
+          "odnosPremaDjeci": "odlična",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "nizak",
+          "lakocaTreniranja": "lako",
+          "instinkti": "majčinski"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "8 godina",
+          "bolesti": "osjetljiva na vlagu",
+          "genetika": "specifična (mekano perje)",
+          "otpornost": "srednja",
+          "osjetljivost": "na hladnoću i vlagu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle bolest",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-6 mjeseci",
+          "gestacija": "21 dan",
+          "brojMladunaca": "5-8",
+          "interval": "više puta godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejeder",
+          "dnevniUnos": "2 obroka",
+          "vrstaHrane": "žitarice, insekti",
+          "dijeta": "balansirana",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "malo",
+          "vrsta": "šetnja",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "ukrasna, jaja",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "posebna njega",
+          "kupanje": "po potrebi",
+          "zubi": "nije primjenjivo",
+          "nokti": "prirodno",
+          "linjanje": "umjereno"
+        },
+
+        "uslovi": {
+          "prostor": "suho dvorište",
+          "minimalni": "mali prostor",
+          "temperatura": "topla",
+          "potrebaProstora": "niska",
+          "sigurnost": "zaštićeno"
+        }
+      },
+      {
+        "ime": "Ayam Cemani",
+        "slika": "ayam_cemani_kokos",
+
+        "osnovneInfo": {
+          "zivotniVijek": "6-8 godina",
+          "visina": "40-45 cm",
+          "tezina": "2-3 kg",
+          "porijeklo": "Indonezija",
+          "brzina": "10 km/h",
+          "tipDlake": "crno perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "oprezna, aktivna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "jato",
+          "odnosPremaLjudima": "oprezna",
+          "odnosPremaDjeci": "umjeren",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "istraživanje"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "7 godina",
+          "bolesti": "rijetke",
+          "genetika": "potpuno crna pigmentacija",
+          "otpornost": "dobra",
+          "osjetljivost": "na hladnoću"
+        },
+
+        "vakcinacija": {
+          "obavezne": "Newcastle bolest",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-6 mjeseci",
+          "gestacija": "21 dan",
+          "brojMladunaca": "5-10",
+          "interval": "više puta godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejeder",
+          "dnevniUnos": "2 obroka",
+          "vrstaHrane": "žitarice, insekti",
+          "dijeta": "balansirana",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "aktivna",
+          "vrsta": "šetnja, let",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "ukrasna, jaja",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "po potrebi",
+          "zubi": "nije primjenjivo",
+          "nokti": "prirodno",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "dvorište",
+          "minimalni": "srednji prostor",
+          "temperatura": "topla klima",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zaštićeno"
+        }
+      }
+    ]
+  },
+
+  {
+    "ime": "Svinje",
+    "slika": "svinja_grupna_slika",
+    "lista": [
+
+      {
+        "ime": "Crna svinja",
+        "slika": "crna_svinja",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-15 godina",
+          "visina": "70-100 cm",
+          "tezina": "150-300 kg",
+          "porijeklo": "Evropa",
+          "brzina": "18 km/h",
+          "tipDlake": "kratka",
+          "snaga": "visoka"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, inteligentna",
+          "inteligencija": "visoka",
+          "socijalnoPonasanje": "živi u grupi",
+          "odnosPremaLjudima": "pitoma",
+          "odnosPremaDjeci": "bezopasna",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "traženje hrane"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "12 godina",
+          "bolesti": "paraziti, respiratorne bolesti",
+          "genetika": "dobra otpornost",
+          "otpornost": "visoka",
+          "osjetljivost": "na loše uslove"
+        },
+
+        "vakcinacija": {
+          "obavezne": "svinjska kuga",
+          "preporucene": "parvovirus",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "po potrebi",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-8 mjeseci",
+          "gestacija": "114 dana",
+          "brojMladunaca": "6-12",
+          "interval": "2 godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejeder",
+          "dnevniUnos": "2-3 obroka",
+          "vrstaHrane": "žitarice, povrće",
+          "dijeta": "raznovrsna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "traženje hrane",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "proizvodnja mesa",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "po potrebi",
+          "zubi": "prirodno trošenje",
+          "nokti": "prirodno trošenje",
+          "linjanje": "minimalno"
+        },
+
+        "uslovi": {
+          "prostor": "farma",
+          "minimalni": "srednje velik prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograđen prostor"
+        }
+      },
+      {
+        "ime": "Pietren svinja",
+        "slika": "pietren_svinja",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-12 godina",
+          "visina": "80-100 cm",
+          "tezina": "200-300 kg",
+          "porijeklo": "Belgija",
+          "brzina": "20 km/h",
+          "tipDlake": "kratka",
+          "snaga": "vrlo visoka"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, aktivna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "živi u grupi",
+          "odnosPremaLjudima": "dobra",
+          "odnosPremaDjeci": "bezopasna",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "hranjenje"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "11 godina",
+          "bolesti": "stres, mišićni sindrom",
+          "genetika": "vrlo razvijena muskulatura",
+          "otpornost": "srednja",
+          "osjetljivost": "na stres i temperaturu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "svinjska kuga",
+          "preporucene": "parvovirus",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "po potrebi",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "5-7 mjeseci",
+          "gestacija": "114 dana",
+          "brojMladunaca": "6-10",
+          "interval": "2 godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejeder",
+          "dnevniUnos": "2-3 obroka",
+          "vrstaHrane": "koncentrati, žitarice",
+          "dijeta": "proteinska",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "kretanje, hranjenje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "proizvodnja mesa",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "po potrebi",
+          "zubi": "prirodno trošenje",
+          "nokti": "prirodno trošenje",
+          "linjanje": "minimalno"
+        },
+
+        "uslovi": {
+          "prostor": "farma",
+          "minimalni": "srednje velik prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "kontrolisani uslovi"
+        }
+      },
+      {
+        "ime": "Mangalica svinja",
+        "slika": "mangalica_svinja",
+
+        "osnovneInfo": {
+          "zivotniVijek": "12-15 godina",
+          "visina": "70-90 cm",
+          "tezina": "150-250 kg",
+          "porijeklo": "Mađarska",
+          "brzina": "15 km/h",
+          "tipDlake": "duga, kovrdžava",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, izdržljiva",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "živi u grupi",
+          "odnosPremaLjudima": "pitoma",
+          "odnosPremaDjeci": "bezopasna",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "traženje hrane"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "13 godina",
+          "bolesti": "rijetke",
+          "genetika": "otporna rasa",
+          "otpornost": "vrlo visoka",
+          "osjetljivost": "minimalna"
+        },
+
+        "vakcinacija": {
+          "obavezne": "svinjska kuga",
+          "preporucene": "parvovirus",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "po potrebi",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-8 mjeseci",
+          "gestacija": "114 dana",
+          "brojMladunaca": "4-8",
+          "interval": "2 godišnje",
+          "sezonaParenja": "tokom godine"
+        },
+
+        "ishrana": {
+          "tip": "svejeder",
+          "dnevniUnos": "2-3 obroka",
+          "vrstaHrane": "trava, žitarice",
+          "dijeta": "prirodna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "ispaša",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "proizvodnja mesa",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna njega",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno trošenje",
+          "nokti": "prirodno trošenje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "farma, otvoren prostor",
+          "minimalni": "velik prostor",
+          "temperatura": "otporna na hladnoću",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      }
+    ]
+  },
+
+  {
+    "ime": "Koze",
+    "slika": "grupna_slika_koze",
+    "lista": [
+
+      {
+        "ime": "Sanska koza",
+        "slika": "sanska_koza",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-12 godina",
+          "visina": "70-90 cm",
+          "tezina": "50-80 kg",
+          "porijeklo": "Švicarska",
+          "brzina": "15 km/h",
+          "tipDlake": "kratka",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, poslušna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "živi u stadu",
+          "odnosPremaLjudima": "pitoma",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "lako",
+          "instinkti": "stado"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "11 godina",
+          "bolesti": "mastitis, paraziti",
+          "genetika": "visoka mliječnost",
+          "otpornost": "dobra",
+          "osjetljivost": "na vlagu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "enterotoksemija",
+          "preporucene": "bruceloza",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije uobičajena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-8 mjeseci",
+          "gestacija": "150 dana",
+          "brojMladunaca": "1-3",
+          "interval": "1 godišnje",
+          "sezonaParenja": "jesen"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, sijeno",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "ispaša",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "mlijeko",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno",
+          "nokti": "papci održavanje",
+          "linjanje": "umjereno"
+        },
+
+        "uslovi": {
+          "prostor": "farma, pašnjak",
+          "minimalni": "velik prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      },
+      {
+        "ime": "Alpska koza",
+        "slika": "alpska_koza",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-12 godina",
+          "visina": "70-85 cm",
+          "tezina": "50-70 kg",
+          "porijeklo": "Francuska",
+          "brzina": "15 km/h",
+          "tipDlake": "kratka",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "aktivna, znatiželjna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "stado",
+          "odnosPremaLjudima": "dobra",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "istraživanje"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "11 godina",
+          "bolesti": "paraziti",
+          "genetika": "dobra",
+          "otpornost": "visoka",
+          "osjetljivost": "minimalna"
+        },
+
+        "vakcinacija": {
+          "obavezne": "enterotoksemija",
+          "preporucene": "bruceloza",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije uobičajena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-8 mjeseci",
+          "gestacija": "150 dana",
+          "brojMladunaca": "1-3",
+          "interval": "1 godišnje",
+          "sezonaParenja": "jesen"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, sijeno",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "aktivna",
+          "vrsta": "penjanje, ispaša",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "mlijeko",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno",
+          "nokti": "papci",
+          "linjanje": "umjereno"
+        },
+
+        "uslovi": {
+          "prostor": "planine, pašnjak",
+          "minimalni": "velik prostor",
+          "temperatura": "hladnija klima",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      },
+      {
+        "ime": "Njemačka srnasta koza",
+        "slika": "njemacka_srnasta_koza",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-12 godina",
+          "visina": "70-85 cm",
+          "tezina": "50-70 kg",
+          "porijeklo": "Njemačka",
+          "brzina": "15 km/h",
+          "tipDlake": "kratka",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, prilagodljiva",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "stado",
+          "odnosPremaLjudima": "dobra",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "lako",
+          "instinkti": "stado"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "11 godina",
+          "bolesti": "mastitis",
+          "genetika": "mliječna rasa",
+          "otpornost": "dobra",
+          "osjetljivost": "na vlagu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "enterotoksemija",
+          "preporucene": "bruceloza",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije uobičajena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-8 mjeseci",
+          "gestacija": "150 dana",
+          "brojMladunaca": "1-3",
+          "interval": "1 godišnje",
+          "sezonaParenja": "jesen"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, sijeno",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati",
+          "vrsta": "ispaša",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "mlijeko",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno",
+          "nokti": "papci",
+          "linjanje": "umjereno"
+        },
+
+        "uslovi": {
+          "prostor": "farma",
+          "minimalni": "srednji prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      },
+      {
+        "ime": "Togenburška koza",
+        "slika": "togenburska_koza",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-12 godina",
+          "visina": "70-85 cm",
+          "tezina": "50-70 kg",
+          "porijeklo": "Švicarska",
+          "brzina": "15 km/h",
+          "tipDlake": "srednje duga",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, poslušna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "stado",
+          "odnosPremaLjudima": "dobra",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "lako",
+          "instinkti": "stado"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "11 godina",
+          "bolesti": "paraziti",
+          "genetika": "mliječna rasa",
+          "otpornost": "visoka",
+          "osjetljivost": "na vlagu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "enterotoksemija",
+          "preporucene": "bruceloza",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije uobičajena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-8 mjeseci",
+          "gestacija": "150 dana",
+          "brojMladunaca": "1-3",
+          "interval": "1 godišnje",
+          "sezonaParenja": "jesen"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, sijeno",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "umjerena",
+          "vrsta": "ispaša",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "mlijeko",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "umjerena njega",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno",
+          "nokti": "papci",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "farma",
+          "minimalni": "srednji prostor",
+          "temperatura": "hladnija klima",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      },
+      {
+        "ime": "Anglo-nubijska koza",
+        "slika": "anglo_nubijska_koza",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-15 godina",
+          "visina": "70-90 cm",
+          "tezina": "60-80 kg",
+          "porijeklo": "Velika Britanija",
+          "brzina": "15 km/h",
+          "tipDlake": "kratka",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "živahna, glasna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "stado",
+          "odnosPremaLjudima": "vrlo dobra",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "društvenost"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "12 godina",
+          "bolesti": "paraziti",
+          "genetika": "visok sadržaj mliječne masti",
+          "otpornost": "dobra",
+          "osjetljivost": "na hladnoću"
+        },
+
+        "vakcinacija": {
+          "obavezne": "enterotoksemija",
+          "preporucene": "bruceloza",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije uobičajena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-8 mjeseci",
+          "gestacija": "150 dana",
+          "brojMladunaca": "1-3",
+          "interval": "1 godišnje",
+          "sezonaParenja": "jesen"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, sijeno",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "aktivna",
+          "vrsta": "ispaša, penjanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "mlijeko",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno",
+          "nokti": "papci",
+          "linjanje": "umjereno"
+        },
+
+        "uslovi": {
+          "prostor": "farma",
+          "minimalni": "srednji prostor",
+          "temperatura": "topla klima",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      },
+      {
+        "ime": "Balkanska koza",
+        "slika": "balkanska_koza",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-15 godina",
+          "visina": "60-80 cm",
+          "tezina": "40-60 kg",
+          "porijeklo": "Balkan",
+          "brzina": "15 km/h",
+          "tipDlake": "kratka do srednje duga",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "izdržljiva, samostalna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "stado",
+          "odnosPremaLjudima": "oprezna ali pitoma",
+          "odnosPremaDjeci": "dobra",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "preživljavanje, ispaša"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "12 godina",
+          "bolesti": "rijetke, paraziti",
+          "genetika": "prirodno otporna",
+          "otpornost": "vrlo visoka",
+          "osjetljivost": "minimalna"
+        },
+
+        "vakcinacija": {
+          "obavezne": "enterotoksemija",
+          "preporucene": "bruceloza",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije uobičajena",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "6-8 mjeseci",
+          "gestacija": "150 dana",
+          "brojMladunaca": "1-2",
+          "interval": "1 godišnje",
+          "sezonaParenja": "jesen"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, grmlje, sijeno",
+          "dijeta": "prirodna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "više sati dnevno",
+          "vrsta": "ispaša, penjanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "mlijeko, meso",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "minimalna",
+          "kupanje": "nije potrebno",
+          "zubi": "prirodno trošenje",
+          "nokti": "papci održavanje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "planine, pašnjaci",
+          "minimalni": "velik otvoren prostor",
+          "temperatura": "otporna na hladnoću i vrućinu",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda ili čuvar"
+        }
+      }
+
+    ]
+  },
+
+  {
+    "ime": "Guske",
+    "slika": "guske_zajednicka_slika",
+    "lista": [
+
+      {
+        "ime": "Domaća guska",
+        "slika": "domaca_guska",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-15 godina",
+          "visina": "70-90 cm",
+          "tezina": "4-8 kg",
+          "porijeklo": "Evropa",
+          "brzina": "10 km/h",
+          "tipDlake": "perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "zaštitnička, glasna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "živi u jatu",
+          "odnosPremaLjudima": "može biti agresivna",
+          "odnosPremaDjeci": "oprez",
+          "odnosPremaZivotinjama": "teritorijalna",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "teško",
+          "instinkti": "čuvarski"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "12 godina",
+          "bolesti": "paraziti, respiratorne bolesti",
+          "genetika": "otporna",
+          "otpornost": "visoka",
+          "osjetljivost": "na vlagu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "nije često potrebno",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "8-12 mjeseci",
+          "gestacija": "28-35 dana (inkubacija)",
+          "brojMladunaca": "5-12",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, žitarice",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "hodanje, plivanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "proizvodnja mesa i jaja",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "prirodna njega",
+          "kupanje": "voda (plivanje)",
+          "zubi": "nije primjenjivo",
+          "nokti": "minimalno",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "farma, dvorište",
+          "minimalni": "otvoren prostor + voda",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "zaštita od predatora"
+        }
+      },
+      {
+        "ime": "Kineska guska",
+        "slika": "kineska_guska",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-15 godina",
+          "visina": "80-100 cm",
+          "tezina": "4-6 kg",
+          "porijeklo": "Kina",
+          "brzina": "12 km/h",
+          "tipDlake": "perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "glasna, aktivna, teritorijalna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "jato",
+          "odnosPremaLjudima": "oprezna",
+          "odnosPremaDjeci": "oprez",
+          "odnosPremaZivotinjama": "teritorijalna",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "teško",
+          "instinkti": "čuvarski"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "12 godina",
+          "bolesti": "respiratorne bolesti",
+          "genetika": "dobra",
+          "otpornost": "visoka",
+          "osjetljivost": "na hladnoću"
+        },
+
+        "vakcinacija": {
+          "obavezne": "nije često",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "8-12 mjeseci",
+          "gestacija": "28-35 dana",
+          "brojMladunaca": "5-10",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, žitarice",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "plivanje, hodanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "jaja, čuvanje",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "prirodna",
+          "kupanje": "voda",
+          "zubi": "nije primjenjivo",
+          "nokti": "minimalno",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "dvorište + voda",
+          "minimalni": "srednji prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      },
+      {
+        "ime": "Češka bijela guska",
+        "slika": "ceska_bijela_guska",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-15 godina",
+          "visina": "70-90 cm",
+          "tezina": "5-7 kg",
+          "porijeklo": "Češka",
+          "brzina": "10 km/h",
+          "tipDlake": "perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, pitoma",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "jato",
+          "odnosPremaLjudima": "dobra",
+          "odnosPremaDjeci": "bezopasna",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "stado"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "12 godina",
+          "bolesti": "rijetke",
+          "genetika": "stabilna",
+          "otpornost": "visoka",
+          "osjetljivost": "minimalna"
+        },
+
+        "vakcinacija": {
+          "obavezne": "nije često",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "8-12 mjeseci",
+          "gestacija": "28-35 dana",
+          "brojMladunaca": "6-12",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, žitarice",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "hodanje, plivanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "meso i jaja",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "prirodna",
+          "kupanje": "voda",
+          "zubi": "nije primjenjivo",
+          "nokti": "minimalno",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "farma + voda",
+          "minimalni": "otvoren prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      },
+      {
+        "ime": "Kuban guska",
+        "slika": "kuban_guska",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-15 godina",
+          "visina": "70-90 cm",
+          "tezina": "4-6 kg",
+          "porijeklo": "Rusija",
+          "brzina": "10 km/h",
+          "tipDlake": "perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "aktivna, glasna",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "jato",
+          "odnosPremaLjudima": "oprezna",
+          "odnosPremaDjeci": "oprez",
+          "odnosPremaZivotinjama": "teritorijalna",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "teško",
+          "instinkti": "čuvarski"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "12 godina",
+          "bolesti": "paraziti",
+          "genetika": "dobra",
+          "otpornost": "visoka",
+          "osjetljivost": "na vlagu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "nije često",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "8-12 mjeseci",
+          "gestacija": "28-35 dana",
+          "brojMladunaca": "5-10",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, žitarice",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "plivanje, hodanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "jaja",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "prirodna",
+          "kupanje": "voda",
+          "zubi": "nije primjenjivo",
+          "nokti": "minimalno",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "dvorište + voda",
+          "minimalni": "srednji prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      },
+      {
+        "ime": "Bijelotalijanska guska",
+        "slika": "bijelotalijanska_guska",
+
+        "osnovneInfo": {
+          "zivotniVijek": "10-15 godina",
+          "visina": "70-90 cm",
+          "tezina": "5-8 kg",
+          "porijeklo": "Italija",
+          "brzina": "10 km/h",
+          "tipDlake": "perje",
+          "snaga": "srednja"
+        },
+
+        "ponasanje": {
+          "temperament": "mirna, pitoma",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "jato",
+          "odnosPremaLjudima": "dobra",
+          "odnosPremaDjeci": "bezopasna",
+          "odnosPremaZivotinjama": "dobra",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "stado"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "12 godina",
+          "bolesti": "rijetke",
+          "genetika": "stabilna",
+          "otpornost": "visoka",
+          "osjetljivost": "minimalna"
+        },
+
+        "vakcinacija": {
+          "obavezne": "nije često",
+          "preporucene": "po potrebi",
+          "zadnjaVakcinacija": "2025",
+          "plan": "po potrebi",
+          "paraziti": "svaka 3-6 mjeseci",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "nije primjenjivo",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "8-12 mjeseci",
+          "gestacija": "28-35 dana",
+          "brojMladunaca": "6-10",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, žitarice",
+          "dijeta": "vlakna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "plivanje, hodanje",
+          "trening": "nije primjenjivo",
+          "radneSposobnosti": "meso i jaja",
+          "sport": "nije primjenjivo"
+        },
+
+        "njega": {
+          "dlaka": "prirodna",
+          "kupanje": "voda",
+          "zubi": "nije primjenjivo",
+          "nokti": "minimalno",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "farma + voda",
+          "minimalni": "otvoren prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "srednja",
+          "sigurnost": "ograda"
+        }
+      }
+    ]
+  },
+
+  {
+    "ime": "Patke",
+    "slika": "grupna_slika_patke",
+    "lista": [
+      { "ime": "Domaća bijela patka", "slika": "bijela_patka" },
+      { "ime": "Pekinška patka", "slika": "pekinska_patka" },
+      { "ime": "Moskova patka", "slika": "moskova_patka" },
+      { "ime": "Indijska trkačica", "slika": "indijska_trkacica" },
+      { "ime": "Rouen patka", "slika": "rouen_patka" }
+    ]
+  },
+
+  {
+    "ime": "Konji",
+    "slika": "grupna_slika_konj",
+    "lista": [
+      {
+        "ime": "Engleski punokrvnjak",
+        "slika": "engleski_punokrvnjak",
+
+        "osnovneInfo": {
+          "zivotniVijek": "25-30 godina",
+          "visina": "155-175 cm",
+          "tezina": "450-550 kg",
+          "porijeklo": "Engleska",
+          "brzina": "60-70 km/h",
+          "tipDlake": "kratka",
+          "snaga": "vrlo visoka"
+        },
+
+        "ponasanje": {
+          "temperament": "energičan, osjetljiv, brz",
+          "inteligencija": "visoka",
+          "socijalnoPonasanje": "društven",
+          "odnosPremaLjudima": "dobar uz iskustvo",
+          "odnosPremaDjeci": "nije za početnike",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "vrlo visok",
+          "lakocaTreniranja": "srednje",
+          "instinkti": "trkački"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "27 godina",
+          "bolesti": "problemi sa tetivama, kolike",
+          "genetika": "uzgajan za brzinu",
+          "otpornost": "srednja",
+          "osjetljivost": "na povrede"
+        },
+
+        "vakcinacija": {
+          "obavezne": "tetanus",
+          "preporucene": "gripa konja",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 2-3 mjeseca",
+          "pregledi": "1-2x godišnje",
+          "sterilizacija": "po potrebi",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "12-18 mjeseci",
+          "gestacija": "330-345 dana",
+          "brojMladunaca": "1",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "sijeno, žitarice",
+          "dijeta": "energetska",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "više sati dnevno",
+          "vrsta": "trčanje, trening",
+          "trening": "trke",
+          "radneSposobnosti": "trkaći konj",
+          "sport": "galopske trke"
+        },
+
+        "njega": {
+          "dlaka": "redovno četkanje",
+          "kupanje": "po potrebi",
+          "zubi": "pregledi",
+          "nokti": "potkivanje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "farma, štala",
+          "minimalni": "velik prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "velika",
+          "sigurnost": "ograđen prostor"
+        }
+      },
+      {
+        "ime": "Lipicanac",
+        "slika": "lacaune_ovca",
+
+        "osnovneInfo": {
+          "zivotniVijek": "25-35 godina",
+          "visina": "150-160 cm",
+          "tezina": "450-600 kg",
+          "porijeklo": "Slovenija (Lipica)",
+          "brzina": "40-50 km/h",
+          "tipDlake": "kratka",
+          "snaga": "visoka"
+        },
+
+        "ponasanje": {
+          "temperament": "miran, inteligentan, poslušan",
+          "inteligencija": "visoka",
+          "socijalnoPonasanje": "društven",
+          "odnosPremaLjudima": "vrlo dobar",
+          "odnosPremaDjeci": "dobar",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "lako",
+          "instinkti": "radni"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "30 godina",
+          "bolesti": "kolike, problemi sa zglobovima",
+          "genetika": "stabilna",
+          "otpornost": "visoka",
+          "osjetljivost": "na lošu ishranu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "tetanus",
+          "preporucene": "gripa konja",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 2-3 mjeseca",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "po potrebi",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "12-18 mjeseci",
+          "gestacija": "330-345 dana",
+          "brojMladunaca": "1",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "sijeno, trava, žitarice",
+          "dijeta": "balansirana",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "trening, hodanje",
+          "trening": "dresura",
+          "radneSposobnosti": "dresurni konj",
+          "sport": "dresura"
+        },
+
+        "njega": {
+          "dlaka": "redovno četkanje",
+          "kupanje": "po potrebi",
+          "zubi": "pregledi",
+          "nokti": "potkivanje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "štala, pašnjak",
+          "minimalni": "velik prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "velika",
+          "sigurnost": "ograđen prostor"
+        }
+      },
+      {
+        "ime": "Arapski konj",
+        "slika": " arapski_konj",
+
+        "osnovneInfo": {
+          "zivotniVijek": "25-30 godina",
+          "visina": "145-155 cm",
+          "tezina": "350-450 kg",
+          "porijeklo": "Bliski istok",
+          "brzina": "55-65 km/h",
+          "tipDlake": "kratka",
+          "snaga": "visoka"
+        },
+
+        "ponasanje": {
+          "temperament": "živahan, inteligentan, izdržljiv",
+          "inteligencija": "vrlo visoka",
+          "socijalnoPonasanje": "društven",
+          "odnosPremaLjudima": "vrlo odan",
+          "odnosPremaDjeci": "dobar",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "lako",
+          "instinkti": "izdržljivost"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "28 godina",
+          "bolesti": "kolike, respiratorni problemi",
+          "genetika": "čista linija",
+          "otpornost": "visoka",
+          "osjetljivost": "na lošu ishranu"
+        },
+
+        "vakcinacija": {
+          "obavezne": "tetanus",
+          "preporucene": "gripa konja",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 2-3 mjeseca",
+          "pregledi": "1-2x godišnje",
+          "sterilizacija": "po potrebi",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "12-18 mjeseci",
+          "gestacija": "330-345 dana",
+          "brojMladunaca": "1",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "sijeno, trava, žitarice",
+          "dijeta": "balansirana",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "više sati dnevno",
+          "vrsta": "trčanje, trening",
+          "trening": "izdržljivost",
+          "radneSposobnosti": "duge distance",
+          "sport": "endurance"
+        },
+
+        "njega": {
+          "dlaka": "redovno četkanje",
+          "kupanje": "po potrebi",
+          "zubi": "pregledi",
+          "nokti": "potkivanje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "pašnjak, štala",
+          "minimalni": "velik prostor",
+          "temperatura": "topla do umjerena",
+          "potrebaProstora": "velika",
+          "sigurnost": "ograđen prostor"
+        }
+      },
+      {
+        "ime": "Gidran konj",
+        "slika": "gidran_konj",
+
+        "osnovneInfo": {
+          "zivotniVijek": "25-30 godina",
+          "visina": "155-165 cm",
+          "tezina": "450-550 kg",
+          "porijeklo": "Mađarska",
+          "brzina": "50-60 km/h",
+          "tipDlake": "kratka",
+          "snaga": "visoka"
+        },
+
+        "ponasanje": {
+          "temperament": "živahan, hrabar, poslušan",
+          "inteligencija": "visoka",
+          "socijalnoPonasanje": "društven",
+          "odnosPremaLjudima": "vrlo dobar",
+          "odnosPremaDjeci": "dobar",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "visok",
+          "lakocaTreniranja": "lako",
+          "instinkti": "radni"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "27 godina",
+          "bolesti": "kolike, problemi sa zglobovima",
+          "genetika": "stabilna",
+          "otpornost": "visoka",
+          "osjetljivost": "na napor"
+        },
+
+        "vakcinacija": {
+          "obavezne": "tetanus",
+          "preporucene": "gripa konja",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 2-3 mjeseca",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "po potrebi",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "12-18 mjeseci",
+          "gestacija": "330-345 dana",
+          "brojMladunaca": "1",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "sijeno, žitarice",
+          "dijeta": "energetska",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "više sati dnevno",
+          "vrsta": "trening, rad",
+          "trening": "radni konj",
+          "radneSposobnosti": "vojni i sportski",
+          "sport": "dresura, preskakanje"
+        },
+
+        "njega": {
+          "dlaka": "redovno četkanje",
+          "kupanje": "po potrebi",
+          "zubi": "pregledi",
+          "nokti": "potkivanje",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "štala, pašnjak",
+          "minimalni": "velik prostor",
+          "temperatura": "umjerena",
+          "potrebaProstora": "velika",
+          "sigurnost": "ograđen prostor"
+        }
+      },
+      {
+        "ime": "Bosanski brdski konj",
+        "slika": "bosanski_brdski_konj",
+
+        "osnovneInfo": {
+          "zivotniVijek": "25-30 godina",
+          "visina": "130-145 cm",
+          "tezina": "300-400 kg",
+          "porijeklo": "Bosna i Hercegovina",
+          "brzina": "40 km/h",
+          "tipDlake": "kratka",
+          "snaga": "visoka"
+        },
+
+        "ponasanje": {
+          "temperament": "miran, izdržljiv, poslušan",
+          "inteligencija": "srednja",
+          "socijalnoPonasanje": "društven",
+          "odnosPremaLjudima": "vrlo dobar",
+          "odnosPremaDjeci": "dobar",
+          "odnosPremaZivotinjama": "dobar",
+          "nivoEnergije": "srednji",
+          "lakocaTreniranja": "lako",
+          "instinkti": "radni, izdržljivost"
+        },
+
+        "zdravlje": {
+          "prosjecnaStarost": "27 godina",
+          "bolesti": "rijetke",
+          "genetika": "otporna autohtona rasa",
+          "otpornost": "vrlo visoka",
+          "osjetljivost": "minimalna"
+        },
+
+        "vakcinacija": {
+          "obavezne": "tetanus",
+          "preporucene": "gripa konja",
+          "zadnjaVakcinacija": "2025",
+          "plan": "godišnje",
+          "paraziti": "svaka 2-3 mjeseca",
+          "pregledi": "1x godišnje",
+          "sterilizacija": "po potrebi",
+          "terapije": "po potrebi"
+        },
+
+        "reprodukcija": {
+          "polnaZrelost": "12-18 mjeseci",
+          "gestacija": "330-345 dana",
+          "brojMladunaca": "1",
+          "interval": "1 godišnje",
+          "sezonaParenja": "proljeće"
+        },
+
+        "ishrana": {
+          "tip": "biljožder",
+          "dnevniUnos": "više obroka",
+          "vrstaHrane": "trava, sijeno",
+          "dijeta": "prirodna",
+          "alergije": "rijetke",
+          "voda": "stalno dostupna"
+        },
+
+        "aktivnost": {
+          "kretanje": "nekoliko sati dnevno",
+          "vrsta": "rad, nošenje tereta",
+          "trening": "radni",
+          "radneSposobnosti": "transport, planine",
+          "sport": "rekreativno jahanje"
+        },
+
+        "njega": {
+          "dlaka": "minimalna njega",
+          "kupanje": "po potrebi",
+          "zubi": "pregledi",
+          "nokti": "potkivanje po potrebi",
+          "linjanje": "sezonsko"
+        },
+
+        "uslovi": {
+          "prostor": "planine, pašnjak",
+          "minimalni": "velik prostor",
+          "temperatura": "otporan na hladnoću",
+          "potrebaProstora": "velika",
+          "sigurnost": "prirodni uslovi"
+        }
+      }
+    ]
+  }
+
+
+
+
+]

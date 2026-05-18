@@ -1,0 +1,66 @@
+[
+  {
+    "id": "article_1",
+    "title": "Wie kann man den Maisertrag steigern?",
+    "description": "Mais gehört zu den wichtigsten landwirtschaftlichen Kulturen und benötigt eine richtige Bodenvorbereitung, um maximale Erträge zu erzielen. Vor der Aussaat wird eine Bodenanalyse empfohlen, um die optimale Düngermenge und den pH-Wert des Bodens zu bestimmen.\n\nDie Verwendung von hochwertigem zertifiziertem Saatgut erhöht die Widerstandsfähigkeit der Pflanzen gegen Krankheiten und Wetterbedingungen erheblich. Die Aussaat sollte zum optimalen Zeitpunkt erfolgen, wenn die Bodentemperatur den richtigen Wert für die Keimung erreicht.\n\nRegelmäßige Bewässerung während trockener Perioden spielt eine wichtige Rolle bei der Pflanzenentwicklung. Besonders wichtig ist ausreichende Feuchtigkeit während der Kolbenbildung.\n\nNeben der Bewässerung sind Unkrautbekämpfung und Schädlingsschutz sehr wichtig. Der rechtzeitige Einsatz von Pflanzenschutzmitteln kann Verluste deutlich reduzieren und die Qualität der Ernte verbessern.\n\nExperten empfehlen außerdem eine richtige Fruchtfolge, damit der Boden über mehrere Saisons fruchtbar und gesund bleibt.",
+    "time": "5 Min Lesezeit",
+    "category": "Ratschlag",
+    "image": "povrce_naslovna",
+    "tags": [
+      "Mais",
+      "Pflanzen",
+      "Ertrag",
+      "Dünger",
+      "Aussaat",
+      "Landwirtschaft"
+    ]
+  },
+  {
+    "id": "article_2",
+    "title": "Top 5 Krankheiten bei Kühen und wie man sie verhindert",
+    "description": "Krankheiten bei Kühen können schwere wirtschaftliche Verluste verursachen, wenn sie nicht rechtzeitig erkannt werden. Eine der häufigsten Krankheiten ist Mastitis, die das Euter und die Milchqualität beeinträchtigt.\n\nAtemwegsinfektionen stellen ebenfalls ein großes Problem dar, besonders in den kälteren Jahreszeiten. Regelmäßige Belüftung des Stalls und gute Hygiene können das Krankheitsrisiko erheblich senken.\n\nParasiten und Verdauungsprobleme entstehen oft durch schlechte Ernährung und minderwertiges Wasser. Deshalb sollten Futterqualität und sauberes Wasser regelmäßig kontrolliert werden.\n\nImpfungen gehören zu den wichtigsten Maßnahmen zur Krankheitsvorbeugung. Tierärzte empfehlen rechtzeitige Immunisierung, um die Ausbreitung von Infektionen zu reduzieren.\n\nRegelmäßige Untersuchungen der Tiere ermöglichen eine frühzeitige Erkennung von Symptomen und eine schnellere Reaktion, was sich direkt auf die Gesundheit der gesamten Herde auswirkt.",
+    "time": "7 Min Lesezeit",
+    "category": "Viehzucht",
+    "image": "stocarstvoimg",
+    "tags": [
+      "Kühe",
+      "Mastitis",
+      "Impfung",
+      "Gesundheit",
+      "Viehzucht",
+      "Tierarzt"
+    ]
+  },
+  {
+    "id": "article_3",
+    "title": "Tröpfchenbewässerung",
+    "description": "Das Tröpfchenbewässerungssystem ist eine der effizientesten Methoden zur Wasserverteilung in der Landwirtschaft. Dieses System ermöglicht die direkte Bewässerung der Pflanzenwurzeln mit minimalem Wasserverlust.\n\nEin großer Vorteil dieses Systems ist die Wassereinsparung und gleichmäßige Bewässerung der Pflanzen. Besonders nützlich ist es in den Sommermonaten, wenn die Temperaturen hoch sind und der Boden schnell Feuchtigkeit verliert.\n\nDie Installation des Systems ist nicht kompliziert, erfordert jedoch eine sorgfältige Planung der Rohre und Tropfer. Der Wasserdruck und die Qualität der Filter müssen berücksichtigt werden.\n\nRegelmäßige Wartung verhindert Verstopfungen und verlängert die Lebensdauer des Systems. Es wird empfohlen, die Filter zu reinigen und die Rohre vor jeder Saison zu überprüfen.\n\nLandwirte, die Tröpfchenbewässerung nutzen, erzielen oft höhere Erträge bei geringerem Wasser- und Energieverbrauch.",
+    "time": "6 Min Lesezeit",
+    "category": "Bewässerung",
+    "image": "navodnjavanje",
+    "tags": [
+      "Bewässerung",
+      "Tröpfchenbewässerung",
+      "Wasser",
+      "Pflanzen",
+      "System",
+      "Feld"
+    ]
+  },
+  {
+    "id": "article_4",
+    "title": "Traktorwartung Schritt für Schritt",
+    "description": "Die richtige Wartung eines Traktors ist entscheidend für eine lange Lebensdauer und Sicherheit bei der Arbeit auf dem Bauernhof. Regelmäßige Kontrolle von Motor, Öl und Kühlsystem kann schwere Schäden verhindern.\n\nDas Motoröl sollte gemäß den Herstellerempfehlungen gewechselt werden. Hochwertiges Öl reduziert den Motorverschleiß und verbessert die Leistung des Traktors.\n\nAuch die Reifen benötigen regelmäßige Druckkontrollen, da falsch aufgepumpte Reifen den Kraftstoffverbrauch erhöhen und die Stabilität des Fahrzeugs verringern.\n\nVor Arbeitsbeginn sollten Bremsen, Beleuchtung und Hydrauliksystem überprüft werden. Kleine Probleme können schnell zu großen Schäden werden, wenn sie ignoriert werden.\n\nNach Saisonende wird eine gründliche Reinigung des Traktors und die Lagerung an einem trockenen Ort empfohlen, um Korrosion und Schäden zu vermeiden.",
+    "time": "8 Min Lesezeit",
+    "category": "Maschinen",
+    "image": "traktor_mas",
+    "tags": [
+      "Traktor",
+      "Maschinen",
+      "Motor",
+      "Service",
+      "Öl",
+      "Landwirtschaft"
+    ]
+  }
+]

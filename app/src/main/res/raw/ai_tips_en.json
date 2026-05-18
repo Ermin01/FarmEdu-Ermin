@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Stable Ventilation",
+    "tip": "Ventilating the stable is recommended today due to increased humidity.",
+    "description": "High humidity can cause respiratory problems in animals and promote bacterial growth.",
+    "category": "Animal Housing",
+    "emoji": "🌬️",
+    "priority": "high",
+    "voice": "Stable ventilation is recommended due to increased humidity."
+  },
+  {
+    "title": "Cleaning Water Troughs",
+    "tip": "Regular cleaning of water troughs reduces the risk of infections.",
+    "description": "Dirty water increases the risk of bacterial diseases in livestock.",
+    "category": "Hygiene",
+    "emoji": "💧",
+    "priority": "medium",
+    "voice": "Clean water troughs regularly to reduce the risk of infections."
+  },
+  {
+    "title": "Minerals in Nutrition",
+    "tip": "Adding minerals to nutrition improves animal resistance.",
+    "description": "Minerals help strengthen immunity and support proper body development.",
+    "category": "Nutrition",
+    "emoji": "🥬",
+    "priority": "high",
+    "voice": "Adding minerals improves animal resistance."
+  },
+  {
+    "title": "Fresh Water",
+    "tip": "Fresh water increases livestock productivity.",
+    "description": "Adequate water intake improves milk production and animal health.",
+    "category": "Water",
+    "emoji": "🚰",
+    "priority": "medium",
+    "voice": "Provide fresh water for better livestock productivity."
+  },
+  {
+    "title": "Temperature Control",
+    "tip": "Temperature control reduces stress in animals.",
+    "description": "High temperatures can cause reduced appetite and lower production.",
+    "category": "Temperature",
+    "emoji": "🌡️",
+    "priority": "high",
+    "voice": "Temperature control reduces stress in animals."
+  }
+]

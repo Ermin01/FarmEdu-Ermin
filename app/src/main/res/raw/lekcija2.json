@@ -1,0 +1,22 @@
+{
+  "naslov": "Grane poljoprivrede",
+  "opis": "Upoznaj glavne vrste poljoprivrede i njihovu ulogu.",
+  "sadrzaj": [
+    {
+      "naslov": "Biljna proizvodnja",
+      "tekst": "Biljna proizvodnja obuhvata uzgoj biljaka kao što su žitarice, voće, povrće i industrijske kulture. Osnovni cilj je proizvodnja hrane za ljude i životinje."
+    },
+    {
+      "naslov": "Stočna proizvodnja",
+      "tekst": "Stočna proizvodnja uključuje uzgoj životinja poput krava, ovaca, koza i peradi. Koristi se za proizvodnju mesa, mlijeka, jaja i drugih proizvoda."
+    },
+    {
+      "naslov": "Organska poljoprivreda",
+      "tekst": "Organska poljoprivreda je način proizvodnje bez upotrebe hemikalija i pesticida. Fokus je na očuvanju prirode i zdravoj hrani."
+    },
+    {
+      "naslov": "Zašto su važne?",
+      "tekst": "Sve ove grane zajedno omogućavaju proizvodnju hrane, razvoj ekonomije i opstanak čovječanstva."
+    }
+  ]
+}

@@ -1,0 +1,961 @@
+<resources>
+
+
+
+        <string name="odaberi_jezik">Choose language</string>
+
+        <string name="bosanski_jezik">Bosnian 🇧🇦</string>
+
+        <string name="engleski_jezik">English 🇬🇧</string>
+
+        <string name="njemacki_jezik">German 🇩🇪</string>
+
+
+    <string name="app_name">FarmEdu-Ermin</string>
+    <string name="hello_blank_fragment">Text</string>
+
+    <!-- General -->
+    <string name="opcenito">🌿 General</string>
+    <string name="jezik">🌍 Language</string>
+    <string name="tema">☀️ Theme</string>
+    <string name="obavijesti">🔔 Notifications</string>
+
+    <!-- Account -->
+    <string name="racun">🌿 Account</string>
+    <string name="profil">👤 Profile</string>
+    <string name="privatnost">🔒 Privacy</string>
+    <string name="backup">⬇️ Backup</string>
+
+    <!-- Other -->
+    <string name="ostalo">🌿 Other</string>
+    <string name="pomoc">❓ Help &amp; Support</string>
+    <string name="ocijeni">⭐ Rate App</string>
+    <string name="o_aplikaciji">ℹ️ About App</string>
+
+    <string name="trenutni_jezik">English</string>
+    <string name="slogan">Learn, grow, succeed together 🌿</string>
+
+    <!-- ŽIVOTINJE -->
+    <string name="zivotni_vijek">Lifespan</string>
+    <string name="visina">Height</string>
+    <string name="tezina">Weight</string>
+    <string name="porijeklo">Origin</string>
+    <string name="brzina">Speed</string>
+    <string name="tip_dlake">Coat type</string>
+    <string name="snaga">Strength</string>
+
+    <string name="temperament">Temperament</string>
+    <string name="inteligencija">Intelligence</string>
+    <string name="socijalno">Social behavior</string>
+    <string name="ljudi">People</string>
+    <string name="djeca">Children</string>
+    <string name="zivotinje">Animals</string>
+    <string name="energija">Energy level</string>
+    <string name="trening">Training</string>
+    <string name="instinkti">Instincts</string>
+
+    <string name="starost">Age</string>
+    <string name="bolesti">Diseases</string>
+    <string name="genetika">Genetics</string>
+    <string name="otpornost">Resistance</string>
+    <string name="osjetljivost">Sensitivity</string>
+
+    <string name="tip">Type</string>
+    <string name="obroci">Meals</string>
+    <string name="kretanje">Movement</string>
+
+    <!-- SEKCIJE -->
+    <string name="osnovne_info">📌 Basic Info</string>
+    <string name="ponasanje">🧠 Behavior</string>
+    <string name="zdravlje">❤️ Health</string>
+    <string name="ishrana">🍖 Diet</string>
+    <string name="aktivnost">🏃 Activity</string>
+
+    <!-- HOME -->
+    <string name="dobrodosao">Welcome 👋</string>
+    <string name="kategorije">Categories</string>
+
+    <!-- POLJOPRIVREDA -->
+    <string name="poljoprivreda_naslov">Agriculture &amp; Nature</string>
+    <string name="poljoprivreda_podnaslov">Extend life in the countryside!</string>
+
+    <string name="osnove_poljoprivrede">Basics of Agriculture</string>
+    <string name="osnove_poljoprivrede_desc">Learn the basic concepts and explore the main branches.</string>
+
+    <string name="uzgoj_biljaka">Plant Cultivation</string>
+    <string name="uzgoj_biljaka_desc">Learn how to properly grow crops.</string>
+
+    <string name="vremenski_uslovi">Weather Conditions</string>
+    <string name="vremenski_uslovi_desc">Track weather and climate impact.</string>
+
+    <string name="zastita_bilja">Plant Protection</string>
+    <string name="zastita_bilja_desc">Identify diseases and pests and learn how to protect your crops.</string>
+
+    <string name="mehanizacija">Machinery &amp; Tools</string>
+    <string name="mehanizacija_desc">Get to know agricultural machines and their proper use.</string>
+
+    <string name="savjeti_praksa">Tips &amp; Practice</string>
+    <string name="savjeti_praksa_desc">Useful tips from experienced farmers.</string>
+
+
+<!--    Lekcije-->
+    <string name="lekcije_naslov">📚 Lessons</string>
+
+    <string name="lekcija1_naslov">What is agriculture</string>
+    <string name="lekcija1_desc">Basic concepts and definition</string>
+
+    <string name="lekcija2_naslov">Branches of agriculture</string>
+    <string name="lekcija2_desc">Plant, livestock and organic</string>
+
+    <string name="lekcija3_naslov">Growth factors</string>
+    <string name="lekcija3_desc">Water, sun, soil and climate</string>
+
+    <string name="kviz_naslov">Knowledge Quiz</string>
+    <string name="kviz_desc">Test what you have learned</string>
+
+
+
+
+
+
+
+    <string name="jabuka_naslov">Apple</string>
+    <string name="jabuka_opis">Apple is one of the most widespread fruit trees. It is easy to grow and produces high-quality fruit.</string>
+    <string name="jabuka_sadnja">Autumn or early spring</string>
+    <string name="jabuka_berba">September - October</string>
+    <string name="jabuka_zalijevanje">Moderate, regular</string>
+    <string name="jabuka_sunce">Full sun</string>
+    <string name="jabuka_temperatura">10-25°C</string>
+    <string name="jabuka_tlo">Fertile, well-drained soil</string>
+    <string name="jabuka_prinos">50-100 kg per tree</string>
+
+    <!-- PEAR -->
+    <string name="kruska_naslov">Pear</string>
+    <string name="kruska_opis">Pear prefers a warmer climate and produces juicy fruit.</string>
+    <string name="kruska_sadnja">Autumn</string>
+    <string name="kruska_berba">August - September</string>
+    <string name="kruska_zalijevanje">Moderate</string>
+    <string name="kruska_sunce">Full sun</string>
+    <string name="kruska_temperatura">15-30°C</string>
+    <string name="kruska_tlo">Light, fertile soil</string>
+    <string name="kruska_prinos">40-80 kg per tree</string>
+
+    <!-- PLUM -->
+    <string name="sljiva_naslov">Plum</string>
+    <string name="sljiva_opis">Plum is very popular in the Balkans and is used for food and brandy.</string>
+    <string name="sljiva_sadnja">Autumn</string>
+    <string name="sljiva_berba">July - August</string>
+    <string name="sljiva_zalijevanje">Minimal</string>
+    <string name="sljiva_sunce">Full sun</string>
+    <string name="sljiva_temperatura">10-30°C</string>
+    <string name="sljiva_tlo">Various soils, well-drained</string>
+    <string name="sljiva_prinos">30-70 kg per tree</string>
+
+    <!-- CHERRY -->
+    <string name="tresnja_naslov">Cherry</string>
+    <string name="tresnja_opis">Cherry produces sweet fruit and requires plenty of sunlight.</string>
+    <string name="tresnja_sadnja">Spring</string>
+    <string name="tresnja_berba">May - June</string>
+    <string name="tresnja_zalijevanje">Moderate</string>
+    <string name="tresnja_sunce">Full sun</string>
+    <string name="tresnja_temperatura">15-25°C</string>
+    <string name="tresnja_tlo">Fertile, light soil</string>
+    <string name="tresnja_prinos">20-50 kg per tree</string>
+
+    <!-- STRAWBERRY -->
+    <string name="jagoda_naslov">Strawberry</string>
+    <string name="jagoda_opis">Strawberries grow quickly and produce fruit in the first year.</string>
+    <string name="jagoda_sadnja">Spring</string>
+    <string name="jagoda_berba">May - June</string>
+    <string name="jagoda_zalijevanje">Frequent</string>
+    <string name="jagoda_sunce">Full sun</string>
+    <string name="jagoda_temperatura">15-25°C</string>
+    <string name="jagoda_tlo">Humus-rich soil</string>
+    <string name="jagoda_prinos">0.5-1 kg per plant</string>
+
+    <!-- RASPBERRY -->
+    <string name="malina_naslov">Raspberry</string>
+    <string name="malina_opis">Raspberry is a very profitable crop and is often exported.</string>
+    <string name="malina_sadnja">Autumn</string>
+    <string name="malina_berba">June - August</string>
+    <string name="malina_zalijevanje">Regular</string>
+    <string name="malina_sunce">Partial shade or sun</string>
+    <string name="malina_temperatura">15-25°C</string>
+    <string name="malina_tlo">Slightly acidic soil</string>
+    <string name="malina_prinos">1-2 kg per plant</string>
+
+    <string name="sunce">Sun</string>
+    <string name="zalijevanje">Watering</string>
+    <string name="temperatura">Temperature</string>
+    <string name="tip_tla">Soil type</string>
+    <string name="prinos">Yield</string>
+    <string name="berba">Harvest</string>
+
+
+    <string name="voce_naslov">Fruit</string>
+    <string name="voce_citat">🌱 Sin, guilt, and neurosis are essentially the same — the fruit of the tree of knowledge.</string>
+
+    <!-- VOCE -->
+
+
+
+    <!-- POVRCE -->
+
+    <!-- POVRCE -->
+
+    <string name="krompir_naslov">Potato</string>
+    <string name="krompir_opis">Potato is one of the most important crops. It is planted in spring and requires loose, well-drained soil.</string>
+    <string name="krompir_sadnja">March - April</string>
+    <string name="krompir_zalijevanje">Moderate</string>
+    <string name="krompir_sunce">Full sun</string>
+
+    <string name="paprika_naslov">Pepper</string>
+    <string name="paprika_opis">Pepper loves heat and sunlight. Regular watering and fertilization are key for a good yield.</string>
+    <string name="paprika_sadnja">April - May</string>
+    <string name="paprika_zalijevanje">Regular</string>
+    <string name="paprika_sunce">Full sun</string>
+
+    <string name="mrkva_naslov">Carrot</string>
+    <string name="mrkva_opis">Carrot grows best in loose soil without stones. Regular watering and thinning are important.</string>
+    <string name="mrkva_sadnja">March - June</string>
+    <string name="mrkva_zalijevanje">Moderate</string>
+    <string name="mrkva_sunce">Sun / partial shade</string>
+
+    <string name="paradajz_naslov">Tomato</string>
+    <string name="paradajz_opis">Tomato needs a lot of sunlight and support. Regular watering and disease protection are required.</string>
+    <string name="paradajz_sadnja">April - May</string>
+    <string name="paradajz_zalijevanje">Frequent</string>
+    <string name="paradajz_sunce">Full sun</string>
+
+    <string name="luk_naslov">Onion</string>
+    <string name="luk_opis">Onion is easy to grow. It is planted early and does not require much water.</string>
+    <string name="luk_sadnja">February - March</string>
+    <string name="luk_zalijevanje">Rare</string>
+    <string name="luk_sunce">Full sun</string>
+
+    <string name="kupus_naslov">Cabbage</string>
+    <string name="kupus_opis">Cabbage prefers cooler conditions and regular watering. It is commonly used in households.</string>
+    <string name="kupus_sadnja">March - April</string>
+    <string name="kupus_zalijevanje">Regular</string>
+    <string name="kupus_sunce">Sun / partial shade</string>
+
+
+
+        <!-- WHEAT -->
+        <string name="psenica_naslov">Wheat</string>
+        <string name="psenica_opis">Wheat is one of the most important cereals in the world, used for flour and bread production.</string>
+        <string name="psenica_sadnja">Autumn (winter) or spring (spring wheat)</string>
+        <string name="psenica_berba">June - July</string>
+        <string name="psenica_zalijevanje">Moderate, does not like too much water</string>
+        <string name="psenica_sunce">Full sun</string>
+        <string name="psenica_temperatura">10°C - 25°C</string>
+        <string name="psenica_tlo">Fertile, well-drained soil</string>
+        <string name="psenica_prinos">5 - 8 t/ha</string>
+
+        <!-- CORN -->
+        <string name="kukuruz_naslov">Corn</string>
+        <string name="kukuruz_opis">Corn is a heat-loving plant used for human and animal nutrition.</string>
+        <string name="kukuruz_sadnja">April - May</string>
+        <string name="kukuruz_berba">September - October</string>
+        <string name="kukuruz_zalijevanje">Requires regular watering in dry periods</string>
+        <string name="kukuruz_sunce">Full sun</string>
+        <string name="kukuruz_temperatura">18°C - 30°C</string>
+        <string name="kukuruz_tlo">Deep, fertile and moist soil</string>
+        <string name="kukuruz_prinos">7 - 12 t/ha</string>
+
+        <!-- BARLEY -->
+        <string name="jecam_naslov">Barley</string>
+        <string name="jecam_opis">Barley is used for animal feed and beer production.</string>
+        <string name="jecam_sadnja">Spring or autumn</string>
+        <string name="jecam_berba">June</string>
+        <string name="jecam_zalijevanje">Moderate</string>
+        <string name="jecam_sunce">Full sun</string>
+        <string name="jecam_temperatura">12°C - 25°C</string>
+        <string name="jecam_tlo">Light to medium-heavy soils</string>
+        <string name="jecam_prinos">4 - 7 t/ha</string>
+
+        <!-- OATS -->
+        <string name="zob_naslov">Oats</string>
+        <string name="zob_opis">Oats are a healthy cereal rich in fiber, often used for breakfast.</string>
+        <string name="zob_sadnja">March - April</string>
+        <string name="zob_berba">July - August</string>
+        <string name="zob_zalijevanje">Tolerates moisture, moderate watering</string>
+        <string name="zob_sunce">Sun to partial shade</string>
+        <string name="zob_temperatura">10°C - 22°C</string>
+        <string name="zob_tlo">Moist and fertile soil</string>
+        <string name="zob_prinos">3 - 6 t/ha</string>
+
+        <!-- RYE -->
+        <string name="raz_naslov">Rye</string>
+        <string name="raz_opis">Rye is a hardy cereal that grows even in poor soil.</string>
+        <string name="raz_sadnja">September - October</string>
+        <string name="raz_berba">June</string>
+        <string name="raz_zalijevanje">Low to moderate</string>
+        <string name="raz_sunce">Full sun</string>
+        <string name="raz_temperatura">5°C - 20°C</string>
+        <string name="raz_tlo">Poor, sandy soils</string>
+        <string name="raz_prinos">3 - 5 t/ha</string>
+
+        <!-- GLOBAL -->
+
+
+    <string name="sadnja">Planting</string>
+
+
+
+
+        <!-- 🌿 PARSLEY -->
+        <string name="persun_naslov">Parsley</string>
+        <string name="persun_opis">Parsley is a very popular herb used in many dishes. It is rich in vitamins and easy to grow.</string>
+        <string name="persun_sadnja">Spring</string>
+        <string name="persun_berba">Throughout the season</string>
+        <string name="persun_zalijevanje">Regular but moderate watering</string>
+        <string name="persun_sunce">Partial shade or sun</string>
+        <string name="persun_temperatura">10-25°C</string>
+        <string name="persun_tlo">Loose, humus-rich soil</string>
+        <string name="persun_prinos">Continuous leaf harvesting</string>
+
+        <!-- 🌿 BASIL -->
+        <string name="bosiljak_naslov">Basil</string>
+        <string name="bosiljak_opis">Basil is an aromatic herb commonly used in Mediterranean cuisine.</string>
+        <string name="bosiljak_sadnja">Spring</string>
+        <string name="bosiljak_berba">Summer</string>
+        <string name="bosiljak_zalijevanje">Frequent but not excessive watering</string>
+        <string name="bosiljak_sunce">Full sun</string>
+        <string name="bosiljak_temperatura">18-30°C</string>
+        <string name="bosiljak_tlo">Light, well-drained soil</string>
+        <string name="bosiljak_prinos">Regular leaf cutting</string>
+
+        <!-- 🌿 MINT -->
+        <string name="menta_naslov">Mint</string>
+        <string name="menta_opis">Mint is a refreshing herb used in drinks and dishes.</string>
+        <string name="menta_sadnja">Spring</string>
+        <string name="menta_berba">Throughout the season</string>
+        <string name="menta_zalijevanje">Frequent watering</string>
+        <string name="menta_sunce">Partial shade</string>
+        <string name="menta_temperatura">15-25°C</string>
+        <string name="menta_tlo">Moist, rich soil</string>
+        <string name="menta_prinos">Spreads quickly and produces many leaves</string>
+
+        <!-- 🌿 ROSEMARY -->
+        <string name="ruzmarin_naslov">Rosemary</string>
+        <string name="ruzmarin_opis">Rosemary is a perennial herb used as a spice and in medicine.</string>
+        <string name="ruzmarin_sadnja">Spring</string>
+        <string name="ruzmarin_berba">All year round</string>
+        <string name="ruzmarin_zalijevanje">Minimal watering</string>
+        <string name="ruzmarin_sunce">Full sun</string>
+        <string name="ruzmarin_temperatura">15-30°C</string>
+        <string name="ruzmarin_tlo">Dry, rocky soil</string>
+        <string name="ruzmarin_prinos">Long-term branch use</string>
+
+        <!-- 🌿 THYME -->
+        <string name="timijan_naslov">Thyme</string>
+        <string name="timijan_opis">Thyme is a small aromatic shrub used in cooking and medicine.</string>
+        <string name="timijan_sadnja">Spring</string>
+        <string name="timijan_berba">Summer</string>
+        <string name="timijan_zalijevanje">Moderate watering</string>
+        <string name="timijan_sunce">Full sun</string>
+        <string name="timijan_temperatura">15-28°C</string>
+        <string name="timijan_tlo">Dry, well-drained soil</string>
+        <string name="timijan_prinos">Cutting branches</string>
+
+        <!-- 🌿 OREGANO -->
+        <string name="origano_naslov">Oregano</string>
+        <string name="origano_opis">Oregano is a popular spice used in pizzas and Italian dishes.</string>
+        <string name="origano_sadnja">Spring</string>
+        <string name="origano_berba">Summer</string>
+        <string name="origano_zalijevanje">Moderate watering</string>
+        <string name="origano_sunce">Full sun</string>
+        <string name="origano_temperatura">18-30°C</string>
+        <string name="origano_tlo">Light, dry soil</string>
+        <string name="origano_prinos">Drying leaves</string>
+
+<!--    zacinsko bilje-->
+
+
+<!--    uzgoj fragment bilja-->
+
+
+    <string name="kategorije_uzgoja">Cultivation categories</string>
+    <string name="trikovi">🌱 Tips for great success</string>
+
+    <string name="povrce">Vegetables</string>
+    <string name="zitarice">Cereals</string>
+    <string name="voce">Fruits</string>
+    <string name="zacinsko_bilje">Herbs</string>
+    <string name="savjeti">Tips</string>
+
+
+    <string name="savjeti_praksa_naslov_praksa">Tips  Practice</string>
+    <string name="savjeti_praksa_opis_opis">Real tips from everyday work</string>
+    <string name="novi_savjet_btn">🔄 new tip</string>
+
+    <string name="savjet_zalijevanje_naslov">🌿 Watering</string>
+    <string name="savjet_zalijevanje_tekst">Water plants early morning or evening to reduce evaporation.</string>
+
+    <string name="savjet_insekticid_naslov">🐛 Natural insecticide</string>
+    <string name="savjet_insekticid_tekst">Mix water and soap to remove aphids.</string>
+
+    <string name="savjet_sadnja_naslov">🌱 Planting</string>
+    <string name="savjet_sadnja_tekst">Do not plant before the last frost.</string>
+
+    <string name="savjet_djubrivo_naslov">🍃 Fertilizer</string>
+    <string name="savjet_djubrivo_tekst">Nettle can be used as natural fertilizer.</string>
+
+    <string name="savjet_traktor_naslov">🚜 Tractor</string>
+    <string name="savjet_traktor_tekst">Check oil and filters regularly.</string>
+
+    <string name="savjet_zetva_naslov">🌾 Harvest</string>
+    <string name="savjet_zetva_tekst">Harvest during dry weather.</string>
+
+    <string name="savjet_kisa_naslov">🌧 Rain</string>
+    <string name="savjet_kisa_tekst">Do not spray before rain.</string>
+
+    <string name="savjet_sunce_naslov">☀️ Sun</string>
+    <string name="savjet_sunce_tekst">Avoid pesticides in strong sun.</string>
+
+    <string name="savjet_puzevi_naslov">🐌 Snails</string>
+    <string name="savjet_puzevi_tekst">Use ash to repel snails.</string>
+
+    <string name="savjet_korov_naslov">🌿 Weeds</string>
+    <string name="savjet_korov_tekst">Remove weeds regularly.</string>
+
+    <string name="savjet_voda_naslov">💧 Water</string>
+    <string name="savjet_voda_tekst">Too much watering is harmful.</string>
+
+    <string name="savjet_voce_naslov">🌳 Fruit</string>
+    <string name="savjet_voce_tekst">Prune trees in spring.</string>
+
+    <string name="savjet_kukuruz_naslov">🌽 Corn</string>
+    <string name="savjet_kukuruz_tekst">Plant corn with spacing.</string>
+
+    <string name="savjet_stoka_naslov">🐄 Livestock</string>
+    <string name="savjet_stoka_tekst">Provide fresh water to animals.</string>
+
+    <string name="savjet_sigurnost_naslov">🧤 Safety</string>
+    <string name="savjet_sigurnost_tekst">Always wear gloves.</string>
+
+
+<!--    savijeti dva-->
+
+    <string name="savjeti_title">Tips</string>
+    <string name="savjeti_subtitle">For healthy plant growth 🌿</string>
+    <string name="savjeti_badge">🌱 Small tricks for big success</string>
+
+    <string name="savjet_zalijevanje_naslov_dda">Proper watering</string>
+    <string name="savjet_zalijevanje_opis">Water plants early in the morning or in the evening when temperatures are lower.</string>
+
+    <string name="savjet_svjetlost_naslov">Enough light</string>
+    <string name="savjet_svjetlost_opis">Most plants prefer indirect sunlight.</string>
+
+    <string name="savjet_tlo_naslov">Quality soil</string>
+    <string name="savjet_tlo_opis">Use high-quality and nutrient-rich soil.</string>
+
+    <string name="savjet_rezidba_naslov">Regular pruning</string>
+    <string name="savjet_rezidba_opis">Remove dry and damaged parts to encourage new growth.</string>
+
+    <string name="banner_naslov">Care with love,</string>
+    <string name="banner_opis">and nature will reward you 💚</string>
+
+<!--    odrzavanje i serivs-->
+
+    <string name="servis_title">Maintenance and Service</string>
+    <string name="servis_subtitle">Extend the lifespan of your machines</string>
+
+    <string name="servis_card1_title">🔧 Regular maintenance</string>
+    <string name="servis_card1_desc">Regularly check oil, filters, and parts condition to prevent breakdowns.</string>
+
+    <string name="servis_card2_title">🛢 Oil change</string>
+    <string name="servis_card2_desc">Change oil according to manufacturer recommendations for proper engine performance.</string>
+
+    <string name="servis_card3_title">🧼 Cleaning</string>
+    <string name="servis_card3_desc">Clean the machine from dirt and dust after use to prevent damage.</string>
+
+    <string name="servis_card4_title">🛑 Safety</string>
+    <string name="servis_card4_desc">Always use protective equipment and turn off the machine before servicing.</string>
+
+
+<!--    gorivo fragment-->
+
+    <string name="gorivo_title">Fuel and Consumption</string>
+    <string name="gorivo_subtitle">How to reduce consumption and save money</string>
+
+    <string name="gorivo_card1_title">⛽ Fuel quality</string>
+    <string name="gorivo_card1_desc">Use high-quality fuel to prevent breakdowns and reduce consumption.</string>
+
+    <string name="gorivo_card2_title">⚙️ Proper usage</string>
+    <string name="gorivo_card2_desc">Do not overwork the machine – operating at optimal RPM saves fuel.</string>
+
+    <string name="gorivo_card3_title">🔧 Maintenance</string>
+    <string name="gorivo_card3_desc">Regular engine servicing directly affects lower fuel consumption.</string>
+
+
+<!--    sigurnost cards-->
+    <string name="sigurnost_title">Work Safety</string>
+    <string name="sigurnost_subtitle">Protect yourself and others on the farm</string>
+
+    <string name="sigurnost_oprema_title">🦺 Protective equipment</string>
+    <string name="sigurnost_oprema_desc">Always use gloves, boots, and safety glasses while working.</string>
+
+    <string name="sigurnost_masine_title">⚠️ Working with machines</string>
+    <string name="sigurnost_masine_desc">Never approach moving parts while the machine is running.</string>
+
+    <string name="sigurnost_struja_title">🔌 Electrical safety</string>
+    <string name="sigurnost_struja_desc">Do not use damaged cables and always work in dry conditions.</string>
+
+    <string name="sigurnost_hemija_title">🧴 Chemicals</string>
+    <string name="sigurnost_hemija_desc">Use a mask and avoid direct contact with pesticides.</string>
+
+
+<!--    mehan-->
+
+    <string name="mech_title">Mechanization and Tools</string>
+    <string name="mech_subtitle">Learn about machines that make farm work easier</string>
+
+    <string name="action_back">Back</string>
+
+    <string name="mech_machines_title">Agricultural machines</string>
+    <string name="mech_machines_desc">Learn about machines that make farm work easier</string>
+
+    <string name="mech_tools_title">Tools and equipment</string>
+    <string name="mech_tools_desc">Basic tools and their proper use</string>
+
+    <string name="mech_service_title">Maintenance and service</string>
+    <string name="mech_service_desc">How to properly maintain machines and extend their lifespan</string>
+
+    <string name="mech_safety_title">Work safety</string>
+    <string name="mech_safety_desc">Tips and rules for safe work with machines and tools</string>
+
+    <string name="mech_fuel_title">Fuel and consumption</string>
+    <string name="mech_fuel_desc">Fuel types and how to optimize consumption</string>
+
+
+
+    <!--    fragment_profile-->
+    <string name="profile_title">My Profile</string>
+    <string name="profile_aktivnost">Activity</string>
+    <string name="o_meni">About Me</string>
+    <string name="napisi_o_meni">Write something about yourself...</string>
+    <!-- values-en/strings.xml (English) -->
+    <string name="uredi_profil">Edit Profile</string>
+    <string name="promjeni_lozinku">Change Password</string>
+    <string name="aktivnost_naloga">Account Activity</string>
+    <string name="odjavi_se">Log Out</string>
+
+<!--    fragment_privatnost-->
+
+
+    <string name="sigurnost_kontrola">Security and data control</string>
+    <string name="vasa_privatnost">Your privacy</string>
+    <string name="vasi_podaci_sigurni">Your data is protected and secure.</string>
+    <string name="privatnost_opis">Control how the app uses your data, location, and notifications. You can change all options at any time.</string>
+    <string name="postavke_privatnosti">Privacy settings</string>
+    <string name="pristup_lokaciji">Location access</string>
+    <string name="gps_lokalne_info">Uses GPS for local information</string>
+    <string name="analitika">Analytics</string>
+    <string name="analitika_opis">Improving the app experience</string>
+    <string name="personalizirane_obavijesti">Personalized notifications</string>
+    <string name="pametne_preporuke">Smart recommendations and notifications</string>
+    <string name="upravljanje_podacima">Data management</string>
+    <string name="obrisi_podatke">Delete data</string>
+    <string name="pravila_privatnosti">Privacy policy</string>
+
+
+
+
+
+
+
+
+
+    <string name="jaja">Eggs</string>
+    <string name="jaja_opis">Egg production, hygiene, storage, and egg quality.</string>
+    <string name="sta_cete_pronaci"> What you will find</string>
+    <string name="proizvodnja_jaja">Egg Production</string>
+    <string name="proizvodnja_jaja_opis">The process of egg production from laying hens and factors affecting quantity and quality.</string>
+    <string name="higijena_proizvodnje">Production Hygiene</string>
+    <string name="higijena_proizvodnje_opis">    Hygiene practices and standards for hen health and egg safety.</string>
+    <string name="skladistenje_jaja">Egg Storage</string>
+    <string name="skladistenje_jaja_opis">Proper storage and handling of eggs to preserve freshness and quality.</string>
+    <string name="kvalitet_jaja">Egg Quality</string>
+    <string name="kvalitet_jaja_opis">    Quality criteria, grading, and classification of eggs according to standards.</string>
+    <string name="zdrave_zivotinje">Healthy animals = quality eggs</string>
+    <string name="higijena_kljuc">    Hygiene is key for safe eggs</string>
+    <string name="hladenje_jaja">    Proper cooling preserves egg freshness and safety</string>
+    <string name="redovna_kontrola">Regular inspection ensures safety</string>
+    <string name="kvalitetno_jaje">    Quality eggs start with healthy animals.</string>
+
+
+    <string name="dobrodosli">Welcome 👋</string>
+
+    <string name="home_opis">
+    Everything you need for successful and modern
+    agricultural knowledge.
+</string>
+
+    <string name="suncano">Sunny</string>
+
+
+
+    <string name="pogledaj_sve">View all</string>
+
+
+
+    <string name="masine">Machines</string>
+
+    <string name="organska_proizvodnja">Organic Production</string>
+
+    <string name="brzi_pristup">Quick Access</string>
+
+
+
+
+
+
+
+    <!-- ENGLISH -->
+
+    <string name="premium_course">Premium Course</string>
+
+    <string name="osnove_stocarstva_naslov">Basics of Livestock Farming</string>
+
+    <string name="osnove_stocarstva_podnaslov">Learn the basics of animal breeding and modern production</string>
+
+    <string name="lekcije_broj">4 lessons</string>
+
+    <string name="vrijeme_citanja">15 min reading</string>
+
+    <string name="lesson_01">What is livestock farming?</string>
+
+    <string name="lesson_01_opis">Livestock farming is a branch of agriculture focused on raising domestic animals for food and other products.</string>
+
+    <string name="lesson_02">Types of livestock farming</string>
+
+    <string name="lesson_02_opis">The most common branches are cattle farming, sheep farming, goat farming, and poultry farming.</string>
+
+
+
+
+    <string name="stocarstvo_naslov">Livestock Farming</string>
+    <string name="stocarstvo_opis">Everything about animal breeding and care</string>
+
+    <string name="osnove_stocarstva">Basics of Livestock Farming</string>
+    <string name="osnove_stocarstva_opis">Learn the basic concepts and production types</string>
+
+    <string name="vrste_zivotinja">Types of Animals</string>
+    <string name="vrste_zivotinja_opis">Overview of all domestic animals</string>
+
+    <string name="ishrana_zivotinja">Animal Nutrition</string>
+    <string name="ishrana_zivotinja_opis">Nutrition plans for healthy growth</string>
+
+    <string name="bolesti_prevencija_opis">Recognize diseases, prevention methods, and animal protection</string>
+
+    <string name="smjestaj_oprema">Housing and Equipment</string>
+    <string name="smjestaj_oprema_opis">Learn how to organize barns and choose the right equipment.</string>
+
+    <string name="proizvodnja_prerada">Production and Processing</string>
+    <string name="proizvodnja_prerada_opis">Milk, meat, eggs, and wool - from production to processing and market.</string>
+
+
+    <string name="rate_app">Rate the app</string>
+    <string name="opinion_matters">Your opinion matters to us</string>
+
+    <string name="how_do_you_like">How do you like FarmEdu?</string>
+
+    <string name="rating_help">Your rating helps us improve the app and user experience.</string>
+
+    <string name="add_comment">Add a comment</string>
+
+    <string name="write_experience">Write your experience...</string>
+
+    <string name="send_rating">Send rating</string>
+
+    <string name="thanks_support">Thanks for your support 💚</string>
+
+    <string name="rating_supports_app">Your rating helps the development of the FarmEdu app.</string>
+
+
+<!--    fragment_proizvodnja-->
+
+
+    <string name="fragment_pro_naslov">Production and Processing</string>
+    <string name="fragment_pro_podnaslov">Tips, hygiene, and quality of livestock products</string>
+
+    <string name="fragment_pro_prevencija">Prevention</string>
+    <string name="fragment_pro_zdravlje">Health</string>
+    <string name="fragment_pro_vakcinacija">Vaccination</string>
+
+    <string name="fragment_pro_potkategorije">Subcategories</string>
+
+    <string name="fragment_pro_mlijeko">Milk</string>
+    <string name="fragment_pro_mlijeko_opis">Milk production, hygiene, and quality</string>
+
+    <string name="fragment_pro_meso">Meat</string>
+    <string name="fragment_pro_meso_opis">Breeding, processing, and meat quality control</string>
+
+    <string name="fragment_pro_jaja">Eggs</string>
+    <string name="fragment_pro_jaja_opis">Egg storage, hygiene, and safety</string>
+
+    <string name="fragment_pro_vuna">Wool</string>
+    <string name="fragment_pro_vuna_opis">Shearing, processing, and wool quality</string>
+
+    <string name="fragment_pro_prerada">Processing</string>
+    <string name="fragment_pro_prerada_opis">Livestock product processing and market preparation</string>
+
+    <string name="fragment_pro_trziste">Market</string>
+    <string name="fragment_pro_trziste_opis">Product sales and market information</string>
+
+    <!-- ENGLISH -->
+    <string name="bolesti_prevencija">Diseases and Prevention</string>
+    <string name="bolesti_opis">Recognize diseases early and protect your livestock with proper prevention.</string>
+
+    <string name="prevencija">Prevention</string>
+    <string name="zdravljee">Health</string>
+    <string name="vakcinacija">Vaccination</string>
+
+    <string name="prevencija_najbolja">Prevention is the best protection</string>
+
+    <string name="redovna_njega">Regular care, hygiene, nutrition, and vaccination are key to the health and productivity of your livestock.</string>
+
+    <string name="najcesce_bolesti">Most Common Diseases</string>
+
+    <string name="respiratorne_bolesti">Respiratory Diseases</string>
+    <string name="respiratorne_opis">Coughing, sneezing, pneumonia. Most common in calves and lambs.</string>
+
+    <string name="probavni_poremecaji">Digestive Disorders</string>
+    <string name="probavni_opis">Diarrhea, bloating, cramps. Causes: nutrition, water, stress.</string>
+
+    <string name="paraziti">Parasites</string>
+    <string name="paraziti_opis">Internal and external parasites reduce growth and immunity.</string>
+
+    <string name="mastitis">Mastitis</string>
+    <string name="mastitis_opis">Udder inflammation in cows and goats. Affects milk quality.</string>
+
+    <string name="mjere_prevencije">Prevention Measures</string>
+
+    <string name="vakcinacija_opis">Follow the vaccination schedule recommended by your veterinarian.</string>
+
+    <string name="higijena">Hygiene</string>
+    <string name="higijena_opis">Regular cleaning of facilities and equipment prevents diseases.</string>
+
+    <string name="pravilna_ishrana">Proper Nutrition</string>
+    <string name="pravilna_ishrana_opis">Quality, balanced nutrition strengthens animal immunity.</string>
+
+    <string name="cista_voda">Clean Water</string>
+    <string name="cista_voda_opis">Provide constant access to clean and fresh water.</string>
+
+    <string name="veterinar_upozorenje">If symptoms of illness appear, contact a veterinarian immediately. Quick reaction saves animals and reduces losses.</string>
+
+    <!--    fragment_alati_oprema-->
+    <string name="alati_oprema">Tools and Equipment</string>
+    <string name="osnovni_alati">🛠️ Basic tools for farm work</string>
+    <string name="trikovi_alati">🛠 Small tips for tools and equipment</string>
+
+
+<!--    frament_o_aplikaciji-->
+
+
+    <string name="fragment_o_aplikaciji_nazad">Back</string>
+
+    <string name="fragment_o_aplikaciji_osnovni_podaci">Basic Information</string>
+
+    <string name="fragment_o_aplikaciji_info_aplikacije">Application Information</string>
+
+    <string name="fragment_o_aplikaciji_farmedu">FarmEdu</string>
+
+    <string name="fragment_o_aplikaciji_farmedu_opis">Smart educational platform for farming</string>
+
+    <string name="fragment_o_aplikaciji_glavni_opis">FarmEdu allows users to explore the world of domestic animals, plants, weather conditions, and modern agriculture through a modern and simple interface.</string>
+
+    <string name="fragment_o_aplikaciji_detalji">Application Details</string>
+
+    <string name="fragment_o_aplikaciji_naziv">Application Name</string>
+
+    <string name="fragment_o_aplikaciji_naziv_vrijednost">FarmEduErmin</string>
+
+    <string name="fragment_o_aplikaciji_autor">Author</string>
+
+    <string name="fragment_o_aplikaciji_autor_ime">Ermin</string>
+
+    <string name="fragment_o_aplikaciji_godina">Year</string>
+
+    <string name="fragment_o_aplikaciji_godina_vrijednost">2026</string>
+
+    <string name="fragment_o_aplikaciji_verzija">Version</string>
+
+    <string name="fragment_o_aplikaciji_verzija_broj">v1.0.0</string>
+
+    <string name="fragment_o_aplikaciji_svrha">Purpose of the App</string>
+
+    <string name="fragment_o_aplikaciji_edukacija">📚 Education and Development</string>
+
+    <string name="fragment_o_aplikaciji_edukacija_opis">The application was created to provide users with easy access to educational content related to animals, milk, meat, egg production, and modern breeding methods.</string>
+
+    <string name="fragment_o_aplikaciji_hvala">Thank you for using FarmEdu</string>
+
+    <string name="fragment_o_aplikaciji_footer_opis">Smarter learning for the modern farm.</string>
+
+
+<!--    fragment sigurnost kopija-->
+
+
+    <!-- values-en/strings.xml (English) -->
+
+    <string name="fragment_backup_naslov">Backup</string>
+
+    <string name="fragment_backup_podnaslov">Backup and data restore</string>
+
+    <string name="fragment_backup_status_naslov">Backup status</string>
+
+    <string name="fragment_backup_status_opis">Application data is secure</string>
+
+    <string name="fragment_backup_zadnji_backup">Last backup: Never</string>
+
+    <string name="fragment_backup_status_neaktivan">Backup is not active</string>
+
+    <string name="fragment_backup_upravljanje">Backup management</string>
+
+    <string name="fragment_backup_napravi">Create backup now</string>
+
+    <string name="fragment_backup_vrati">Restore data</string>
+
+    <string name="fragment_backup_vrati_opis">Restore previously saved data</string>
+
+    <string name="fragment_backup_auto_naslov">Automatic security</string>
+
+    <string name="fragment_backup_auto_backup">Automatic backup</string>
+
+    <string name="fragment_backup_auto_opis">Daily data backup</string>
+
+
+<!--    fragment_vuna-->
+
+    <string name="fragment_vuna_tag">Production and processing</string>
+    <string name="fragment_vuna_title">Wool</string>
+    <string name="fragment_vuna_desc">Wool production, washing, carding, spinning, and wool quality.</string>
+    <string name="fragment_vuna_section">What you will find</string>
+
+    <string name="fragment_vuna_card1_title">Wool production</string>
+    <string name="fragment_vuna_card1_desc">The process of sheep farming and factors affecting wool quantity and quality.</string>
+
+    <string name="fragment_vuna_card2_title">Production hygiene</string>
+    <string name="fragment_vuna_card2_desc">Hygiene practices and standards for sheep health and wool safety.</string>
+
+    <string name="fragment_vuna_card3_title">Wool washing and processing</string>
+    <string name="fragment_vuna_card3_desc">Washing, drying, and preparing wool for further processing and improved quality.</string>
+
+    <string name="fragment_vuna_card4_title">Wool quality</string>
+    <string name="fragment_vuna_card4_desc">Quality criteria, grading, and factors affecting wool properties and value.</string>
+
+    <string name="fragment_vuna_recommendations">Important recommendations</string>
+
+    <string name="fragment_vuna_tip1">Healthy sheep = quality wool</string>
+    <string name="fragment_vuna_tip2">Hygiene is the key to clean wool</string>
+    <string name="fragment_vuna_tip3">Washing improves wool quality</string>
+    <string name="fragment_vuna_tip4">Regular control ensures quality</string>
+
+    <string name="fragment_vuna_warning">Quality wool starts with a healthy animal.</string>
+
+<!--    smjestaj-->
+    <!-- values-en/strings.xml (English) -->
+
+    <string name="fragment_smjestaj_oprema_title">Housing and equipment</string>
+    <string name="fragment_smjestaj_oprema_desc">Safety and productivity of animals</string>
+
+    <string name="fragment_smjestaj_objekti">Types of housing facilities</string>
+
+    <string name="fragment_smjestaj_savjet">Expert advice</string>
+    <string name="fragment_smjestaj_savjet_desc">Regularly clean the area and maintain optimal conditions for animal health.</string>
+
+    <string name="fragment_smjestaj_stale">Barns</string>
+    <string name="fragment_smjestaj_stale_desc">Traditional facilities for housing cattle, sheep, and other animals.</string>
+
+    <string name="fragment_smjestaj_nadstresnice">Shelters</string>
+    <string name="fragment_smjestaj_nadstresnice_desc">Open structures for protection from sun, rain, and wind.</string>
+
+    <string name="fragment_smjestaj_boksovi">Pens and stalls</string>
+    <string name="fragment_smjestaj_boksovi_desc">Separate spaces for individual or group animals.</string>
+
+    <string name="fragment_smjestaj_kokosinjci">Chicken coops</string>
+    <string name="fragment_smjestaj_kokosinjci_desc">Facilities adapted for keeping poultry.</string>
+
+    <!-- English -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <!-- ENGLISH -->
+    <string name="welcome_back">Welcome Back 👋</string>
+    <string name="password">Password</string>
+    <string name="register_question">Don t have an account? Register</string>
+    <string name="email">Email</string>
+
+
+    <!-- MENU -->
+    <string name="home">Home</string>
+    <string name="stocarstvo">Livestock</string>
+    <string name="poljoprivreda">Agriculture</string>
+    <string name="opcije">Settings</string>
+
+    <!-- res/values-en/strings.xml -->
+
+    <string name="ai_tip_not_available">
+    AI tip is not available
+</string>
+
+    <string name="ai_confidence_high">
+    AI analysis confidence: 98%%
+</string>
+
+    <string name="ai_confidence_medium">
+    AI analysis confidence: 91%%
+</string>
+
+    <string name="ai_confidence_low">
+    AI analysis confidence: 85%%
+</string>
+
+    <string name="home_home">View all</string>
+    <string name="popular_articles">Popular Articles</string>
+    <string name="selected_articles">0 selected</string>
+    <string name="welcome_user">Welcome, %1$s 👋</string>
+    <string name="welcome_default">Welcome 👋</string>
+
+    <string name="tips_experts">Expert\ntips</string>
+    <string name="weather_forecast">Weather\nforecast</string>
+    <string name="day_planner">Daily planner</string>
+    <string name="video_tutorials">Video\ntutorials</string>
+
+<!--    edit profie-->
+    <string name="hint_full_name">Full name</string>
+    <string name="hint_city_country">City / country</string>
+    <string name="hint_about_me">About me...</string>
+    <string name="save_changes">Save changes</string>
+    <string name="edit_profile">Edit profile</string>
+
+
+    <string name="partnership">🤝 Partnership</string>
+    <string name="partner_accept_message">The user accepted your partnership request.</string>
+    <string name="time_2_min_ago">2 minutes ago</string>
+    <string name="dodaj_user_novog">Add new user</string>
+
+    <string name="zapocni_razgovor">Send a message and start a conversation...</string>
+    <string name="chat">Chat</string>
+    <string name="pretrazi_korisnike">Search users...</string>
+    <string name="partner_request_message">Wants to add you as a partner 🤝</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+
+
+    <string name="active_now">🟢 Active now</string>
+    <string name="send_message_hint">Send a message...</string>
+
+    <string name="partnership_requests">Partnership Requests</string>
+    <string name="users_who_want_to_collaborate">Users who want to collaborate with you</string>
+    <string name="new_partnerships">New Partnerships</string>
+    <string name="accept_requests_expand_network">Accept requests and expand your collaborator network.</string>
+    <string name="add_user">Add User</string>
+    <string name="search_users_hint">Search users...</string>
+
+    <string name="listen_text">Listen</string>
+    <string name="read_more">Read more</string>
+</resources>

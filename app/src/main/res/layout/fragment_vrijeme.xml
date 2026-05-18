@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#051114">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="false"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <!-- HEADER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:padding="14dp"
+                    android:background="@drawable/bg_back_button"
+                    android:src="@drawable/baseline_arrow_back"
+                    android:tint="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.02"
+                        android:text="Weather AI"
+                        android:textColor="#FFFFFF"
+                        android:textSize="31sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Pametna vremenska analiza"
+                        android:textColor="#7D96A1"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_green_button">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/weathericon" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!-- SEARCH -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_search_glass"
+                android:elevation="3dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/postavke"
+                    android:tint="#90A5AF" />
+
+                <EditText
+                    android:id="@+id/etSearchCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Pretraži grad..."
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#6F8791"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- MAIN WEATHER CARD -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="#0A232A"
+                app:cardCornerRadius="38dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- HERO SECTION -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="390dp">
+
+                        <!-- BACKGROUND -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.30"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/farm_baner" />
+
+                        <!-- OVERLAY -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#33000000" />
+
+                        <!-- CONTENT -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="24dp">
+
+                            <!-- TOP -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvGrad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Loading..."
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="32sp"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="6dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/imgCountry"
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/it_lock" />
+
+                                        <TextView
+                                            android:id="@+id/tvDatum"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="8dp"
+                                            android:text="Učitavanje..."
+                                            android:textColor="#B5C6CC"
+                                            android:textSize="15sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:id="@+id/weatherIcon"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/sunny_light" />
+
+                            </LinearLayout>
+
+                            <!-- TEMP -->
+                            <TextView
+                                android:id="@+id/tvTemp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="--°"
+                                android:textColor="#FFFFFF"
+                                android:textSize="96sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvOpis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Učitavanje vremena..."
+                                android:textColor="#C3FF58"
+                                android:textSize="21sp"
+                                android:textStyle="bold" />
+
+                            <!-- MINI CARD -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="24dp"
+                                android:background="@drawable/weather_box"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="UV INDEX"
+                                        android:textColor="#78909B"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvUv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="--"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="26sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="46dp"
+                                    android:background="#28434B" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="OSJEĆAJ"
+                                        android:textColor="#78909B"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tvFeels"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="--°"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="26sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- FORECAST -->
+            <LinearLayout
+                android:id="@+id/forecastContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- LOADING -->
+    <FrameLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC051114"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:indeterminateTint="#C3FF58" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Učitavanje vremena..."
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

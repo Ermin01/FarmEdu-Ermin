@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F4F6FA"
+    android:paddingStart="18dp"
+    android:paddingTop="14dp"
+    android:paddingEnd="18dp"
+    android:paddingBottom="26dp">
+
+    <!-- HANDLE -->
+
+    <View
+        android:layout_width="54dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/bg_green_button" />
+
+    <!-- TITLE -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opcije korisnika"
+        android:textColor="#111111"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="22dp"
+        android:text="Upravljaj partnerom i sigurnošću"
+        android:textColor="#7B8494"
+        android:textSize="14sp" />
+
+    <!-- DELETE PARTNER -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/btnDeletePartner"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <!-- ICON -->
+
+            <LinearLayout
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/accept_button_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/btn_default"
+                    android:tint="#FFFFFF" />
+
+            </LinearLayout>
+
+            <!-- TEXT -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obriši partnera"
+                    android:textColor="#111111"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Ukloni korisnika iz partnera"
+                    android:textColor="#7A7A7A"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- ARROW -->
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/accept_button_bg"
+                android:tint="#B0B7C3" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- REPORT -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <LinearLayout
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/accept_button_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/waring"
+                    android:tint="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prijavi korisnika"
+                    android:textColor="#111111"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Prijavi neprimjeren sadržaj"
+                    android:textColor="#7A7A7A"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/accept_button_bg"
+                android:tint="#B0B7C3" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- BLOCK -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/btnBlock"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <LinearLayout
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/accept_button_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/block"
+                    android:tint="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blokiraj korisnika"
+                    android:textColor="#111111"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Spriječi dalju komunikaciju"
+                    android:textColor="#7A7A7A"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/accept_button_bg"
+                android:tint="#B0B7C3" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- CLOSE BUTTON -->
+
+    <LinearLayout
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/bg_green_button"
+        android:gravity="center"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zatvori"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

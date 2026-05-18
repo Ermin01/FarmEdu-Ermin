@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg_bottom_sheet">
+
+    <!-- HANDLE -->
+    <View
+        android:layout_width="45dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:background="#D0D0D0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postavke"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#111111"
+        android:layout_marginTop="20dp"/>
+
+    <!-- DELETE -->
+    <LinearLayout
+        android:id="@+id/btnDeleteArticles"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_option_item">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:tint="#E53935"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obriši članke"
+            android:textSize="16sp"
+            android:textColor="#E53935"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

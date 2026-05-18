@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Provjetravanje štale",
+    "tip": "Danas je preporučeno provjetravanje štale zbog povećane vlage.",
+    "description": "Visoka vlaga može izazvati respiratorne probleme kod životinja i razvoj bakterija.",
+    "category": "Smještaj životinja",
+    "emoji": "🌬️",
+    "priority": "high",
+    "voice": "Preporučuje se provjetravanje štale zbog povećane vlage."
+  },
+  {
+    "title": "Čišćenje pojilica",
+    "tip": "Redovno čišćenje pojilica smanjuje mogućnost infekcija.",
+    "description": "Prljava voda povećava rizik od bakterijskih bolesti kod stoke.",
+    "category": "Higijena",
+    "emoji": "💧",
+    "priority": "medium",
+    "voice": "Redovno čistite pojilice kako biste smanjili mogućnost infekcija."
+  },
+  {
+    "title": "Minerali u ishrani",
+    "tip": "Dodavanje minerala u ishranu poboljšava otpornost životinja.",
+    "description": "Minerali pomažu jačanju imuniteta i pravilnom razvoju organizma.",
+    "category": "Ishrana",
+    "emoji": "🥬",
+    "priority": "high",
+    "voice": "Dodavanje minerala poboljšava otpornost životinja."
+  },
+  {
+    "title": "Svježa voda",
+    "tip": "Svježa voda povećava produktivnost stoke.",
+    "description": "Dovoljan unos vode poboljšava proizvodnju mlijeka i zdravlje životinja.",
+    "category": "Voda",
+    "emoji": "🚰",
+    "priority": "medium",
+    "voice": "Osigurajte svježu vodu za bolju produktivnost stoke."
+  },
+  {
+    "title": "Kontrola temperature",
+    "tip": "Kontrola temperature smanjuje stres kod životinja.",
+    "description": "Previsoke temperature mogu izazvati pad apetita i proizvodnje.",
+    "category": "Temperatura",
+    "emoji": "🌡️",
+    "priority": "high",
+    "voice": "Kontrola temperature smanjuje stres kod životinja."
+  }
+]

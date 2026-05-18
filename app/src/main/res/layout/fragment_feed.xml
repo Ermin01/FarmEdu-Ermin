@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F8FA"
+    android:paddingTop="18dp"
+    tools:context=".chat.FeedFragment">
+
+    <!-- ===================================== -->
+    <!-- TOP BAR -->
+    <!-- ===================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- BACK -->
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_search_modern"
+            android:padding="11dp"
+            android:src="@drawable/baseline_arrow_back" />
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:text="Objave"
+            android:textColor="#111111"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- ADD POST -->
+
+        <ImageView
+            android:id="@+id/accelerate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_green_button"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/dot_active" />
+
+    </LinearLayout>
+
+    <!-- ===================================== -->
+    <!-- SEARCH -->
+    <!-- ===================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_search_modern"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <EditText
+            android:id="@+id/etSearchPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Pretraži objave..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#111111"
+            android:textColorHint="#9E9E9E"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <!-- ===================================== -->
+    <!-- CATEGORY CHIPS -->
+    <!-- ===================================== -->
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <!-- SVE -->
+
+            <TextView
+                android:id="@+id/chipSve"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_green_button"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Sve"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- STOCARSTVO -->
+
+            <TextView
+                android:id="@+id/chipStocarstvo"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_search_modern"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="🐄 Stočarstvo"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- VOCNJAK -->
+
+            <TextView
+                android:id="@+id/chipVocnjak"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_search_modern"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="🍎 Voćnjak"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- MASINE -->
+
+            <TextView
+                android:id="@+id/chipMasine"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_search_modern"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="🚜 Mašine"
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- ===================================== -->
+    <!-- POSTS -->
+    <!-- ===================================== -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPosts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="18dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp"
+        tools:listitem="@layout/item_post" />
+
+</LinearLayout>

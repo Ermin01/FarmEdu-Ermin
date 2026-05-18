@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F5F7F6">
+
+    <!-- 🔝 HEADER -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <!-- SLika -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/alatiioprema" />
+
+        <!-- Overlay -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66000000"/>
+
+        <!-- BACK dugme -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="29dp"
+            android:layout_gravity="top|start"
+            android:padding="12dp"
+            android:src="@drawable/baseline_arrow_back"
+            android:background="@drawable/bg_back_button"
+            app:tint="#FFFFFF"/>
+
+        <!-- TEKST -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|start"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alati_oprema"
+                android:textColor="#4CAF50"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/osnovni_alati"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="6dp"
+                android:text="@string/trikovi_alati"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="@drawable/bg_pill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- 📦 LISTA -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAlati"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"/>
+
+</LinearLayout>

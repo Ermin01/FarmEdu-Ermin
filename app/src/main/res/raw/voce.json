@@ -1,0 +1,74 @@
+[
+  {
+    "naslov": "jabuka_naslov",
+    "opis": "jabuka_opis",
+    "vrijeme_sadnje": "jabuka_sadnja",
+    "vrijeme_berbe": "jabuka_berba",
+    "zalijevanje": "jabuka_zalijevanje",
+    "sunce": "jabuka_sunce",
+    "temperatura": "jabuka_temperatura",
+    "tip_tla": "jabuka_tlo",
+    "prinos": "jabuka_prinos",
+    "slika": "jabuka"
+  },
+  {
+    "naslov": "kruska_naslov",
+    "opis": "kruska_opis",
+    "vrijeme_sadnje": "kruska_sadnja",
+    "vrijeme_berbe": "kruska_berba",
+    "zalijevanje": "kruska_zalijevanje",
+    "sunce": "kruska_sunce",
+    "temperatura": "kruska_temperatura",
+    "tip_tla": "kruska_tlo",
+    "prinos": "kruska_prinos",
+    "slika": "kruska"
+  },
+  {
+    "naslov": "sljiva_naslov",
+    "opis": "sljiva_opis",
+    "vrijeme_sadnje": "sljiva_sadnja",
+    "vrijeme_berbe": "sljiva_berba",
+    "zalijevanje": "sljiva_zalijevanje",
+    "sunce": "sljiva_sunce",
+    "temperatura": "sljiva_temperatura",
+    "tip_tla": "sljiva_tlo",
+    "prinos": "sljiva_prinos",
+    "slika": "sljiva"
+  },
+  {
+    "naslov": "tresnja_naslov",
+    "opis": "tresnja_opis",
+    "vrijeme_sadnje": "tresnja_sadnja",
+    "vrijeme_berbe": "tresnja_berba",
+    "zalijevanje": "tresnja_zalijevanje",
+    "sunce": "tresnja_sunce",
+    "temperatura": "tresnja_temperatura",
+    "tip_tla": "tresnja_tlo",
+    "prinos": "tresnja_prinos",
+    "slika": "tresnja"
+  },
+  {
+    "naslov": "jagoda_naslov",
+    "opis": "jagoda_opis",
+    "vrijeme_sadnje": "jagoda_sadnja",
+    "vrijeme_berbe": "jagoda_berba",
+    "zalijevanje": "jagoda_zalijevanje",
+    "sunce": "jagoda_sunce",
+    "temperatura": "jagoda_temperatura",
+    "tip_tla": "jagoda_tlo",
+    "prinos": "jagoda_prinos",
+    "slika": "jagoda"
+  },
+  {
+    "naslov": "malina_naslov",
+    "opis": "malina_opis",
+    "vrijeme_sadnje": "malina_sadnja",
+    "vrijeme_berbe": "malina_berba",
+    "zalijevanje": "malina_zalijevanje",
+    "sunce": "malina_sunce",
+    "temperatura": "malina_temperatura",
+    "tip_tla": "malina_tlo",
+    "prinos": "malina_prinos",
+    "slika": "malina"
+  }
+]

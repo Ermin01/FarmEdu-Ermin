@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:fillViewport="true"
+    tools:context=".PlanerdanaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- BACK -->
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_back_button"
+                android:padding="10dp"
+                android:src="@drawable/baseline_arrow_back"
+                android:scaleType="centerInside"
+                app:tint="#FFFFFF" />
+
+
+
+            <!-- TEXT -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Planer dana 🌱"
+                    android:textColor="#111111"
+                    android:textSize="26sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Organizuj farmu i dnevne aktivnosti"
+                    android:textColor="#777777"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <!-- INFO -->
+            <ImageView
+                android:id="@+id/btnInfo"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_dialog_info"
+                android:tint="#4CAF50"/>
+        </LinearLayout>
+
+        <!-- KALENDAR CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <!-- HEADER -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtMonth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Maj 2025"
+                        android:textColor="#111111"
+                        android:textSize="23sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/btnPrevMonth"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="18dp"
+                        android:padding="2dp"
+                        android:src="@android:drawable/ic_media_previous"
+                        android:tint="#666666"/>
+
+                    <ImageView
+                        android:id="@+id/btnNextMonth"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="2dp"
+                        android:src="@android:drawable/ic_media_next"
+                        android:tint="#666666"/>
+                </LinearLayout>
+
+                <!-- DANI -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Pon"
+                        android:textColor="#9A9A9A"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Uto"
+                        android:textColor="#9A9A9A"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sri"
+                        android:textColor="#9A9A9A"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Čet"
+                        android:textColor="#9A9A9A"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Pet"
+                        android:textColor="#9A9A9A"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sub"
+                        android:textColor="#9A9A9A"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Ned"
+                        android:textColor="#9A9A9A"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- DINAMIČKI GRID -->
+                <GridLayout
+                    android:id="@+id/calendarGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:columnCount="7"
+                    android:useDefaultMargins="true"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- FILTERI -->
+
+        <!-- NASLOV -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Plan za odabrani dan"
+                android:textColor="#111111"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtTaskCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 zadataka"
+                android:textColor="#777777"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <!-- TASKOVI -->
+        <LinearLayout
+            android:id="@+id/tasksContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"/>
+
+        <!-- BUTTON -->
+        <Button
+            android:id="@+id/btnDodajTask"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_green_button"
+            android:text="+ Dodaj novi zadatak"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

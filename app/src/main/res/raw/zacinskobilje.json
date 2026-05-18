@@ -1,0 +1,74 @@
+[
+  {
+    "naslov": "persun_naslov",
+    "slika": "persun",
+    "opis": "persun_opis",
+    "vrijeme_sadnje": "persun_sadnja",
+    "vrijeme_berbe": "persun_berba",
+    "zalijevanje": "persun_zalijevanje",
+    "sunce": "persun_sunce",
+    "temperatura": "persun_temperatura",
+    "tip_tla": "persun_tlo",
+    "prinos": "persun_prinos"
+  },
+  {
+    "naslov": "bosiljak_naslov",
+    "slika": "bosiljak",
+    "opis": "bosiljak_opis",
+    "vrijeme_sadnje": "bosiljak_sadnja",
+    "vrijeme_berbe": "bosiljak_berba",
+    "zalijevanje": "bosiljak_zalijevanje",
+    "sunce": "bosiljak_sunce",
+    "temperatura": "bosiljak_temperatura",
+    "tip_tla": "bosiljak_tlo",
+    "prinos": "bosiljak_prinos"
+  },
+  {
+    "naslov": "menta_naslov",
+    "slika": "menta",
+    "opis": "menta_opis",
+    "vrijeme_sadnje": "menta_sadnja",
+    "vrijeme_berbe": "menta_berba",
+    "zalijevanje": "menta_zalijevanje",
+    "sunce": "menta_sunce",
+    "temperatura": "menta_temperatura",
+    "tip_tla": "menta_tlo",
+    "prinos": "menta_prinos"
+  },
+  {
+    "naslov": "ruzmarin_naslov",
+    "slika": "ruzmarin",
+    "opis": "ruzmarin_opis",
+    "vrijeme_sadnje": "ruzmarin_sadnja",
+    "vrijeme_berbe": "ruzmarin_berba",
+    "zalijevanje": "ruzmarin_zalijevanje",
+    "sunce": "ruzmarin_sunce",
+    "temperatura": "ruzmarin_temperatura",
+    "tip_tla": "ruzmarin_tlo",
+    "prinos": "ruzmarin_prinos"
+  },
+  {
+    "naslov": "timijan_naslov",
+    "slika": "timijan",
+    "opis": "timijan_opis",
+    "vrijeme_sadnje": "timijan_sadnja",
+    "vrijeme_berbe": "timijan_berba",
+    "zalijevanje": "timijan_zalijevanje",
+    "sunce": "timijan_sunce",
+    "temperatura": "timijan_temperatura",
+    "tip_tla": "timijan_tlo",
+    "prinos": "timijan_prinos"
+  },
+  {
+    "naslov": "origano_naslov",
+    "slika": "origano",
+    "opis": "origano_opis",
+    "vrijeme_sadnje": "origano_sadnja",
+    "vrijeme_berbe": "origano_berba",
+    "zalijevanje": "origano_zalijevanje",
+    "sunce": "origano_sunce",
+    "temperatura": "origano_temperatura",
+    "tip_tla": "origano_tlo",
+    "prinos": "origano_prinos"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "naslov": "krompir_naslov",
+    "slika": "krompir",
+    "opis": "krompir_opis",
+    "vrijeme_sadnje": "krompir_sadnja",
+    "zalijevanje": "krompir_zalijevanje",
+    "sunce": "krompir_sunce"
+  },
+  {
+    "naslov": "paprika_naslov",
+    "slika": "paprika",
+    "opis": "paprika_opis",
+    "vrijeme_sadnje": "paprika_sadnja",
+    "zalijevanje": "paprika_zalijevanje",
+    "sunce": "paprika_sunce"
+  },
+  {
+    "naslov": "mrkva_naslov",
+    "slika": "mrkva",
+    "opis": "mrkva_opis",
+    "vrijeme_sadnje": "mrkva_sadnja",
+    "zalijevanje": "mrkva_zalijevanje",
+    "sunce": "mrkva_sunce"
+  },
+  {
+    "naslov": "paradajz_naslov",
+    "slika": "paradajz",
+    "opis": "paradajz_opis",
+    "vrijeme_sadnje": "paradajz_sadnja",
+    "zalijevanje": "paradajz_zalijevanje",
+    "sunce": "paradajz_sunce"
+  },
+  {
+    "naslov": "luk_naslov",
+    "slika": "luk",
+    "opis": "luk_opis",
+    "vrijeme_sadnje": "luk_sadnja",
+    "zalijevanje": "luk_zalijevanje",
+    "sunce": "luk_sunce"
+  },
+  {
+    "naslov": "kupus_naslov",
+    "slika": "kupus",
+    "opis": "kupus_opis",
+    "vrijeme_sadnje": "kupus_sadnja",
+    "zalijevanje": "kupus_zalijevanje",
+    "sunce": "kupus_sunce"
+  }
+]
