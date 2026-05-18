@@ -37,6 +37,8 @@ public class NovaObjavaFragment extends Fragment {
     private FirebaseFirestore db;
 
     private PhotoAdapter photoAdapter;
+
+    private ImageView btnBack;
     private final List<Uri> photoList = new ArrayList<>();
 
     private final ActivityResultLauncher<String> pickImageLauncher =
@@ -94,6 +96,15 @@ public class NovaObjavaFragment extends Fragment {
         chipMasine.setOnClickListener(v -> {
             selectedCategory = "Mašine";
             updateCategoryUI();
+        });
+
+        btnBack = view.findViewById(R.id.btnBack);
+
+        btnBack.setOnClickListener(v -> {
+            requireActivity().getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainer, new FeedFragment())
+                    .commit();
         });
 
         etDescription.addTextChangedListener(new TextWatcher() {
