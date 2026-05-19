@@ -22,10 +22,13 @@ import java.util.List;
 public class FeedFragment extends Fragment {
 
     private RecyclerView recyclerPosts;
+
     private ImageView btnAddPost;
 
     private PostAdapter adapter;
-    private final List<PostModel> postList = new ArrayList<>();
+
+    private final List<PostModel> postList =
+            new ArrayList<>();
 
     private FirebaseFirestore db;
 
@@ -35,7 +38,12 @@ public class FeedFragment extends Fragment {
             ViewGroup container,
             Bundle savedInstanceState
     ) {
-        return inflater.inflate(R.layout.fragment_feed, container, false);
+
+        return inflater.inflate(
+                R.layout.fragment_feed,
+                container,
+                false
+        );
     }
 
     @Override
@@ -44,31 +52,48 @@ public class FeedFragment extends Fragment {
             @Nullable Bundle savedInstanceState
     ) {
 
-        super.onViewCreated(view, savedInstanceState);
+        super.onViewCreated(
+                view,
+                savedInstanceState
+        );
 
         db = FirebaseFirestore.getInstance();
 
-        recyclerPosts = view.findViewById(R.id.recyclerPosts);
-        btnAddPost = view.findViewById(R.id.accelerate);
+        recyclerPosts =
+                view.findViewById(R.id.recyclerPosts);
+
+        btnAddPost =
+                view.findViewById(R.id.accelerate);
 
         recyclerPosts.setLayoutManager(
-                new LinearLayoutManager(requireContext())
+                new LinearLayoutManager(
+                        requireContext()
+                )
         );
 
         adapter = new PostAdapter(postList);
+
         recyclerPosts.setAdapter(adapter);
 
         loadPosts();
 
         btnAddPost.setOnClickListener(v ->
+
                 requireActivity()
                         .getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.fragmentContainer, new NovaObjavaFragment())
+                        .replace(
+                                R.id.fragmentContainer,
+                                new NovaObjavaFragment()
+                        )
                         .addToBackStack(null)
                         .commit()
         );
     }
+
+    // =====================================================
+    // LOAD POSTS
+    // =====================================================
 
     private void loadPosts() {
 
@@ -78,19 +103,92 @@ public class FeedFragment extends Fragment {
 
                     postList.clear();
 
-                    for (DocumentSnapshot doc : queryDocumentSnapshots) {
+                    for (DocumentSnapshot doc
+                            : queryDocumentSnapshots) {
 
-                        PostModel post = doc.toObject(PostModel.class);
+                        PostModel post =
+                                doc.toObject(PostModel.class);
 
                         if (post != null) {
 
-                            // 🔥 ID FIX (OBAVEZNO)
-                            post.setPostId(doc.getId());
+                            // =================================
+                            // POST ID
+                            // =================================
 
-                            // 🔥 IMAGE FIX (OBAVEZNO - sigurnost)
-                            String imageUri = doc.getString("imageUri");
+                            post.setPostId(
+                                    doc.getId()
+                            );
+
+                            // =================================
+                            // SINGLE IMAGE SUPPORT
+                            // =================================
+
+                            String imageUri =
+                                    doc.getString("imageUri");
+
                             if (imageUri != null) {
-                                post.setImageUri(imageUri);
+
+                                post.setImageUri(
+                                        imageUri
+                                );
+                            }
+
+                            // =================================
+                            // MULTIPLE IMAGES
+                            // =================================
+
+                            List<String> imageUrls =
+                                    (List<String>) doc.get("imageUrls");
+
+                            if (imageUrls != null) {
+
+                                post.setImageUrls(
+                                        imageUrls
+                                );
+
+                            } else {
+
+                                post.setImageUrls(
+                                        new ArrayList<>()
+                                );
+                            }
+
+                            // =================================
+                            // LIKES USERS
+                            // =================================
+
+                            List<String> likedUsers =
+                                    (List<String>) doc.get("likedUsers");
+
+                            if (likedUsers != null) {
+
+                                post.setLikedUsers(
+                                        likedUsers
+                                );
+
+                            } else {
+
+                                post.setLikedUsers(
+                                        new ArrayList<>()
+                                );
+                            }
+
+                            // =================================
+                            // SAFETY FIX
+                            // =================================
+
+                            if (post.getImageUrls() == null) {
+
+                                post.setImageUrls(
+                                        new ArrayList<>()
+                                );
+                            }
+
+                            if (post.getLikedUsers() == null) {
+
+                                post.setLikedUsers(
+                                        new ArrayList<>()
+                                );
                             }
 
                             postList.add(0, post);
@@ -103,9 +201,9 @@ public class FeedFragment extends Fragment {
 
     @Override
     public void onResume() {
+
         super.onResume();
+
         loadPosts();
     }
 }
-
-//git commit -m "fix edit post bug"

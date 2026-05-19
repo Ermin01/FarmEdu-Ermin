@@ -704,10 +704,9 @@ landwirtschaftliches Wissen brauchen.
     <string name="profile_aktivnost">Aktivität</string>
     <string name="o_meni">Über mich</string>
     <string name="napisi_o_meni">Schreibe etwas über dich...</string>
-
+    <string name="obrisi_profil">Profil löschen</string>
     <string name="uredi_profil">Profil bearbeiten</string>
     <string name="promjeni_lozinku">Passwort ändern</string>
-    <string name="aktivnost_naloga">Kontoaktivität</string>
     <string name="odjavi_se">Abmelden</string>
 
     <!-- fragment_privatnost-->

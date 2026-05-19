@@ -69,11 +69,7 @@
                     android:layout_height="56dp"
                     android:background="@drawable/bg_green_button">
 
-                    <ImageView
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/weathericon" />
+
 
                 </FrameLayout>
 

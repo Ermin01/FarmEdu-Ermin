@@ -26,7 +26,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 }
-
 dependencies {
 
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -39,12 +38,9 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-storage")
 
-
     // EMOJI
     implementation("com.vanniktech:emoji:0.16.0")
     implementation("com.vanniktech:emoji-google:0.16.0")
-
-
 
     // 🌐 RETROFIT
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
@@ -52,4 +48,10 @@ dependencies {
 
     // 🖼️ GLIDE
     implementation("com.github.bumptech.glide:glide:4.16.0")
+
+    // 🔍 PHOTO VIEW
+    implementation("com.github.chrisbanes:PhotoView:2.3.0")
+
+    // VIEWPAGER
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
 }

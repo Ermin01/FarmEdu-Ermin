@@ -28,7 +28,10 @@ public class ProfileFragment extends Fragment {
 
     private TextView tvName;
     private TextView tvCity;
+
     private TextView txtFriendsCount;
+    private TextView txtPostsCount;
+    private TextView txtCommentsCount;
 
     private ImageView btnBack;
     private ImageView btnSettings;
@@ -71,6 +74,12 @@ public class ProfileFragment extends Fragment {
 
         txtFriendsCount =
                 view.findViewById(R.id.txtFriendsCount);
+
+        txtPostsCount =
+                view.findViewById(R.id.txtPostsCount);
+
+        txtCommentsCount =
+                view.findViewById(R.id.txtCommentsCount);
 
         btnBack =
                 view.findViewById(R.id.btnBack);
@@ -137,6 +146,10 @@ public class ProfileFragment extends Fragment {
 
         txtFriendsCount.setText("0");
 
+        txtPostsCount.setText("0");
+
+        txtCommentsCount.setText("0");
+
         imgProfile.setImageResource(
                 R.drawable.user
         );
@@ -148,6 +161,10 @@ public class ProfileFragment extends Fragment {
         loadProfile();
 
         loadFriendsCount();
+
+        loadPostsCount();
+
+        loadCommentsCount();
 
         // ====================================================
         // EDIT PROFILE
@@ -290,9 +307,114 @@ public class ProfileFragment extends Fragment {
     }
 
     // ====================================================
+    // LOAD POSTS COUNT
+    // ====================================================
+
+    private void loadPostsCount() {
+
+        db.collection("posts")
+                .whereEqualTo("userId", uid)
+                .get()
+
+                .addOnSuccessListener(queryDocumentSnapshots -> {
+
+                    int count =
+                            queryDocumentSnapshots.size();
+
+                    txtPostsCount.setText(
+                            String.valueOf(count)
+                    );
+                })
+
+                .addOnFailureListener(e -> {
+
+                    txtPostsCount.setText("0");
+                });
+    }
+
+    // ====================================================
+    // LOAD COMMENTS COUNT
+    // ====================================================
+
+    private void loadCommentsCount() {
+
+        db.collection("posts")
+                .get()
+
+                .addOnSuccessListener(posts -> {
+
+                    if (posts.isEmpty()) {
+
+                        txtCommentsCount.setText("0");
+
+                        return;
+                    }
+
+                    final int[] totalComments = {0};
+
+                    final int totalPosts =
+                            posts.size();
+
+                    final int[] processed = {0};
+
+                    for (DocumentSnapshot post :
+                            posts.getDocuments()) {
+
+                        db.collection("posts")
+                                .document(post.getId())
+                                .collection("comments")
+                                .whereEqualTo(
+                                        "userId",
+                                        uid
+                                )
+                                .get()
+
+                                .addOnSuccessListener(comments -> {
+
+                                    totalComments[0] +=
+                                            comments.size();
+
+                                    processed[0]++;
+
+                                    if (processed[0]
+                                            >= totalPosts) {
+
+                                        txtCommentsCount.setText(
+                                                String.valueOf(
+                                                        totalComments[0]
+                                                )
+                                        );
+                                    }
+                                })
+
+                                .addOnFailureListener(e -> {
+
+                                    processed[0]++;
+
+                                    if (processed[0]
+                                            >= totalPosts) {
+
+                                        txtCommentsCount.setText(
+                                                String.valueOf(
+                                                        totalComments[0]
+                                                )
+                                        );
+                                    }
+                                });
+                    }
+                })
+
+                .addOnFailureListener(e -> {
+
+                    txtCommentsCount.setText("0");
+                });
+    }
+
+    // ====================================================
     // UPDATE UI
     // ====================================================
 
+    @SuppressWarnings("unchecked")
     private void updateUI(DocumentSnapshot doc) {
 
         String name =
@@ -315,7 +437,7 @@ public class ProfileFragment extends Fragment {
         // ====================================================
 
         if (name != null
-                && !name.isEmpty()) {
+                && !name.trim().isEmpty()) {
 
             tvName.setText(name);
 
@@ -329,7 +451,7 @@ public class ProfileFragment extends Fragment {
         // ====================================================
 
         if (city != null
-                && !city.isEmpty()) {
+                && !city.trim().isEmpty()) {
 
             tvCity.setText(city);
 
@@ -345,7 +467,7 @@ public class ProfileFragment extends Fragment {
         // ====================================================
 
         if (about != null
-                && !about.isEmpty()) {
+                && !about.trim().isEmpty()) {
 
             tvAbout.setText(about);
 
@@ -364,9 +486,18 @@ public class ProfileFragment extends Fragment {
 
         if (avatar != null) {
 
-            imgProfile.setImageResource(
-                    avatar.intValue()
-            );
+            try {
+
+                imgProfile.setImageResource(
+                        avatar.intValue()
+                );
+
+            } catch (Exception e) {
+
+                imgProfile.setImageResource(
+                        R.drawable.user
+                );
+            }
 
         } else {
 

@@ -529,7 +529,7 @@
     <!-- values/strings.xml (Bosanski) -->
     <string name="uredi_profil">Uredi profil</string>
     <string name="promjeni_lozinku">Promjeni lozinku</string>
-    <string name="aktivnost_naloga">Aktivnost naloga</string>
+    <string name="obrisi_profil">Obriši profil</string>
     <string name="odjavi_se">Odjavi se</string>
 
 

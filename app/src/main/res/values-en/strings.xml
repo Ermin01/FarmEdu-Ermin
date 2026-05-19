@@ -536,10 +536,11 @@
     <string name="profile_aktivnost">Activity</string>
     <string name="o_meni">About Me</string>
     <string name="napisi_o_meni">Write something about yourself...</string>
-    <!-- values-en/strings.xml (English) -->
+    <string name="obrisi_profil">Delete Profile</string>
+
     <string name="uredi_profil">Edit Profile</string>
     <string name="promjeni_lozinku">Change Password</string>
-    <string name="aktivnost_naloga">Account Activity</string>
+
     <string name="odjavi_se">Log Out</string>
 
 <!--    fragment_privatnost-->

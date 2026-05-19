@@ -325,7 +325,7 @@ public class EditProfileFragment extends Fragment {
         );
 
         layout.setBackgroundResource(
-                R.drawable.active_bg
+                R.drawable.bg_green_dot
         );
 
         FlexboxLayout.LayoutParams params =

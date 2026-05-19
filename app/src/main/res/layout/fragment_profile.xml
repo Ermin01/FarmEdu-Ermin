@@ -201,10 +201,12 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
+                <!-- OBJAVE -->
                 <TextView
+                    android:id="@+id/txtPostsCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="24"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -212,7 +214,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Farme"
+                    android:text="Objava"
                     android:textColor="#8FA1A8"
                     android:textSize="13sp" />
 
@@ -232,10 +234,13 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
+                <!-- KOMENTARI -->
+
                 <TextView
+                    android:id="@+id/txtCommentsCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1.6K"
+                    android:text="0"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -243,7 +248,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pratilaca"
+                    android:text="Komentara"
                     android:textColor="#8FA1A8"
                     android:textSize="13sp" />
 
@@ -531,9 +536,8 @@
                 android:layout_height="1dp"
                 android:background="#15252B" />
 
-            <!-- ACTIVITY -->
             <LinearLayout
-                android:id="@+id/btnActivity"
+                android:id="@+id/btnBrisiprofil"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:gravity="center_vertical"
@@ -544,7 +548,7 @@
                 <ImageView
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:src="@drawable/ic_activity"
+                    android:src="@drawable/it_lock"
                     app:tint="#B7FF2A" />
 
                 <TextView
@@ -552,7 +556,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
-                    android:text="@string/aktivnost_naloga"
+                    android:text="@string/obrisi_profil"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
@@ -563,6 +567,8 @@
                     app:tint="#8B949A" />
 
             </LinearLayout>
+
+
 
         </LinearLayout>
 

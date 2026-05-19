@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "category": "stocarstvo",
+    "keywords": [
+      "krava",
+      "mlijeko",
+      "muznja",
+      "litara",
+      "mlijecnost"
+    ],
+    "questions": [
+      "Koliko mlijeka daje krava?",
+      "Koliko litara mlijeka krava daje dnevno?",
+      "Kolika je mliječnost krave?"
+    ],
+    "answers": [
+      "Prosječna mliječna krava daje između 20 i 35 litara mlijeka dnevno.",
+      "Dobra mliječna krava može proizvesti više od 30 litara mlijeka dnevno."
+    ],
+    "suggestions": [
+      "Holstein",
+      "Jersey",
+      "Simentalac"
+    ],
+    "follow_up": [
+      "Želiš li najbolje mliječne pasmine?",
+      "Zanima li te ishrana krava?"
+    ]
+  }
+]

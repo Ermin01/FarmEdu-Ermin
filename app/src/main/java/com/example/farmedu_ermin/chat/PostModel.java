@@ -5,6 +5,12 @@ import java.util.List;
 
 public class PostModel {
 
+    // =====================================
+    // BASIC
+    // =====================================
+
+    private String userId;
+
     private String postId;
 
     private String name;
@@ -15,6 +21,10 @@ public class PostModel {
 
     private int avatar;
 
+    // =====================================
+    // STATS
+    // =====================================
+
     private int likes;
 
     private int comments;
@@ -22,28 +32,70 @@ public class PostModel {
     private boolean liked;
 
     // =====================================
-    // IMAGE URI / URL
+    // SINGLE IMAGE (OLD SUPPORT)
     // =====================================
 
     private String imageUri;
 
+    // =====================================
+    // MULTIPLE IMAGES
+    // =====================================
+
+    private List<String> imageUrls;
+
+    // =====================================
+    // LIKES
+    // =====================================
+
     private List<String> likedUsers;
 
     // =====================================
-    // CONSTRUCTORS
+    // EMPTY CONSTRUCTOR
     // =====================================
 
     public PostModel() {
 
-        likedUsers = new ArrayList<>();
+        this.userId = "";
+
+        this.postId = "";
+
+        this.name = "";
+
+        this.time = "";
+
+        this.description = "";
+
+        this.avatar = 0;
+
+        this.likes = 0;
+
+        this.comments = 0;
+
+        this.liked = false;
+
+        this.imageUri = "";
+
+        this.imageUrls = new ArrayList<>();
+
+        this.likedUsers = new ArrayList<>();
     }
 
+    // =====================================
+    // CONSTRUCTOR
+    // =====================================
+
     public PostModel(
+            String userId,
+            String postId,
             String name,
             String time,
             String description,
             int avatar
     ) {
+
+        this.userId = userId;
+
+        this.postId = postId;
 
         this.name = name;
 
@@ -61,12 +113,18 @@ public class PostModel {
 
         this.imageUri = "";
 
+        this.imageUrls = new ArrayList<>();
+
         this.likedUsers = new ArrayList<>();
     }
 
     // =====================================
     // GETTERS
     // =====================================
+
+    public String getUserId() {
+        return userId;
+    }
 
     public String getPostId() {
         return postId;
@@ -100,14 +158,29 @@ public class PostModel {
         return liked;
     }
 
+    // =====================================
+    // OLD IMAGE
+    // =====================================
+
     public String getImageUri() {
         return imageUri;
     }
 
-    // DODANO
     public String getImageUrl() {
         return imageUri;
     }
+
+    // =====================================
+    // MULTIPLE IMAGES
+    // =====================================
+
+    public List<String> getImageUrls() {
+        return imageUrls;
+    }
+
+    // =====================================
+    // LIKES
+    // =====================================
 
     public List<String> getLikedUsers() {
         return likedUsers;
@@ -116,6 +189,10 @@ public class PostModel {
     // =====================================
     // SETTERS
     // =====================================
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 
     public void setPostId(String postId) {
         this.postId = postId;
@@ -149,14 +226,29 @@ public class PostModel {
         this.liked = liked;
     }
 
+    // =====================================
+    // OLD IMAGE
+    // =====================================
+
     public void setImageUri(String imageUri) {
         this.imageUri = imageUri;
     }
 
-    // DODANO
     public void setImageUrl(String imageUrl) {
         this.imageUri = imageUrl;
     }
+
+    // =====================================
+    // MULTIPLE IMAGES
+    // =====================================
+
+    public void setImageUrls(List<String> imageUrls) {
+        this.imageUrls = imageUrls;
+    }
+
+    // =====================================
+    // LIKES
+    // =====================================
 
     public void setLikedUsers(List<String> likedUsers) {
         this.likedUsers = likedUsers;
