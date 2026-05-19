@@ -42,6 +42,8 @@ public class ProfileFragment extends Fragment {
     private LinearLayout btnLogout;
 
     private FlexboxLayout interestsLayout;
+    private LinearLayout btnBrisiProfil;
+
 
     private FirebaseFirestore db;
 
@@ -98,6 +100,9 @@ public class ProfileFragment extends Fragment {
 
         interestsLayout =
                 view.findViewById(R.id.interestsLayout);
+
+        btnBrisiProfil =
+                view.findViewById(R.id.btnBrisiprofil);
 
         db =
                 FirebaseFirestore.getInstance();
@@ -189,6 +194,109 @@ public class ProfileFragment extends Fragment {
                         .commit()
 
         );
+
+        // ====================================================
+// DELETE PROFILE
+// ====================================================
+
+        btnBrisiProfil.setOnClickListener(v -> {
+
+            new android.app.AlertDialog.Builder(requireContext())
+
+                    .setTitle("Obriši profil")
+
+                    .setMessage(
+                            "Da li ste sigurni da želite obrisati profil? Ova radnja se ne može poništiti."
+                    )
+
+                    .setPositiveButton("Obriši",
+                            (dialog, which) -> {
+
+                                FirebaseUser currentUser =
+                                        FirebaseAuth.getInstance()
+                                                .getCurrentUser();
+
+                                if (currentUser == null) {
+
+                                    Toast.makeText(
+                                            getContext(),
+                                            "Greška",
+                                            Toast.LENGTH_SHORT
+                                    ).show();
+
+                                    return;
+                                }
+
+                                String userId =
+                                        currentUser.getUid();
+
+                                // ====================================================
+                                // DELETE FIRESTORE USER
+                                // ====================================================
+
+                                db.collection("users")
+                                        .document(userId)
+                                        .delete()
+
+                                        .addOnSuccessListener(unused -> {
+
+                                            // ====================================================
+                                            // DELETE AUTH ACCOUNT
+                                            // ====================================================
+
+                                            currentUser.delete()
+
+                                                    .addOnSuccessListener(unused1 -> {
+
+                                                        Toast.makeText(
+                                                                getContext(),
+                                                                "Profil obrisan",
+                                                                Toast.LENGTH_LONG
+                                                        ).show();
+
+                                                        Intent intent =
+                                                                new Intent(
+                                                                        requireActivity(),
+                                                                        MainActivity.class
+                                                                );
+
+                                                        intent.setFlags(
+                                                                Intent.FLAG_ACTIVITY_NEW_TASK
+                                                                        | Intent.FLAG_ACTIVITY_CLEAR_TASK
+                                                        );
+
+                                                        startActivity(intent);
+
+                                                        requireActivity().finish();
+                                                    })
+
+                                                    .addOnFailureListener(e -> {
+
+                                                        Toast.makeText(
+                                                                getContext(),
+                                                                "Greška pri brisanju naloga",
+                                                                Toast.LENGTH_LONG
+                                                        ).show();
+                                                    });
+
+                                        })
+
+                                        .addOnFailureListener(e -> {
+
+                                            Toast.makeText(
+                                                    getContext(),
+                                                    "Greška pri brisanju podataka",
+                                                    Toast.LENGTH_LONG
+                                            ).show();
+                                        });
+
+                            })
+
+                    .setNegativeButton("Otkaži", null)
+
+                    .show();
+
+        });
 
         // ====================================================
         // LOGOUT

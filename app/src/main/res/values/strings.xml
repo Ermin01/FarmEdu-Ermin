@@ -885,10 +885,9 @@
     <string name="welcome_user">Dobrodošli, %1$s 👋</string>
     <string name="welcome_default">Dobrodošli 👋</string>
 
-    <string name="tips_experts">Savjeti\nstručnjaka</string>
+    <string name="tips_experts">Stručni savjeti</string>
     <string name="weather_forecast">Vremenska\nprognoza</string>
-    <string name="day_planner">Planer dana</string>
-    <string name="video_tutorials">Video\ntutorijali</string>
+    <string name="day_planner">Planer</string>
 
 
     <!--    edit profil-->

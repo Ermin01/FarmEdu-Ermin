@@ -537,7 +537,7 @@
                 android:background="#15252B" />
 
             <LinearLayout
-                android:id="@+id/btnBrisiprofil"
+                    android:id="@+id/btnBrisiprofil"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:gravity="center_vertical"
@@ -548,7 +548,7 @@
                 <ImageView
                     android:layout_width="22dp"
                     android:layout_height="22dp"
-                    android:src="@drawable/it_lock"
+                    android:src="@drawable/tresh"
                     app:tint="#B7FF2A" />
 
                 <TextView
