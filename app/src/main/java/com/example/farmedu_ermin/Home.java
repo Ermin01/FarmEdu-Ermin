@@ -33,6 +33,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.farmedu_ermin.chat.ChatFragment;
 import com.example.farmedu_ermin.chat.ZahtjevPrijateljstvoFragment;
+import com.example.farmedu_ermin.market.MarketplaceFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -60,6 +61,8 @@ public class Home extends Fragment {
     private TextView txtAiConfidence;
 
     private ImageView aiAvatar;
+
+    private LinearLayout loadingOverlay;
 
     private LinearLayout btnVoice;
     private LinearLayout btnRefreshAi;
@@ -163,10 +166,9 @@ public class Home extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
 
-        if (textToSpeech != null) {
-            textToSpeech.stop();
-            textToSpeech.shutdown();
-            textToSpeech = null;
+        if (badgeListener != null) {
+            badgeListener.remove();
+            badgeListener = null;
         }
 
         try {
@@ -246,9 +248,10 @@ public class Home extends Fragment {
         profileImage = view.findViewById(R.id.profileImage);
 
         txtInboxBadge = view.findViewById(R.id.txtInboxBadge);
-
+        loadingOverlay = view.findViewById(R.id.loadingOverlay);
 
         setupWelcome();
+        showLoading();
         loadJsonData();
         loadArticles();
 
@@ -269,59 +272,110 @@ public class Home extends Fragment {
         setupClicks(view);
         loadInboxBadge();
 
+        view.postDelayed(() -> {
+
+            if (isAdded()) {
+                hideLoading();
+            }
+
+        }, 2200);
+
         return view;
     }
 
     private void loadInboxBadge() {
 
-        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser currentUser =
+                FirebaseAuth.getInstance().getCurrentUser();
 
         if (currentUser == null) {
-            if (txtInboxBadge != null) txtInboxBadge.setVisibility(View.GONE);
+
+            if (txtInboxBadge != null) {
+                txtInboxBadge.animate().cancel();
+            }
+
             return;
         }
 
         String currentUid = currentUser.getUid();
+
+        // reset prije listenera
+        txtInboxBadge.clearAnimation();
+        txtInboxBadge.setVisibility(View.GONE);
+        txtInboxBadge.setAlpha(0f);
+        txtInboxBadge.setScaleX(0.7f);
+        txtInboxBadge.setScaleY(0.7f);
 
         if (badgeListener != null) {
             badgeListener.remove();
             badgeListener = null;
         }
 
-        // Slusaj zahtjeve koji cekaju (pending)
         badgeListener = FirebaseFirestore.getInstance()
                 .collection("chat_requests")
                 .whereEqualTo("receiverUid", currentUid)
                 .whereEqualTo("status", "pending")
                 .addSnapshotListener((value, error) -> {
 
-                    if (!isAdded() || getActivity() == null || txtInboxBadge == null) return;
+                    if (!isAdded()
+                            || getActivity() == null
+                            || txtInboxBadge == null) {
+                        return;
+                    }
 
                     if (error != null) {
-                        Log.e("FIREBASE_BADGE", "BADGE ERROR", error);
+
+                        Log.e(
+                                "FIREBASE_BADGE",
+                                "BADGE ERROR",
+                                error
+                        );
+
                         txtInboxBadge.setVisibility(View.GONE);
                         return;
                     }
 
                     if (value == null || value.isEmpty()) {
-                        txtInboxBadge.setVisibility(View.GONE);
-                        txtInboxBadge.setText("");
+
+                        txtInboxBadge.animate().cancel();
+
+                        txtInboxBadge.animate()
+                                .alpha(0f)
+                                .scaleX(0.7f)
+                                .scaleY(0.7f)
+                                .setDuration(120)
+                                .withEndAction(() -> {
+                                    if (txtInboxBadge != null) {
+                                        txtInboxBadge.setVisibility(View.GONE);
+                                    }
+                                })
+                                .start();
+
                         return;
                     }
 
                     int count = value.size();
 
-                    txtInboxBadge.setVisibility(View.VISIBLE);
-                    txtInboxBadge.setText(count > 99 ? "99+" : String.valueOf(count));
+                    txtInboxBadge.setText(
+                            count > 99
+                                    ? "99+"
+                                    : String.valueOf(count)
+                    );
 
-                    // Pop animacija
-                    txtInboxBadge.setScaleX(0.5f);
-                    txtInboxBadge.setScaleY(0.5f);
-                    txtInboxBadge.animate()
-                            .scaleX(1f)
-                            .scaleY(1f)
-                            .setDuration(200)
-                            .start();
+                    // prikazi smooth
+                    if (txtInboxBadge.getVisibility() != View.VISIBLE) {
+
+                        txtInboxBadge.setVisibility(View.VISIBLE);
+
+                        txtInboxBadge.animate().cancel();
+
+                        txtInboxBadge.animate()
+                                .alpha(1f)
+                                .scaleX(1f)
+                                .scaleY(1f)
+                                .setDuration(220)
+                                .start();
+                    }
                 });
     }
 
@@ -342,37 +396,31 @@ public class Home extends Fragment {
             return;
         }
 
-        user.reload().addOnCompleteListener(task -> {
+        String name = user.getDisplayName();
 
-            if (!isAdded()) return;
+        if (name != null && !name.trim().isEmpty()) {
 
-            FirebaseUser updatedUser =
-                    FirebaseAuth.getInstance()
-                            .getCurrentUser();
+            tvWelcome.setText(
+                    getString(
+                            R.string.welcome_user,
+                            name
+                    )
+            );
 
-            if (updatedUser == null) return;
+        } else {
 
-            String name =
-                    updatedUser.getDisplayName();
+            tvWelcome.setText(
+                    getString(R.string.welcome_default)
+            );
+        }
 
-            if (name != null && !name.isEmpty()) {
+        // smooth fade
+        tvWelcome.setAlpha(0f);
 
-                tvWelcome.setText(
-                        getString(
-                                R.string.welcome_user,
-                                name
-                        )
-                );
-
-            } else {
-
-                tvWelcome.setText(
-                        getString(
-                                R.string.welcome_default
-                        )
-                );
-            }
-        });
+        tvWelcome.animate()
+                .alpha(1f)
+                .setDuration(350)
+                .start();
     }
 
     // =========================
@@ -515,6 +563,26 @@ public class Home extends Fragment {
                                 new SavjetiStrucnjakaFragment()
                         )
                 );
+
+        view.findViewById(R.id.kameralive)
+                .setOnClickListener(v ->
+                        openFragment(
+                                new FarmCameraFragment()
+                        )
+                );
+
+        view.findViewById(R.id.martkshop)
+                .setOnClickListener(v ->
+                        openFragment(
+                                new MarketplaceFragment()
+                        )
+                );
+
+
+
+
+
+
 
         view.findViewById(R.id.cardPlaner)
                 .setOnClickListener(v ->
@@ -1564,6 +1632,31 @@ public class Home extends Fragment {
     // =========================
     // DESTROY
     // =========================
+
+    private void showLoading() {
+
+        if (loadingOverlay == null) return;
+
+        loadingOverlay.setAlpha(0f);
+        loadingOverlay.setVisibility(View.VISIBLE);
+
+        loadingOverlay.animate()
+                .alpha(1f)
+                .setDuration(200)
+                .start();
+    }
+
+    private void hideLoading() {
+
+        if (loadingOverlay == null) return;
+
+        loadingOverlay.animate()
+                .alpha(0f)
+                .setDuration(250)
+                .withEndAction(() ->
+                        loadingOverlay.setVisibility(View.GONE))
+                .start();
+    }
 
     @Override
     public void onDestroy() {

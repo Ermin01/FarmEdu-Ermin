@@ -99,10 +99,21 @@
                     android:id="@+id/tvWelcome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/dobrodosli"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Dobrodošli 👋"
                     android:textColor="#000000"
                     android:textSize="18sp"
-                    android:layout_marginTop="10dp"/>
+                    android:textStyle="bold"
+
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+
+                    android:duplicateParentState="false"
+                    android:includeFontPadding="false"
+
+                    android:fontFamily="sans-serif-medium"/>
 
                 <!-- SUBTEXT -->
                 <TextView
@@ -881,6 +892,7 @@
 
                     <!-- CARD 2 -->
                     <LinearLayout
+                        android:id="@+id/martkshop"
                         android:layout_width="95dp"
                         android:layout_height="100dp"
                         android:layout_margin="6dp"
@@ -892,13 +904,13 @@
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            android:src="@android:drawable/ic_menu_compass"
+                            android:src="@drawable/shopingggmarket"
                             app:tint="#F5B301"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/weather_forecast"
+                            android:text="Market"
                             android:textColor="#222222"
                             android:textStyle="bold"
                             android:textSize="12sp"
@@ -907,6 +919,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/kameralive"
                         android:layout_width="95dp"
                         android:layout_height="100dp"
                         android:layout_margin="6dp"
@@ -918,7 +931,7 @@
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            android:src="@android:drawable/ic_delete"
+                            android:src="@drawable/kamera"
                             app:tint="#F5B301"/>
 
                         <TextView
@@ -990,6 +1003,13 @@
                 </LinearLayout>
 
             </HorizontalScrollView>
+
+
+
+
+
+
+
 
             <!-- POPULARNI ČLANCI HEADER -->
             <LinearLayout
@@ -1125,5 +1145,31 @@
 
 
     </ScrollView>
+
+    <!-- PREMIUM LOADING OVERLAY -->
+    <LinearLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCFFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:indeterminateTint="#9BE15D"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Učitavanje FarmEdu..."
+            android:textColor="#222222"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
