@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.farmedu_ermin.utils.ForgotPasswordUser;
 import com.google.android.flexbox.FlexboxLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -39,6 +40,7 @@ public class ProfileFragment extends Fragment {
     private ImageView imgProfile;
 
     private LinearLayout btnEditProfile;
+    private LinearLayout btnPassword;
     private LinearLayout btnLogout;
 
     private FlexboxLayout interestsLayout;
@@ -91,6 +93,10 @@ public class ProfileFragment extends Fragment {
 
         btnEditProfile =
                 view.findViewById(R.id.btnEditProfile);
+        btnPassword =
+                view.findViewById(R.id.btnPassword);
+
+
 
         btnLogout =
                 view.findViewById(R.id.btnLogout);
@@ -194,7 +200,25 @@ public class ProfileFragment extends Fragment {
                         .commit()
 
         );
+        btnPassword.setOnClickListener(v ->
 
+                requireActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .setCustomAnimations(
+                                R.anim.slide_in_right,
+                                R.anim.slide_out_left,
+                                R.anim.slide_in_left,
+                                R.anim.slide_out_right
+                        )
+                        .replace(
+                                R.id.fragmentContainer,
+                                new ForgotPasswordUser()
+                        )
+                        .addToBackStack(null)
+                        .commit()
+
+        );
         // ====================================================
 // DELETE PROFILE
 // ====================================================

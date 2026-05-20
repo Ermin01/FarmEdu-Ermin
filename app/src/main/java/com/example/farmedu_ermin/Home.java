@@ -33,7 +33,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.farmedu_ermin.chat.ChatFragment;
 import com.example.farmedu_ermin.chat.ZahtjevPrijateljstvoFragment;
-import com.example.farmedu_ermin.market.MarketplaceFragment;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -571,12 +571,12 @@ public class Home extends Fragment {
                         )
                 );
 
-        view.findViewById(R.id.martkshop)
-                .setOnClickListener(v ->
-                        openFragment(
-                                new MarketplaceFragment()
-                        )
-                );
+//        view.findViewById(R.id.martkshop)
+//                .setOnClickListener(v ->
+//                        openFragment(
+//                                new MarketplaceFragment()
+//                        )
+//                );
 
 
 

@@ -71,7 +71,7 @@ public class NovaObjavaFragment extends Fragment {
 
                         if (uri == null) return;
 
-                        // MAX 3 SLIKE
+                        // MAX 3 slike
                         if (photoList.size() >= 3) {
 
                             Toast.makeText(
@@ -129,7 +129,6 @@ public class NovaObjavaFragment extends Fragment {
         etDescription = view.findViewById(R.id.etDescription);
 
         txtCounter = view.findViewById(R.id.txtCounter);
-
         txtName = view.findViewById(R.id.txtName);
 
         imgUser = view.findViewById(R.id.imgUser);
@@ -139,9 +138,7 @@ public class NovaObjavaFragment extends Fragment {
         btnBack = view.findViewById(R.id.btnBack);
 
         chipStocarstvo = view.findViewById(R.id.chipStocarstvo);
-
         chipVocnjak = view.findViewById(R.id.chipVocnjak);
-
         chipMasine = view.findViewById(R.id.chipMasine);
 
         // =====================================================
@@ -194,18 +191,14 @@ public class NovaObjavaFragment extends Fragment {
         // BACK
         // =====================================================
 
-        btnBack.setOnClickListener(v ->
+        btnBack.setOnClickListener(v -> {
 
-                requireActivity()
-                        .getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(
-                                R.id.fragmentContainer,
-                                new FeedFragment()
-                        )
-                        .commit()
-
-        );
+            requireActivity()
+                    .getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragmentContainer, new FeedFragment())
+                    .commit();
+        });
 
         // =====================================================
         // COUNTER
@@ -229,9 +222,7 @@ public class NovaObjavaFragment extends Fragment {
                     int count
             ) {
 
-                txtCounter.setText(
-                        s.length() + "/500"
-                );
+                txtCounter.setText(s.length() + "/500");
             }
 
             @Override
@@ -248,11 +239,7 @@ public class NovaObjavaFragment extends Fragment {
         // PUBLISH
         // =====================================================
 
-        btnObjavi.setOnClickListener(v ->
-
-                publishPost()
-
-        );
+        btnObjavi.setOnClickListener(v -> publishPost());
     }
 
     // =========================================================
@@ -261,11 +248,10 @@ public class NovaObjavaFragment extends Fragment {
 
     private void publishPost() {
 
-        String desc =
-                etDescription
-                        .getText()
-                        .toString()
-                        .trim();
+        String desc = etDescription
+                .getText()
+                .toString()
+                .trim();
 
         if (desc.isEmpty()) {
 
@@ -279,8 +265,7 @@ public class NovaObjavaFragment extends Fragment {
         }
 
         FirebaseUser user =
-                FirebaseAuth.getInstance()
-                        .getCurrentUser();
+                FirebaseAuth.getInstance().getCurrentUser();
 
         if (user == null) return;
 
@@ -293,14 +278,11 @@ public class NovaObjavaFragment extends Fragment {
         db.collection("users")
                 .document(user.getUid())
                 .get()
-
                 .addOnSuccessListener(doc -> {
 
-                    String name =
-                            doc.getString("name");
+                    String name = doc.getString("name");
 
                     if (name == null || name.isEmpty()) {
-
                         name = "Korisnik";
                     }
 
@@ -308,14 +290,12 @@ public class NovaObjavaFragment extends Fragment {
 
                     try {
 
-                        Object avatarObj =
-                                doc.get("avatar");
+                        Object avatarObj = doc.get("avatar");
 
                         if (avatarObj instanceof Long) {
 
                             avatar =
-                                    ((Long) avatarObj)
-                                            .intValue();
+                                    ((Long) avatarObj).intValue();
 
                         } else if (avatarObj instanceof Integer) {
 
@@ -323,10 +303,11 @@ public class NovaObjavaFragment extends Fragment {
                                     (Integer) avatarObj;
                         }
 
-                    } catch (Exception ignored) {}
+                    } catch (Exception ignored) {
+                    }
 
                     // =================================================
-                    // SAVE IMAGES
+                    // SAVE MULTIPLE IMAGES
                     // =================================================
 
                     List<String> savedImages =
@@ -347,50 +328,38 @@ public class NovaObjavaFragment extends Fragment {
                     // CREATE POST
                     // =================================================
 
-                    PostModel post =
-                            new PostModel();
+                    PostModel post = new PostModel();
 
-                    // USER UID
-                    post.setUserId(user.getUid());
-
-                    // BASIC
                     post.setName(name);
 
                     post.setTime("Upravo sada");
 
                     post.setDescription(
-                            "📌 "
-                                    + selectedCategory
-                                    + "\n\n"
-                                    + desc
+                            "📌 " +
+                                    selectedCategory +
+                                    "\n\n" +
+                                    desc
                     );
 
                     post.setAvatar(avatar);
 
-                    // STATS
                     post.setLikes(0);
 
                     post.setComments(0);
 
-                    post.setLiked(false);
-
-                    post.setLikedUsers(
-                            new ArrayList<>()
-                    );
+                    post.setLikedUsers(new ArrayList<>());
 
                     // =================================================
-                    // OLD IMAGE SUPPORT
+                    // OLD SUPPORT
                     // =================================================
 
                     if (!savedImages.isEmpty()) {
 
-                        post.setImageUri(
-                                savedImages.get(0)
-                        );
+                        post.setImageUri(savedImages.get(0));
                     }
 
                     // =================================================
-                    // MULTIPLE IMAGES
+                    // NEW MULTIPLE IMAGES
                     // =================================================
 
                     post.setImageUrls(savedImages);
@@ -401,7 +370,6 @@ public class NovaObjavaFragment extends Fragment {
 
                     db.collection("posts")
                             .add(post)
-
                             .addOnSuccessListener(ref -> {
 
                                 ref.update(
@@ -424,7 +392,6 @@ public class NovaObjavaFragment extends Fragment {
                                         )
                                         .commit();
                             })
-
                             .addOnFailureListener(e -> {
 
                                 btnObjavi.setEnabled(true);
@@ -453,19 +420,17 @@ public class NovaObjavaFragment extends Fragment {
 
             if (input == null) return "";
 
-            File file =
-                    new File(
-                            requireContext().getFilesDir(),
-                            "img_"
-                                    + System.currentTimeMillis()
-                                    + ".jpg"
-                    );
+            File file = new File(
+                    requireContext().getFilesDir(),
+                    "img_" +
+                            System.currentTimeMillis() +
+                            ".jpg"
+            );
 
             OutputStream out =
                     new FileOutputStream(file);
 
-            byte[] buffer =
-                    new byte[1024];
+            byte[] buffer = new byte[1024];
 
             int len;
 
@@ -497,23 +462,20 @@ public class NovaObjavaFragment extends Fragment {
     private void loadUser() {
 
         FirebaseUser user =
-                FirebaseAuth.getInstance()
-                        .getCurrentUser();
+                FirebaseAuth.getInstance().getCurrentUser();
 
         if (user == null) return;
 
         db.collection("users")
                 .document(user.getUid())
                 .get()
-
                 .addOnSuccessListener(doc -> {
 
                     // =================================================
                     // NAME
                     // =================================================
 
-                    String name =
-                            doc.getString("name");
+                    String name = doc.getString("name");
 
                     txtName.setText(
                             name != null
@@ -536,9 +498,7 @@ public class NovaObjavaFragment extends Fragment {
                                     ((Long) avatarObj)
                                             .intValue();
 
-                            imgUser.setImageResource(
-                                    resId
-                            );
+                            imgUser.setImageResource(resId);
 
                         } else if (avatarObj instanceof Integer) {
 
