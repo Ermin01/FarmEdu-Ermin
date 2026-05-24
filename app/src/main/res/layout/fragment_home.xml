@@ -245,7 +245,7 @@
                             <ImageView
                                 android:layout_width="15dp"
                                 android:layout_height="15dp"
-                                android:src="@drawable/higjena"
+                                android:src="@drawable/sunce"
                                 app:tint="#DDEBFF" />
 
                             <TextView
@@ -269,7 +269,7 @@
                             <ImageView
                                 android:layout_width="15dp"
                                 android:layout_height="15dp"
-                                android:src="@drawable/iconerror"
+                                android:src="@drawable/sunny_light"
                                 app:tint="#DDEBFF" />
 
                             <TextView
@@ -435,31 +435,7 @@
                         android:textSize="14sp"/>
 
                     <!-- CATEGORY -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="12dp"
-                        android:background="#149BE15D"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:paddingStart="12dp"
-                        android:paddingEnd="12dp">
 
-                        <ImageView
-                            android:layout_width="14dp"
-                            android:layout_height="14dp"
-                            android:src="@drawable/iconerror"
-                            app:tint="#9BE15D"/>
-
-                        <TextView
-                            android:id="@+id/txtAiCategory"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text=" Ishrana"
-                            android:textColor="#9BE15D"
-                            android:textSize="11sp"
-                            android:textStyle="bold"/>
-                    </LinearLayout>
 
                     <!-- BUTTONS -->
                     <LinearLayout
@@ -892,7 +868,7 @@
 
                     <!-- CARD 2 -->
                     <LinearLayout
-                        android:id="@+id/martkshop"
+                        android:id="@+id/notes"
                         android:layout_width="95dp"
                         android:layout_height="100dp"
                         android:layout_margin="6dp"
@@ -904,7 +880,7 @@
                         <ImageView
                             android:layout_width="32dp"
                             android:layout_height="32dp"
-                            android:src="@drawable/shopingggmarket"
+                            android:src="@drawable/notesicon"
                             app:tint="#F5B301"/>
 
                         <TextView
@@ -973,32 +949,7 @@
                             android:layout_marginTop="10dp"/>
                     </LinearLayout>
 
-                    <!-- CARD 5 -->
-                    <LinearLayout
-                        android:layout_width="95dp"
-                        android:layout_height="100dp"
-                        android:layout_margin="6dp"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:background="@drawable/quick_access_bg"
-                        android:padding="10dp">
 
-                        <ImageView
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:src="@android:drawable/ic_media_play"
-                            app:tint="#84C441"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Farmeri blizu"
-                            android:textColor="#222222"
-                            android:textStyle="bold"
-                            android:textSize="12sp"
-                            android:gravity="center"
-                            android:layout_marginTop="10dp"/>
-                    </LinearLayout>
 
                 </LinearLayout>
 

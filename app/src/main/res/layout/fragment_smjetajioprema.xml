@@ -175,7 +175,7 @@
                 android:layout_height="240dp"
                 android:clipToPadding="false"
                 android:paddingStart="10dp"
-                android:background="#0E2027"
+                android:background="@drawable/bg_interest_white"
                 android:paddingEnd="8dp" />
 
         </LinearLayout>

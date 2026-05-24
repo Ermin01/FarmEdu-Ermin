@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "708734363017",
-    "project_id": "erminfarmedu",
-    "storage_bucket": "erminfarmedu.firebasestorage.app"
+    "project_number": "765503352431",
+    "project_id": "farmedu-erko",
+    "storage_bucket": "farmedu-erko.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:708734363017:android:69c5ab38c436900a13ad58",
+        "mobilesdk_app_id": "1:765503352431:android:3e5d9d96bc03278a50a79a",
         "android_client_info": {
           "package_name": "com.example.farmedu_ermin"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBohGVqs3LVL_eXbY3YGBTXs-o6TG1xyoQ"
+          "current_key": "AIzaSyBvU1J98DmGatjbUdGy2dHSKMsLGKCctXo"
         }
       ],
       "services": {

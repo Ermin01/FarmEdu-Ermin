@@ -710,7 +710,7 @@ landwirtschaftliches Wissen brauchen.
     <string name="odjavi_se">Abmelden</string>
 
     <!-- fragment_privatnost-->
-    <string name="privatnost">Datenschutz</string>
+    <string name="privatnost">🔒 Datenschutz</string>
     <string name="sigurnost_kontrola">Sicherheit und Datenkontrolle</string>
     <string name="vasa_privatnost">Ihre Privatsphäre</string>
     <string name="vasi_podaci_sigurni">Ihre Daten sind geschützt und sicher.</string>

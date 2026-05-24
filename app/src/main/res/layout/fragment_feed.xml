@@ -53,7 +53,7 @@
             android:background="@drawable/bg_green_button"
             android:padding="12dp"
             android:scaleType="centerInside"
-            android:src="@drawable/dot_active" />
+            android:src="@drawable/dodajicon" />
 
     </LinearLayout>
 

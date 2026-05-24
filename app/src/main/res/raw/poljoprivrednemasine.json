@@ -114,84 +114,84 @@
     "slika": "sakupljacsijena_mas",
     "opis": "Skuplja pokošeno sijeno u redove."
   },
-  {
-    "naslov": "Samoutovarna prikolica",
-    "slika": "samoutovarna",
-    "opis": "Automatski utovara i prevozi sijeno ili travu."
-  },
-  {
-    "naslov": "Mulčer",
-    "slika": "mulcer",
-    "opis": "Usitnjava travu, grane i ostatke biljaka."
-  },
-  {
-    "naslov": "Kombinirka",
-    "slika": "kombinirka",
-    "opis": "Kombinuje više operacija obrade tla u jednoj mašini."
-  },
-  {
-    "naslov": "Vadilica krompira",
-    "slika": "vadilica_krompira",
-    "opis": "Olakšava vađenje krompira iz zemlje."
-  },
-  {
-    "naslov": "Sejalica za žito",
-    "slika": "sejalica_zito",
-    "opis": "Precizno sije žitarice poput pšenice i ječma."
-  },
-  {
-    "naslov": "Prskalica nošena",
-    "slika": "prskalica_nosena",
-    "opis": "Manja prskalica koja se montira na traktor."
-  },
-  {
-    "naslov": "Prskalica vučena",
-    "slika": "prskalica_vucena",
-    "opis": "Veća prskalica za velike površine."
-  },
-  {
-    "naslov": "Kopačica",
-    "slika": "kopacica",
-    "opis": "Koristi se za okopavanje i uklanjanje korova."
-  },
-  {
-    "naslov": "Rezacica drva",
-    "slika": "rezacica_drva",
-    "opis": "Mašina za rezanje drva na manje komade."
-  },
-  {
-    "naslov": "Mikser za stočnu hranu",
-    "slika": "mikser_hrana",
-    "opis": "Miješa i priprema hranu za stoku."
-  },
-  {
-    "naslov": "Hranilica automatska",
-    "slika": "hranilica",
-    "opis": "Automatski dozira hranu životinjama."
-  },
-  {
-    "naslov": "Muzilica",
-    "slika": "muzilica",
-    "opis": "Koristi se za mužu krava i drugih životinja."
-  },
-  {
-    "naslov": "Silokombajn",
-    "slika": "silokombajn",
-    "opis": "Siječe i prikuplja silažu za stoku."
-  },
-  {
-    "naslov": "Roto kosa",
-    "slika": "roto_kosa",
-    "opis": "Brzo i efikasno kosi travu na velikim površinama."
-  },
-  {
-    "naslov": "Utovarivač",
-    "slika": "utovarivac",
-    "opis": "Koristi se za utovar zemlje, stajnjaka i materijala."
-  },
-  {
-    "naslov": "Mini bager",
-    "slika": "mini_bager",
-    "opis": "Koristi se za kopanje i manje građevinske radove na farmi."
-  }
+//  {
+//    "naslov": "Samoutovarna prikolica",
+//    "slika": "samoutovarna",
+//    "opis": "Automatski utovara i prevozi sijeno ili travu."
+//  },
+//  {
+//    "naslov": "Mulčer",
+//    "slika": "mulcer",
+//    "opis": "Usitnjava travu, grane i ostatke biljaka."
+//  },
+//  {
+//    "naslov": "Kombinirka",
+//    "slika": "kombinirka",
+//    "opis": "Kombinuje više operacija obrade tla u jednoj mašini."
+//  },
+//  {
+//    "naslov": "Vadilica krompira",
+//    "slika": "vadilica_krompira",
+//    "opis": "Olakšava vađenje krompira iz zemlje."
+//  },
+//  {
+//    "naslov": "Sejalica za žito",
+//    "slika": "sejalica_zito",
+//    "opis": "Precizno sije žitarice poput pšenice i ječma."
+//  },
+//  {
+//    "naslov": "Prskalica nošena",
+//    "slika": "prskalica_nosena",
+//    "opis": "Manja prskalica koja se montira na traktor."
+//  },
+//  {
+//    "naslov": "Prskalica vučena",
+//    "slika": "prskalica_vucena",
+//    "opis": "Veća prskalica za velike površine."
+//  },
+//  {
+//    "naslov": "Kopačica",
+//    "slika": "kopacica",
+//    "opis": "Koristi se za okopavanje i uklanjanje korova."
+//  },
+//  {
+//    "naslov": "Rezacica drva",
+//    "slika": "rezacica_drva",
+//    "opis": "Mašina za rezanje drva na manje komade."
+//  },
+//  {
+//    "naslov": "Mikser za stočnu hranu",
+//    "slika": "mikser_hrana",
+//    "opis": "Miješa i priprema hranu za stoku."
+//  },
+//  {
+//    "naslov": "Hranilica automatska",
+//    "slika": "hranilica",
+//    "opis": "Automatski dozira hranu životinjama."
+//  },
+//  {
+//    "naslov": "Muzilica",
+//    "slika": "muzilica",
+//    "opis": "Koristi se za mužu krava i drugih životinja."
+//  },
+//  {
+//    "naslov": "Silokombajn",
+//    "slika": "silokombajn",
+//    "opis": "Siječe i prikuplja silažu za stoku."
+//  },
+//  {
+//    "naslov": "Roto kosa",
+//    "slika": "roto_kosa",
+//    "opis": "Brzo i efikasno kosi travu na velikim površinama."
+//  },
+//  {
+//    "naslov": "Utovarivač",
+//    "slika": "utovarivac",
+//    "opis": "Koristi se za utovar zemlje, stajnjaka i materijala."
+//  },
+//  {
+//    "naslov": "Mini bager",
+//    "slika": "mini_bager",
+//    "opis": "Koristi se za kopanje i manje građevinske radove na farmi."
+//  }
 ]

@@ -226,7 +226,7 @@ public class Home extends Fragment {
         btnReadMore = view.findViewById(R.id.btnReadMore);
 
         txtAiTitle = view.findViewById(R.id.txtAiTitle);
-        txtAiCategory = view.findViewById(R.id.txtAiCategory);
+//        txtAiCategory = view.findViewById(R.id.txtAiCategory);
         txtAiConfidence = view.findViewById(R.id.txtAiConfidence);
 
         aiAvatar = view.findViewById(R.id.aiAvatar);
@@ -571,12 +571,12 @@ public class Home extends Fragment {
                         )
                 );
 
-//        view.findViewById(R.id.martkshop)
-//                .setOnClickListener(v ->
-//                        openFragment(
-//                                new MarketplaceFragment()
-//                        )
-//                );
+        view.findViewById(R.id.notes)
+                .setOnClickListener(v ->
+                        openFragment(
+                                new NotesFragment()
+                        )
+                );
 
 
 
@@ -1456,7 +1456,7 @@ public class Home extends Fragment {
 
             txtAiTip.setText(tip);
 
-            txtAiCategory.setText(category);
+//            txtAiCategory.setText(category);
 
             if (priority.equals("high")) {
 

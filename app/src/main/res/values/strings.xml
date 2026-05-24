@@ -534,7 +534,7 @@
 
 
     <!--    fragment_privatnost-->
-    <string name="privatnost">Privatnost</string>
+    <string name="privatnost">🔒 Privatnost</string>
     <string name="sigurnost_kontrola">Sigurnost i kontrola podataka</string>
     <string name="vasa_privatnost">Vaša privatnost</string>
     <string name="vasi_podaci_sigurni">Vaši podaci su zaštićeni i sigurni.</string>

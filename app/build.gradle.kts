@@ -37,10 +37,12 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-storage")
-
+    implementation("com.google.firebase:firebase-database")
     // EMOJI
     implementation("com.vanniktech:emoji:0.16.0")
     implementation("com.vanniktech:emoji-google:0.16.0")
+
+    implementation("com.itextpdf:itext7-core:7.2.5")
 
     // 🌐 RETROFIT
     implementation("com.squareup.retrofit2:retrofit:2.9.0")

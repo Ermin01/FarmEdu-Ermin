@@ -1,650 +1,306 @@
-package com.example.farmedu_ermin.chat;
+rules_version = '2';
 
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+service cloud.firestore {
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+  match /databases/{database}/documents {
 
-import com.example.farmedu_ermin.R;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.ListenerRegistration;
+    // ========================================================
+    // DEFAULT AUTH CHECK
+    // ========================================================
 
-import java.util.HashMap;
-import java.util.Map;
-
-public class ZahtjevPrijateljstvoFragment extends Fragment {
-
-    private LinearLayout containerRequests;
-    private TextView txtEmpty;
-
-    private FirebaseFirestore db;
-
-    private ListenerRegistration requestListener;
-    private ListenerRegistration notificationListener;
-
-    public ZahtjevPrijateljstvoFragment() {}
-
-    @Nullable
-    @Override
-    public View onCreateView(
-            @NonNull LayoutInflater inflater,
-            @Nullable ViewGroup container,
-            @Nullable Bundle savedInstanceState
-    ) {
-
-        View view = inflater.inflate(
-                R.layout.fragment_zahtjev_prijateljstvo,
-                container,
-                false
-        );
-
-        db = FirebaseFirestore.getInstance();
-
-        containerRequests = view.findViewById(R.id.containerRequests);
-        txtEmpty = view.findViewById(R.id.txtEmpty);
-
-        // BACK BUTTON
-        View btnBack = view.findViewById(R.id.btnBack);
-
-        if (btnBack != null) {
-            btnBack.setOnClickListener(v -> {
-
-                if (getParentFragmentManager().getBackStackEntryCount() > 0) {
-                    getParentFragmentManager().popBackStack();
-                }
-
-            });
-        }
-
-        // LISTENERS
-        listenForRequests();
-        listenForAcceptedNotifications();
-
-        return view;
+    function isLoggedIn() {
+      return request.auth != null;
     }
 
-    // ====================================================
-    // REALTIME LISTENER ZA ZAHTJEVE
-    // ====================================================
-    private void listenForRequests() {
+    // ========================================================
+    // USERS
+    // ========================================================
 
-        FirebaseUser currentUser =
-                FirebaseAuth.getInstance().getCurrentUser();
+    match /users/{userId} {
 
-        if (currentUser == null) return;
+      allow read, write: if isLoggedIn();
 
-        String currentUid = currentUser.getUid();
+      // ====================================================
+      // PARTNERS
+      // ====================================================
 
-        requestListener = db.collection("chat_requests")
-                .whereEqualTo("receiverUid", currentUid)
-                .whereEqualTo("status", "pending")
-                .addSnapshotListener((value, error) -> {
+      match /partners/{partnerId} {
+        allow read, write: if isLoggedIn();
+      }
 
-                    if (!isAdded() || getContext() == null) return;
+      // ====================================================
+      // FOLLOWERS
+      // ====================================================
 
-                    if (error != null) {
-                        Log.e("FIREBASE", "REQUEST LISTENER ERROR", error);
-                        return;
-                    }
+      match /followers/{followerId} {
+        allow read, write: if isLoggedIn();
+      }
 
-                    containerRequests.removeAllViews();
+      // ====================================================
+      // FOLLOWING
+      // ====================================================
 
-                    boolean hasRequests =
-                            value != null && !value.isEmpty();
+      match /following/{followingId} {
+        allow read, write: if isLoggedIn();
+      }
 
-                    if (hasRequests) {
+      // ====================================================
+      // USER POSTS SUBCOLLECTION
+      // ====================================================
 
-                        for (DocumentSnapshot doc : value.getDocuments()) {
+      match /posts/{postId} {
+        allow read, write: if isLoggedIn();
+      }
 
-                            String requestId = doc.getId();
+      // ====================================================
+      // USER NOTES
+      // ====================================================
 
-                            String senderUid =
-                                    doc.getString("senderUid");
+      match /notes/{noteId} {
+        allow read, write: if isLoggedIn();
+      }
 
-                            if (senderUid == null || senderUid.isEmpty())
-                                continue;
+      // ====================================================
+      // USER SETTINGS
+      // ====================================================
 
-                            loadUserCard(
-                                    senderUid,
-                                    requestId,
-                                    currentUid
-                            );
-                        }
-                    }
-
-                    // učitaj i notifikacije nakon zahtjeva
-                    loadAcceptedNotificationsOnce(currentUid);
-                });
+      match /settings/{settingId} {
+        allow read, write: if isLoggedIn();
+      }
     }
 
-    // ====================================================
-    // UCITAJ PRIHVACENE NOTIFIKACIJE
-    // ====================================================
-    private void listenForAcceptedNotifications() {
+    // ========================================================
+    // POSTS
+    // ========================================================
 
-        FirebaseUser currentUser =
-                FirebaseAuth.getInstance().getCurrentUser();
+    match /posts/{postId} {
 
-        if (currentUser == null) return;
+      allow read, write: if isLoggedIn();
 
-        String currentUid = currentUser.getUid();
+      // ====================================================
+      // COMMENTS SUBCOLLECTION
+      // ====================================================
 
-        notificationListener = db.collection("notifications")
-                .whereEqualTo("receiverUid", currentUid)
-                .whereEqualTo("type", "partner_accept")
-                .addSnapshotListener((value, error) -> {
+      match /comments/{commentId} {
+        allow read, write: if isLoggedIn();
+      }
 
-                    if (!isAdded() || getContext() == null) return;
+      // ====================================================
+      // LIKES SUBCOLLECTION
+      // ====================================================
 
-                    if (error != null) {
-                        Log.e("FIREBASE", "NOTIFICATION ERROR", error);
-                        return;
-                    }
-
-                    // refresh prikaza
-                    refreshAllCards();
-                });
+      match /likes/{likeId} {
+        allow read, write: if isLoggedIn();
+      }
     }
 
-    // ====================================================
-    // REFRESH SVEGA
-    // ====================================================
-    private void refreshAllCards() {
+    // ========================================================
+    // GLOBAL COMMENTS
+    // ========================================================
 
-        FirebaseUser currentUser =
-                FirebaseAuth.getInstance().getCurrentUser();
-
-        if (currentUser == null) return;
-
-        String currentUid = currentUser.getUid();
-
-        containerRequests.removeAllViews();
-
-        db.collection("chat_requests")
-                .whereEqualTo("receiverUid", currentUid)
-                .whereEqualTo("status", "pending")
-                .get()
-                .addOnSuccessListener(requests -> {
-
-                    // ZAHTJEVI
-                    for (DocumentSnapshot doc : requests.getDocuments()) {
-
-                        String requestId = doc.getId();
-
-                        String senderUid =
-                                doc.getString("senderUid");
-
-                        if (senderUid == null) continue;
-
-                        loadUserCard(
-                                senderUid,
-                                requestId,
-                                currentUid
-                        );
-                    }
-
-                    // NOTIFIKACIJE
-                    loadAcceptedNotificationsOnce(currentUid);
-                });
+    match /comments/{commentId} {
+      allow read, write: if isLoggedIn();
     }
 
-    // ====================================================
-    // UCITAJ NOTIFIKACIJE JEDNOM
-    // ====================================================
-    private void loadAcceptedNotificationsOnce(String currentUid) {
+    // ========================================================
+    // MESSAGES
+    // ========================================================
 
-        db.collection("notifications")
-                .whereEqualTo("receiverUid", currentUid)
-                .whereEqualTo("type", "partner_accept")
-                .get()
-                .addOnSuccessListener(value -> {
-
-                    if (!isAdded() || getContext() == null) return;
-
-                    boolean hasAnything =
-                            containerRequests.getChildCount() > 0;
-
-                    for (DocumentSnapshot doc : value.getDocuments()) {
-
-                        String partnerName =
-                                doc.getString("partnerName");
-
-                        Long avatar =
-                                doc.getLong("avatar");
-
-                        if (partnerName == null || partnerName.isEmpty()) {
-                            partnerName = "FarmEdu korisnik";
-                        }
-
-                        View card = LayoutInflater.from(getContext())
-                                .inflate(
-                                        R.layout.item_notification_card,
-                                        containerRequests,
-                                        false
-                                );
-
-                        ImageView imgAvatar =
-                                card.findViewById(R.id.imgAvatar);
-
-                        TextView txtMessage =
-                                card.findViewById(R.id.txtMessage);
-
-                        View dotUnread =
-                                card.findViewById(R.id.dotUnread);
-
-                        txtMessage.setText(
-                                partnerName +
-                                        " je prihvatio/la vaš zahtjev za partnerstvo."
-                        );
-
-                        try {
-
-                            if (avatar != null) {
-                                imgAvatar.setImageResource(
-                                        avatar.intValue()
-                                );
-                            } else {
-                                imgAvatar.setImageResource(
-                                        R.drawable.user
-                                );
-                            }
-
-                        } catch (Exception e) {
-
-                            imgAvatar.setImageResource(
-                                    R.drawable.user
-                            );
-                        }
-
-                        if (dotUnread != null) {
-                            dotUnread.setVisibility(View.VISIBLE);
-                        }
-
-                        containerRequests.addView(card);
-
-                        hasAnything = true;
-                    }
-
-                    // EMPTY STATE
-                    if (txtEmpty != null) {
-
-                        if (hasAnything) {
-                            txtEmpty.setVisibility(View.GONE);
-                        } else {
-                            txtEmpty.setVisibility(View.VISIBLE);
-                        }
-                    }
-                });
+    match /messages/{messageId} {
+      allow read, write: if isLoggedIn();
     }
 
-    // ====================================================
-    // UCITAJ KARTICU USERA
-    // ====================================================
-    private void loadUserCard(
-            String senderUid,
-            String requestId,
-            String currentUid
-    ) {
+    // ========================================================
+    // CHATS
+    // ========================================================
 
-        db.collection("users")
-                .document(senderUid)
-                .get()
-                .addOnSuccessListener(doc -> {
+    match /chats/{chatId} {
 
-                    if (!isAdded() || getContext() == null) return;
+      allow read, write: if isLoggedIn();
 
-                    if (!doc.exists()) return;
+      // ====================================================
+      // CHAT MESSAGES SUBCOLLECTION
+      // ====================================================
 
-                    View card = LayoutInflater.from(getContext())
-                            .inflate(
-                                    R.layout.item_request_card,
-                                    containerRequests,
-                                    false
-                            );
-
-                    ImageView imgUser =
-                            card.findViewById(R.id.imgUser);
-
-                    TextView txtName =
-                            card.findViewById(R.id.txtName);
-
-                    TextView txtCity =
-                            card.findViewById(R.id.txtCity);
-
-                    TextView txtStatus =
-                            card.findViewById(R.id.txtStatus);
-
-                    LinearLayout btnAccept =
-                            card.findViewById(R.id.btnAccept);
-
-                    LinearLayout btnReject =
-                            card.findViewById(R.id.btnReject);
-
-                    String name = doc.getString("name");
-                    String city = doc.getString("city");
-
-                    Long avatar = doc.getLong("avatar");
-
-                    if (name == null || name.isEmpty()) {
-                        name = "FarmEdu korisnik";
-                    }
-
-                    if (city == null || city.isEmpty()) {
-                        city = "BiH";
-                    }
-
-                    txtName.setText(name);
-                    txtCity.setText("📍 " + city);
-
-                    txtStatus.setText(
-                            name +
-                                    " vam je poslao/la zahtjev za partnerstvo."
-                    );
-
-                    try {
-
-                        if (avatar != null) {
-                            imgUser.setImageResource(
-                                    avatar.intValue()
-                            );
-                        } else {
-                            imgUser.setImageResource(
-                                    R.drawable.user
-                            );
-                        }
-
-                    } catch (Exception e) {
-
-                        imgUser.setImageResource(
-                                R.drawable.user
-                        );
-                    }
-
-                    final String finalName = name;
-                    final Long finalAvatar = avatar;
-
-                    // ACCEPT
-                    btnAccept.setOnClickListener(v -> {
-
-                        btnAccept.setEnabled(false);
-                        btnReject.setEnabled(false);
-
-                        acceptRequest(
-                                requestId,
-                                senderUid,
-                                currentUid,
-                                finalName,
-                                finalAvatar,
-                                card
-                        );
-                    });
-
-                    // REJECT
-                    btnReject.setOnClickListener(v -> {
-
-                        btnAccept.setEnabled(false);
-                        btnReject.setEnabled(false);
-
-                        rejectRequest(requestId, card);
-                    });
-
-                    containerRequests.addView(card);
-
-                    if (txtEmpty != null) {
-                        txtEmpty.setVisibility(View.GONE);
-                    }
-                });
+      match /messages/{messageId} {
+        allow read, write: if isLoggedIn();
+      }
     }
 
-    // ====================================================
-    // ACCEPT REQUEST
-    // ====================================================
-    private void acceptRequest(
-            String requestId,
-            String senderUid,
-            String currentUid,
-            String senderName,
-            Long senderAvatar,
-            View card
-    ) {
+    // ========================================================
+    // CHAT REQUESTS
+    // ========================================================
 
-        db.collection("chat_requests")
-                .document(requestId)
-                .update("status", "accepted")
-                .addOnSuccessListener(unused -> {
-
-                    db.collection("users")
-                            .document(currentUid)
-                            .get()
-                            .addOnSuccessListener(userDoc -> {
-
-                                if (!isAdded()) return;
-
-                                String accepterName =
-                                        userDoc.getString("name");
-
-                                Long accepterAvatar =
-                                        userDoc.getLong("avatar");
-
-                                if (accepterName == null ||
-                                        accepterName.isEmpty()) {
-
-                                    accepterName =
-                                            "FarmEdu korisnik";
-                                }
-
-                                // NOTIFIKACIJA
-                                Map<String, Object> notification =
-                                        new HashMap<>();
-
-                                notification.put(
-                                        "receiverUid",
-                                        senderUid
-                                );
-
-                                notification.put(
-                                        "type",
-                                        "partner_accept"
-                                );
-
-                                notification.put(
-                                        "message",
-                                        accepterName +
-                                                " je prihvatio/la vaš zahtjev za partnerstvo."
-                                );
-
-                                notification.put(
-                                        "partnerName",
-                                        accepterName
-                                );
-
-                                notification.put(
-                                        "partnerUid",
-                                        currentUid
-                                );
-
-                                notification.put(
-                                        "avatar",
-                                        accepterAvatar != null
-                                                ? accepterAvatar
-                                                : R.drawable.user
-                                );
-
-                                notification.put(
-                                        "seen",
-                                        false
-                                );
-
-                                notification.put(
-                                        "timestamp",
-                                        System.currentTimeMillis()
-                                );
-
-                                db.collection("notifications")
-                                        .add(notification)
-                                        .addOnSuccessListener(ref -> {
-
-                                            if (!isAdded()) return;
-
-                                            Toast.makeText(
-                                                    requireContext(),
-                                                    "✅ Zahtjev prihvaćen!",
-                                                    Toast.LENGTH_SHORT
-                                            ).show();
-
-                                            refreshAllCards();
-                                        });
-
-                                createPartnership(
-                                        currentUid,
-                                        senderUid
-                                );
-                            });
-                })
-                .addOnFailureListener(e -> {
-
-                    Log.e(
-                            "FIREBASE",
-                            "ACCEPT ERROR: " + e.getMessage()
-                    );
-
-                    if (!isAdded()) return;
-
-                    Toast.makeText(
-                            requireContext(),
-                            "Greška, pokušajte ponovo.",
-                            Toast.LENGTH_SHORT
-                    ).show();
-
-                    View btnAccept =
-                            card.findViewById(R.id.btnAccept);
-
-                    View btnReject =
-                            card.findViewById(R.id.btnReject);
-
-                    if (btnAccept != null) {
-                        btnAccept.setEnabled(true);
-                    }
-
-                    if (btnReject != null) {
-                        btnReject.setEnabled(true);
-                    }
-                });
+    match /chat_requests/{requestId} {
+      allow read, write: if isLoggedIn();
     }
 
-    // ====================================================
-    // PARTNERSTVO
-    // ====================================================
-    private void createPartnership(
-            String uid1,
-            String uid2
-    ) {
+    // ========================================================
+    // NOTIFICATIONS
+    // ========================================================
 
-        Map<String, Object> p1 = new HashMap<>();
-
-        p1.put("partnerUid", uid2);
-        p1.put("timestamp", System.currentTimeMillis());
-
-        db.collection("users")
-                .document(uid1)
-                .collection("partners")
-                .document(uid2)
-                .set(p1);
-
-        Map<String, Object> p2 = new HashMap<>();
-
-        p2.put("partnerUid", uid1);
-        p2.put("timestamp", System.currentTimeMillis());
-
-        db.collection("users")
-                .document(uid2)
-                .collection("partners")
-                .document(uid1)
-                .set(p2);
+    match /notifications/{notificationId} {
+      allow read, write: if isLoggedIn();
     }
 
-    // ====================================================
-    // REJECT
-    // ====================================================
-    private void rejectRequest(
-            String requestId,
-            View card
-    ) {
+    // ========================================================
+    // MARKETPLACE
+    // ========================================================
 
-        db.collection("chat_requests")
-                .document(requestId)
-                .update("status", "rejected")
-                .addOnSuccessListener(unused -> {
-
-                    if (!isAdded()) return;
-
-                    Toast.makeText(
-                            requireContext(),
-                            "Zahtjev odbijen.",
-                            Toast.LENGTH_SHORT
-                    ).show();
-
-                    refreshAllCards();
-                })
-                .addOnFailureListener(e -> {
-
-                    Log.e(
-                            "FIREBASE",
-                            "REJECT ERROR: " + e.getMessage()
-                    );
-
-                    if (!isAdded()) return;
-
-                    Toast.makeText(
-                            requireContext(),
-                            "Greška, pokušajte ponovo.",
-                            Toast.LENGTH_SHORT
-                    ).show();
-
-                    View btnAccept =
-                            card.findViewById(R.id.btnAccept);
-
-                    View btnReject =
-                            card.findViewById(R.id.btnReject);
-
-                    if (btnAccept != null) {
-                        btnAccept.setEnabled(true);
-                    }
-
-                    if (btnReject != null) {
-                        btnReject.setEnabled(true);
-                    }
-                });
+    match /marketplace/{itemId} {
+      allow read, write: if isLoggedIn();
     }
 
-    // ====================================================
-    // DESTROY
-    // ====================================================
-    @Override
-    public void onDestroyView() {
+    // ========================================================
+    // PRODUCTS
+    // ========================================================
 
-        super.onDestroyView();
-
-        if (requestListener != null) {
-            requestListener.remove();
-            requestListener = null;
-        }
-
-        if (notificationListener != null) {
-            notificationListener.remove();
-            notificationListener = null;
-        }
+    match /products/{productId} {
+      allow read, write: if isLoggedIn();
     }
+
+    // ========================================================
+    // ORDERS
+    // ========================================================
+
+    match /orders/{orderId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // NOTES
+    // ========================================================
+
+    match /notes/{noteId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // TASKS
+    // ========================================================
+
+    match /tasks/{taskId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // EVENTS
+    // ========================================================
+
+    match /events/{eventId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // DETECTIONS
+    // ========================================================
+
+    match /detections/{detectionId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // AI RESULTS
+    // ========================================================
+
+    match /ai_results/{resultId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // CAMERA SCANS
+    // ========================================================
+
+    match /camera_scans/{scanId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // STORIES
+    // ========================================================
+
+    match /stories/{storyId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // REELS
+    // ========================================================
+
+    match /reels/{reelId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // FOLLOWERS
+    // ========================================================
+
+    match /followers/{followerId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // FOLLOWING
+    // ========================================================
+
+    match /following/{followingId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // LIKES
+    // ========================================================
+
+    match /likes/{likeId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // WEATHER
+    // ========================================================
+
+    match /weather/{weatherId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // REPORTS
+    // ========================================================
+
+    match /reports/{reportId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // SETTINGS
+    // ========================================================
+
+    match /settings/{settingId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // PREMIUM USERS
+    // ========================================================
+
+    match /premium_users/{premiumId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // EDUCATION
+    // ========================================================
+
+    match /education/{lessonId} {
+      allow read, write: if isLoggedIn();
+    }
+
+    // ========================================================
+    // ANALYTICS
+    // ========================================================
+
+    match /analytics/{analyticsId} {
+      allow read, write: if isLoggedIn();
+    }
+  }
 }

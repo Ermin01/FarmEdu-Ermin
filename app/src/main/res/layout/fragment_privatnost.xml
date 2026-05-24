@@ -231,7 +231,7 @@
                     <ImageView
                         android:layout_width="22dp"
                         android:layout_height="22dp"
-                        android:src="@drawable/ic_activity"
+                        android:src="@drawable/analiza"
                         app:tint="#07141B" />
 
                 </LinearLayout>
@@ -290,7 +290,7 @@
                     <ImageView
                         android:layout_width="22dp"
                         android:layout_height="22dp"
-                        android:src="@drawable/green_dot"
+                        android:src="@drawable/notesicon"
                         app:tint="#07141B" />
 
                 </LinearLayout>
